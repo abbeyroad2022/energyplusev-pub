@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-3{fill:#0f1f2e}
+        </style>
+    </defs>
+    <g id="icon-card" transform="translate(-107 -172)">
+        <g id="Box" transform="translate(112.994 178)">
+            <path id="사각형_4080" d="M0 0H32V32H0z" class="cls-1" transform="translate(-5.994 -6)"/>
+        </g>
+        <g id="사각형_5214" fill="#fff" stroke="#0f1f2e" transform="translate(109 178)">
+            <rect width="28" height="20" stroke="none" rx="2"/>
+            <rect width="27" height="19" x=".5" y=".5" class="cls-1" rx="1.5"/>
+        </g>
+        <path id="사각형_5215" d="M0 0H13V1H0z" class="cls-3" transform="translate(109 184)"/>
+        <path id="사각형_6284" d="M0 0H11V1H0z" class="cls-3" transform="translate(126 184)"/>
+        <path id="패스_13165" fill="#3ddb87" stroke="#0f1f2e" d="M66.442 659.91h-3.2l1.7-5-5 7.5h3l-1.2 4.5z" transform="translate(60.058 -471.91)"/>
+    </g>
+</svg>

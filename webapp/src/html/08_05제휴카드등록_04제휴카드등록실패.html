@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">회원/제휴카드 등록</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+         <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <div class="inner is-padding-top box-point-enroll">
+                    <div class="control">
+                        <p class="txt-control-desc">카드 번호</p>
+                        <input type="text" class="input" placeholder="카드번호를 입력해주세요.">
+                        <div class="box-img-card card-01">
+                            <img src="./images/img-point-card.png" alt="">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <p class="txt-control-desc">CVC번호</p>
+                        <input type="text" class="input" placeholder="카드뒷면 3자리를 입력해주세요.">
+                        <div class="box-img-card card-02">
+                            <img src="./images/img-point-card2.png" alt="">
+                        </div>
+                    </div>
+                    <button type="button" class="button is-fullwidth">회원/제휴카드 등록</button>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+	<!-- bottom sheet -->
+	<div class="modal is-active">
+		<div class="modal-background"></div>
+		<!--  Bottom Sheet -->
+		<div class="bottom-sheet is-bottom-fixed is-small">
+			<div class="bottom-sheet-header">
+				<h2 class="title is-3 has-text-centered">사용할 수 없는 카드</h2>
+				<button class="btn-close"><span class="blind">닫기</span></button>
+			</div>
+			<div class="bottom-sheet-body">
+				<div class="inner">
+					<dl class="inner-cont">
+						<dt class="title is-3">등록할 수 없는 카드입니다.</dt>
+						<dd>
+							<p>발급처 또는 고객센터 <strong>1544-5151</strong>에 <br>문의하여 주십시오.</p>
+							<p>오류코드 : <span class="is-red-text">3097833</span></p>
+						</dd>
+					</dl>
+					<div class="is-button-fixed">
+						<div class="inner">
+							<div class="buttons">
+								<button class="button is-fullwidth is-dark">확인</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main" class="log-off">
+        <!-- header -->
+        <header id="header" class="main-header">
+            <div class="inner">
+                <h1>
+                    <a href="/" class="bi" title="Energyplus">
+                        <span class="blind">Energyplus</span>
+                    </a>
+                </h1>
+            </div>
+            <div class="login-btn">로그인</div>
+        </header>
+        <!-- // header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents">
+			<div class="main-wrap-top"></div>
+                <div class="main-wrap">
+                    <div class="main-wrap__top-area_log-off">
+                        <div class="main-tit">
+                            <span>
+                                전기차 충전이<br>
+                                처음이신가요?
+                            </span>
+                            <div class="sub-tit">
+                                친환경 드라이버를 위한 <br>
+                                더 빠르고 더 편한 전기차 충전
+                            </div>
+                        </div>
+                        <div class="button0-log"><span><i class="st-con"></i>충전 시작하기</span></div>
+                        <div class="button1-log"><span>충전소 검색하기</span></div>
+                        <div class="main-wrap__top-area_log-off_bg">
+                        </div>
+                    </div>
+                    <div class="main-wrap__bottom-area">
+                        <div class="main-banner-slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="m-banner">
+                                            <img src="images/Banner.png">
+                                        </div>
+                                    </div>
+                                     <!-- Slide -->
+                                     <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="m-banner">
+                                            <img src="images/Banner.png">
+                                        </div>
+                                    </div>
+                                    <!-- Slide -->
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="m-bannerm-card">
+                                            <img src="images/Banner.png">
+                                        </div>
+                                    </div>
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <div class="m-banner">
+                                            <img src="images/Banner.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- swiper pagination -->
+                                <div class="swiper-pagination-wrap">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+        @@include('./include/gnb.html')
+    </div>
+    <script>
+        // 바로주유 카드 Swiper   
+        var swiper = new Swiper('.main-card-slider > .swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: false,
+            spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        // 슬라이드 배너 Swiper
+        var swiper = new Swiper('.main-banner-slider > .swiper-container', {
+            spaceBetween: 24,
+            // loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        /* 
+         * 바로주유 가격 설정 드롭다운 메뉴 
+         * 클릭시 price에 is-active 클래스 토글 / layer-dropdown-area에 is-active 클래스 토글
+         */
+        const priceItem = document.querySelectorAll('.price')
+        const dropdown = document.querySelector('.layer-dropdown-area')
+        priceItem.forEach(priceItem => {
+            priceItem.addEventListener('click', event => {
+                const currentlyPriceItem = document.querySelector('.price.is-active');
+                if (currentlyPriceItem && currentlyPriceItem != priceItem) {
+                    currentlyPriceItem.classList.remove('is-active');
+                }
+                priceItem.classList.toggle('is-active');
+                dropdown.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

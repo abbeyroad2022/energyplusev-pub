@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">미결제 내역</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+         <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container case-dc">
+				<div class="box-sections pdt30">
+					<ul class="bullet-list bbcolor02">
+						<li class="is-bold">GS칼텍스 가든파이브주유소 (031-1234-5678)</li>
+						<li>거래일시 : <span class="둫">2021.03.26 15:52</span></li>
+					</ul><!-- //bullet-list -->
+					<ul class="ul-list">
+						<li class="level">
+							<span class="">충전량</span>
+							<span class="align-right eng"><strong>90.00</strong>kWh</span>
+						</li>
+						<li class="level">
+							<span class="align-left">충전금액</span>
+							<span class="align-right "><span class="eng">30,000.0</span>원</span>
+						</li>
+						<li>
+							<ul class="bullet-list is-gray">
+								<li class="level">
+									<span class="align-left">무료충전금액</span>
+									<span class="align-right"><span class="eng">-15000.0</span>원</span>
+								</li>
+								<li class="level">
+									<span class="align-left">단가할인금액</span>
+									<span class="align-right"><span class="eng">-15000.0</span>원</span>
+								</li>
+                                <!--
+								<li class="level">
+									<span class="align-left">쿠폰</span>
+									<span class="align-right"><span class="eng">0</span>원</span>
+								</li>
+								<li class="level">
+									<span class="align-left gs-point">사용가능한 포인트</span>
+									<span class="align-right eng">100P</span>
+								</li>
+                                -->
+							</ul>
+						</li>
+						<li class="level">
+							<span class="">결제금액</span>
+							<span class="align-right"><strong class="eng">5000</strong>원</span>
+						</li>
+					</ul><!-- //ul-list -->					
+					<p class="title level is-red-text">
+						<strong class="align-left">미결제 금액</strong>
+						<strong class="align-right"><span class="eng">23,904</span>원</strong>
+					</p>
+				</div>
+				<div class="box-sections bb0 case-dc">
+					<div class="form-grid mb20">
+						<!-- 결제카드 선택 -->
+						<div class="field">
+							<label class="title">결제카드 선택</label>
+                            <div class="pay-card"><i class="ico-plus"></i>결재카드 등록</div>      
+							<div class="control mgt20">
+								<div class="select is-fullwidth ">
+									<select>
+										<option>롯데카드 1234 **** **** ****</option>
+										<option>롯데카드 1234 **** **** ****</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div><!-- //form-grid -->
+				</div>
+                <div class="box-sections bb0">
+                    <ul class="ul-list is-border-none mb0 pdb40">
+                        <li class="mb20">
+                            <ul>
+                                <li class="level">
+                                    <span class="align-left is-title">GS&POINT</span>
+                                    <span class="align-right"><span class="eng">100</span>P</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="control mgt10">
+                            <div class="select is-fullwidth ">
+                                <select>
+                                    <option>직접입력</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control mgt12">
+                            <input type="text" class="input" placeholder="">
+                        </div> 
+                    </ul><!-- //ul-list -->
+                    <div class="buttons pdb40">
+                        <button class="button is-fullwidth is-dark">결제하기</button>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">실물카드 신청</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container card-application">
+                <div class="inner is-padding-top">
+                    <!-- form -->
+                    <div class="form-grid">
+                        <!-- 수령인 -->
+                        <div class="field">
+                            <label class="label">수령인</label>
+                            <div class="control is-clearfix">
+                                <input type="tel" class="input" placeholder="배송 시, 수령하실 분의 이름을 입력하세요">
+                                <!-- 오류시 출력 -->
+                                <p class="help">배송 시, 수령하실 분의 이름을 입력하세요.</p>
+                            </div>
+                        </div>
+                            <!-- 연락처 -->
+                        <div class="field">
+                            <label class="label">연락처</label>
+                            <div class="control is-clearfix">
+                                <input type="tel" class="input" value="010-1234-5678" >
+                                <!-- 오류시 출력 -->
+                                <p class="help">연락처 형식에 맞게 입력하여 주십시오.</p>
+                            </div>
+                        </div>                               
+                        <!-- 주소 -->
+                        <div class="field address">
+                            <label class="label">베송지 주소</label>
+                            <div class="control is-clearfix">
+                                <div id="" class="level">
+                                    <button class="button is-half is-outline">주소찾기</button>
+                                    <input type="text" class="input" placeholder="우편번호">
+                                </div>
+                                <input type="text" class="input" placeholder="기본주소">
+                                <input type="text" class="input" placeholder="상세주소 및 상세건물명">
+                                <!-- 오류시 출력 -->
+                                    <p class="help">내용을 입력해 주십시오</p>
+                            </div>
+                        </div>
+                        <!-- buttons -->
+                        <div class="buttons">
+                            <button class="button is-fullwidth is-dark">발급요청</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+	<!-- bottom sheet -->
+	<div class="modal is-active">
+		<div class="modal-background"></div>
+		<!--  Bottom Sheet -->
+		<div class="bottom-sheet is-bottom-fixed is-small">
+			<div class="bottom-sheet-header">
+				<h2 class="title is-3 has-text-centered">실물카드 발급</h2>
+				<button class="btn-close"><span class="blind">닫기</span></button>
+			</div>
+			<div class="bottom-sheet-body case-dc">
+				<div class="inner">
+					<dt class="title is-3">해당 주소로 실물카드를 발급하시겠습까?</dt>
+                    <dl class="inner-cont is-padding-top-20 ">
+                        <dd>
+                            <ul class="bullet-list th-list ">
+                                <li class="no-bullet pd0">
+                                    <span>수령인</span>
+                                    <span>홍길동</span>
+                                </li>
+                                <li class="no-bullet pd0">
+                                    <span>주소</span>
+                                    
+                                </li>
+                                <span class="address-txt">서울시 강남구 가로수길111(신사동, 123-45)6동 708호 서울시 강남구 가로수길111(신사동, 123-45)6동 708호 서울시 강남구 가로수길111(신사동, 123-45)6동 708호</span>
+                            </ul>
+                        </dd>
+                    </dl>
+					<div class="is-button-fixed">
+						<div class="inner">
+							<div class="buttons">
+								<button class="button is-half is-outline">취소</button>
+								<button class="button is-half is-dark">발급요청</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

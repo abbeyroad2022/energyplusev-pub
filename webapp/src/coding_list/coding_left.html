@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>energyplus EV app</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/dtree.js"></script>
+	<style>
+		body{padding:20px 10px;}
+		ol {list-style-position: inside; padding-left:2px}
+		li {padding:2px}
+		/* li span {
+
+		} */
+		.t_ing {color:#999999}
+		.t_js {color:brown}
+		.t_app {color:#0042ff}
+		.t_app_js {color:#7395d9}
+		.t_confirm {color:#9600ff}
+		.t_confirm_js {color:#40724b}
+		.t_melon {color:#000}
+		.t_modify {color:#ff0000}
+		img{vertical-align:middle}
+	</style>
+</head>
+<body>
+
+<h1 class="c_left">energyplus EV app 코딩진행표</h1>
+<h2 class="c_left">프로세스</h2>
+<ol>
+	<li><span class="t_ing">작업진행중</span></li> <!-- 상태메세지 : 일반 -->
+	<li><span class="t_js">스크립트작업</span></li> <!-- 상태메세지 : 스크립트 -->
+	<li><span class="t_melon">일반</span></li> <!-- 상태메세지 : 일반 -->
+</ol>
+
+<div class="dtree">
+	<p><a href="javascript: p.openAll();"><img src="img/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: p.closeAll();"><img src="img/btn_collapse.gif" alt="Collapse All" /></a></p>
+	<script type="text/javascript">
+		var dir = './guide/'
+		var tree1 = {
+			'WSG' : {
+				'기본결정사항' : {
+					'프로젝트사전 협의사항' : [dir + 'with_back_dev.html',  '일반', 'mainFrame'],
+					'작업 상세규칙'        : [dir + 'checklist_front.html', '일반', 'mainFrame'],
+				},
+				'Guide' : {
+				 	'font'     : [dir + 'guide_font.html',       '일반', 'mainFrame'],
+				 	'Button'   : [dir + 'guide_button.html',     '일반', 'mainFrame'],
+				 	'Form'     : [dir + 'guide_form.html',       '일반', 'mainFrame'],
+				 	'layout'   : [dir + 'guide_layout.html',     '일반', 'mainFrame'],
+				 	'contents' : [dir + 'guide_contents.html',   '일반', 'mainFrame'],
+				},
+			}
+		};
+		var p = new dTree('p', tree1);
+		document.write(p);
+	</script>
+	<p><a href="javascript: d.openAll();"><img src="img/btn_expand.gif" alt="Expand All" /></a> <a href="javascript: d.closeAll();"><img src="img/btn_collapse.gif" alt="Collapse All" /></a></p>
+	<script type="text/javascript">
+		var dir = '../'
+		var tree = {
+			'SYS' : {
+				'00.' : {
+					"00_01서비스점검팝업.html" : [dir + '00_01서비스점검팝업.html', '완료', 'mainFrame'],
+					"00_02업데이트안내.html" : [dir + '00_02업데이트안내.html', '완료', 'mainFrame'],
+					"00_03오류발생안내.html" : [dir + '00_03오류발생안내.html', '완료', 'mainFrame'],
+					"00_04네트워크오류.html" : [dir + '00_04네트워크오류.html', '완료', 'mainFrame'],
+				},
+				'01.' : {
+					"01_02권한요청.html" : [dir + '01_02권한요청.html', '완료', 'mainFrame'],
+				},
+				'02.' : {
+					"02_01공지사항팝업.html" : [dir + '02_01공지사항팝업.html', '완료', 'mainFrame'],
+					"02_02로그오프.html" : [dir + '02_02로그오프.html', '완료', 'mainFrame'],
+					"02_03로그인_01미결제내역.html" : [dir + '02_03로그인_01미결제내역.html', '완료', 'mainFrame'],
+					"02_03로그인_02메인.html" : [dir + '02_03로그인_02메인.html', '완료', 'mainFrame'],
+					"02_03로그인_02메인_01무료충전없는경우.html" : [dir + '02_03로그인_02메인_01무료충전없는경우.html', '완료', 'mainFrame'],
+					"02_03로그인_02메인_01무료충전있는경우.html" : [dir + '02_03로그인_02메인_01무료충전있는경우.html', '완료', 'mainFrame'],
+					"02_04충전하기_01바코드.html" : [dir + '02_04충전하기_01바코드.html', '완료', 'mainFrame'],
+					"02_04충전하기_02시간초과.html" : [dir + '02_04충전하기_02시간초과.html', '완료', 'mainFrame'],
+					"02_05충전중_01무료충전사용안내.html" : [dir + '02_05충전중_01무료충전사용안내.html', '완료', 'mainFrame'],
+					"02_05충전중_02충전알림.html" : [dir + '02_05충전중_02충전알림.html', '완료', 'mainFrame'],
+					"02_05충전중_03커넥트연결.html" : [dir + '02_05충전중_03커넥트연결.html', '완료', 'mainFrame'],
+					"02_05충전중_04충전중화면.html" : [dir + '02_05충전중_04충전중화면.html', '완료', 'mainFrame'],
+					"02_05충전중_05충전중메인.html" : [dir + '02_05충전중_05충전중메인.html', '완료', 'mainFrame'],
+					"02_06전체메뉴_01로그인전.html" : [dir + '02_06전체메뉴_01로그인전.html', '완료', 'mainFrame'],
+					"02_06전체메뉴_02로그인후.html" : [dir + '02_06전체메뉴_02로그인후.html', '완료', 'mainFrame'],
+					"02_06충전완료_01결제성공.html" : [dir + '02_06충전완료_01결제성공.html', '완료', 'mainFrame'],
+					"02_06충전완료_02결제실패.html" : [dir + '02_06충전완료_02결제실패.html', '완료', 'mainFrame'],
+					"02_08회원인증.html" : [dir + '02_08회원인증.html', '완료', 'mainFrame'],
+					"02_09GS&POINT모바일보너스카드.html" : [dir + '02_09GS&POINT모바일보너스카드.html', '완료', 'mainFrame'],
+				},
+				'03.' : {
+					"03_01로그인_01Default.html" : [dir + '03_01로그인_01Default.html', '완료', 'mainFrame'],
+					"03_01로그인_06_5회이상로그인실패시.html" : [dir + '03_01로그인_06_5회이상로그인실패시.html', '완료', 'mainFrame'],
+					"03_01로그인_06_5회이상로그인실패시_02잘못입력시.html" : [dir + '03_01로그인_06_5회이상로그인실패시_02잘못입력시.html', '완료', 'mainFrame'],
+					"03_02마케팅알림동의.html" : [dir + '03_02마케팅알림동의.html', '완료', 'mainFrame'],
+					"03_04가입완료.html" : [dir + '03_04가입완료.html', '완료', 'mainFrame'],
+					"03_04간편로그인연동오류시.html" : [dir + '03_04간편로그인연동오류시.html', '완료', 'mainFrame'],
+					"03_06비밀번호변경안내.html" : [dir + '03_06비밀번호변경안내.html', '완료', 'mainFrame'],
+				},
+				'04.' : {
+					"04_06충전소상세_02두줄.html" : [dir + '04_06충전소상세_02두줄.html', '완료', 'mainFrame'],
+					"04_06충전소상세_02한줄.html" : [dir + '04_06충전소상세_02한줄.html', '완료', 'mainFrame'],
+					"04_07충전소제보.html" : [dir + '04_07충전소제보.html', '완료', 'mainFrame'],
+				},
+				'05.' : {
+					"05_01알림함_01리스트.html" : [dir + '05_01알림함_01리스트.html', '완료', 'mainFrame'],
+					"05_01알림함_03결과없음.html" : [dir + '05_01알림함_03결과없음.html', '완료', 'mainFrame'],
+				},
+				'06.' : {
+					"06_01로그인전_01로그인.html" : [dir + '06_01로그인전_01로그인.html', '완료', 'mainFrame'],
+					"06_02결제정보.html" : [dir + '06_02결제정보.html', '완료', 'mainFrame'],
+					"06_03결제카드등록완료.html" : [dir + '06_03결제카드등록완료.html', '완료', 'mainFrame'],
+					"06_04결제카드삭제.html" : [dir + '06_04결제카드삭제.html', '완료', 'mainFrame'],
+					"06_05결제수단없음.html" : [dir + '06_05결제수단없음.html', '완료', 'mainFrame'],
+				},
+				'07.' : {
+					"07_01바로충전등록.html" : [dir + '07_01바로충전등록.html', '완료', 'mainFrame'],
+					"07_01바로충전등록_05등록완료.html" : [dir + '07_01바로충전등록_05등록완료.html', '완료', 'mainFrame'],
+					"07_02바로충전관리.html" : [dir + '07_02바로충전관리.html', '완료', 'mainFrame'],
+				},
+				'08.' : {
+					"08_01회원카드_01리스트.html" : [dir + '08_01회원카드_01리스트.html', '완료', 'mainFrame'],
+					"08_02회원카드_02이용내역.html" : [dir + '08_02회원카드_02이용내역.html', '완료', 'mainFrame'],
+					"08_03카드등록.html" : [dir + '08_03카드등록.html', '완료', 'mainFrame'],
+					"08_04개인정보활용동의.html" : [dir + '08_04개인정보활용동의.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_01패스워드입력_01.html" : [dir + '08_04실물카드신청_01패스워드입력_01.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_01패스워드입력_02_5회이상로그인실패시.html" : [dir + '08_04실물카드신청_01패스워드입력_02_5회이상로그인실패시.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_01패스워드입력_03잘못입력시.html" : [dir + '08_04실물카드신청_01패스워드입력_03잘못입력시.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_02로밍카드신청폼.html" : [dir + '08_04실물카드신청_02로밍카드신청폼.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_02로밍카드신청폼_01주소찾기.html" : [dir + '08_04실물카드신청_02로밍카드신청폼_01주소찾기.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_02로밍카드신청폼_02주소찾기결과.html" : [dir + '08_04실물카드신청_02로밍카드신청폼_02주소찾기결과.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_02로밍카드신청폼_03주소찾기결과없음.html" : [dir + '08_04실물카드신청_02로밍카드신청폼_03주소찾기결과없음.html', '완료', 'mainFrame'],
+					"08_04실물카드신청_02로밍카드신청확인.html" : [dir + '08_04실물카드신청_02로밍카드신청확인.html', '완료', 'mainFrame'],
+					"08_05제휴카드등록_01제휴카드등록폼.html" : [dir + '08_05제휴카드등록_01제휴카드등록폼.html', '완료', 'mainFrame'],
+					"08_05제휴카드등록_02_5회이상실패시.html" : [dir + '08_05제휴카드등록_02_5회이상실패시.html', '완료', 'mainFrame'],
+					"08_05제휴카드등록_03제휴카드등록완료.html" : [dir + '08_05제휴카드등록_03제휴카드등록완료.html', '완료', 'mainFrame'],
+					"08_05제휴카드등록_04제휴카드등록실패.html" : [dir + '08_05제휴카드등록_04제휴카드등록실패.html', '완료', 'mainFrame'],
+					"08_06제휴카드등록_01제휴카드등록폼.html" : [dir + '08_06제휴카드등록_01제휴카드등록폼.html', '완료', 'mainFrame'],
+				},
+				'09.' : {
+					"09_01충전내역.html" : [dir + '09_01충전내역.html', '완료', 'mainFrame'],
+					"09_02상세.html" : [dir + '09_02상세.html', '완료', 'mainFrame'],
+					"09_03영수증.html" : [dir + '09_03영수증.html', '완료', 'mainFrame'],
+					"09_05개인정보처리방침.html" : [dir + '09_05개인정보처리방침.html', '완료', 'mainFrame'],
+				},
+				'10.' : {
+					"10_01미결제내역_01기본.html" : [dir + '10_01미결제내역_01기본.html', '완료', 'mainFrame'],
+					"10_01미결제내역_02직접입력.html" : [dir + '10_01미결제내역_02직접입력.html', '완료', 'mainFrame'],
+					"10_02결제확인팝업.html" : [dir + '10_02결제확인팝업.html', '완료', 'mainFrame'],
+					"10_02미결제내역없음.html" : [dir + '10_02미결제내역없음.html', '완료', 'mainFrame'],
+				},
+				'11.' : {
+					"11_01단골충전소.html" : [dir + '11_01단골충전소.html', '완료', 'mainFrame'],
+				},
+				'13.' : {
+					"13_01이벤트리스트.html" : [dir + '13_01이벤트리스트.html', '완료', 'mainFrame'],
+					"13_02종료이벤트리스트.html" : [dir + '13_02종료이벤트리스트.html', '완료', 'mainFrame'],
+					"13_03이벤트상세.html" : [dir + '13_03이벤트상세.html', '완료', 'mainFrame'],
+				},
+				'14.' : {
+					"14_01일대일문의_01문의접수1.html" : [dir + '14_01일대일문의_01문의접수1.html', '완료', 'mainFrame'],
+					"14_01일대일문의_01문의접수2(입력).html" : [dir + '14_01일대일문의_01문의접수2(입력).html', '완료', 'mainFrame'],
+					"14_01일대일문의_01문의접수3(에러).html" : [dir + '14_01일대일문의_01문의접수3(에러).html', '완료', 'mainFrame'],
+					"14_01일대일문의_02문의내역.html" : [dir + '14_01일대일문의_02문의내역.html', '완료', 'mainFrame'],
+					"14_02공지사항1.html" : [dir + '14_02공지사항1.html', '완료', 'mainFrame'],
+					"14_03faq_01리스트.html" : [dir + '14_03faq_01리스트.html', '완료', 'mainFrame'],
+					"14_03faq_02검색결과.html" : [dir + '14_03faq_02검색결과.html', '완료', 'mainFrame'],
+					"14_03faq_03결과없음.html" : [dir + '14_03faq_03결과없음.html', '완료', 'mainFrame'],
+				},
+				'16.' : {
+					"16_01설정_01기본.html" : [dir + '16_01설정_01기본.html', '완료', 'mainFrame'],
+					"16_01설정_02펼침.html" : [dir + '16_01설정_02펼침.html', '완료', 'mainFrame'],
+					"16_02소셜로그인.html" : [dir + '16_02소셜로그인.html', '완료', 'mainFrame'],
+					"16_03생체인증안내.html" : [dir + '16_03생체인증안내.html', '완료', 'mainFrame'],
+					"16_04자동결제안내.html" : [dir + '16_04자동결제안내.html', '완료', 'mainFrame'],
+					"16_05푸시알림설정.html" : [dir + '16_05푸시알림설정.html', '완료', 'mainFrame'],
+				},
+				'17.' : {
+					"17_02MO메일폼.html" : [dir + '17_02MO메일폼.html', '완료', 'mainFrame'],
+				},
+				'18.' : {
+					"18_01다이나믹.html" : [dir + '18_01다이나믹.html', '완료', 'mainFrame'],
+				},
+				'19.' : {
+					"19_01쿠폰함관리등록_01쿠폰리스트.html" : [dir + '19_01쿠폰함관리등록_01쿠폰리스트.html', '완료', 'mainFrame'],
+					"19_01쿠폰함관리등록_01쿠폰없음.html" : [dir + '19_01쿠폰함관리등록_01쿠폰없음.html', '완료', 'mainFrame'],
+					"19_01쿠폰함관리_02사용기간만료.html" : [dir + '19_01쿠폰함관리_02사용기간만료.html', '완료', 'mainFrame'],
+					"19_04모바일쿠폰등록_01작성.html" : [dir + '19_04모바일쿠폰등록_01작성.html', '완료', 'mainFrame'],
+					"19_04모바일쿠폰등록_02완료.html" : [dir + '19_04모바일쿠폰등록_02완료.html', '완료', 'mainFrame'],
+				},
+				'99.' : {
+					"99_IOS App준비중.html" : [dir + '99_IOS App준비중.html', '완료', 'mainFrame'],
+				},
+			},
+		}
+		var d = new dTree("d", tree);
+		document.write(d);
+	</script>
+</div>
+</body>
+</html>
+

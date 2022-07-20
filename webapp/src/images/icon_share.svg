@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:none}.cls-2{fill:#fff}.cls-2,.cls-3{stroke:#222;stroke-width:2px}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="Ic_Arrow_Left_24" transform="translate(-7 -66)">
+        <path id="Box" d="M0 0H24V24H0z" class="cls-1" transform="rotate(180 15.5 45)"/>
+        <g id="타원_2146" class="cls-2" transform="translate(21 67)">
+            <circle cx="4" cy="4" r="4" class="cls-4"/>
+            <circle cx="4" cy="4" r="3" class="cls-1"/>
+        </g>
+        <g id="타원_2147" class="cls-2" transform="translate(21 81)">
+            <circle cx="4" cy="4" r="4" class="cls-4"/>
+            <circle cx="4" cy="4" r="3" class="cls-1"/>
+        </g>
+        <g id="타원_2148" class="cls-2" transform="translate(9 74)">
+            <circle cx="4" cy="4" r="4" class="cls-4"/>
+            <circle cx="4" cy="4" r="3" class="cls-1"/>
+        </g>
+        <path id="선_221" d="M0 3L6 0" class="cls-3" transform="translate(15.5 72.5)"/>
+        <path id="선_222" d="M0 0L8 5" class="cls-3" transform="translate(14.5 79.5)"/>
+    </g>
+</svg>

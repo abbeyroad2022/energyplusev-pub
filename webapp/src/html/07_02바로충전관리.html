@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">바로충전 관리</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <section class="contents-section">
+                    <div class="inner">
+                        <!-- 바로주유 등록 -->
+                        <div class="box-point-list">
+                            <button type="button" class="btn-enrollment-card"><i class="ico-plus"></i>바로주유 등록</button>
+                        </div>
+                        <div class="level txt-enrollment-desc">
+                            <div class="level-left">
+                                <p>
+                                    바로충전은 <strong>최대 5개</strong>까지<br>
+                                    등록할 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="level-right">
+                                <!-- 2021-01-14 클래스 수정 is-medium -> is-small -->
+                                <button class="button is-small is-dark" disabled="disabled">저장하기</button>
+                            </div>
+                        </div>
+                        <!-- 순서변경 : 카드 드래그할때 card-area에 draggable-mode 클래스 추가 -->
+                        <div class="card-area">
+                            <!-- Sortable List -->
+                            <div class="list-group">
+                                <!-- 
+                                * 활성화 : is-active 클래스 추가
+                                -->
+                                <div class="card gasoline">
+                                    <div class="card-content">
+                                        <div class="nick is-bold">기아충전해택(2)</div>
+                                        <div class="info-area">
+                                            <span class="oil">충전율</span>
+                                            <span class="price">80%</span>
+                                            <!-- button draggable -->
+                                            <button class="btn-draggable">
+                                                <span class="blind">이동하기</span>
+                                            </button>
+                                        </div>
+                                        <ul class="bullet-list">
+                                            <li>기아충전혜택 회원카드</li>
+                                            <li>포인트 자동사용 2,000P</li>
+                                            <li>롯데카드 1234 **** **** ****</li>
+                                        </ul>
+                                        <div class="buttons">
+                                            <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                                            <button class="button is-half is-medium is-gray">삭제</button>
+                                            <button class="button is-half is-medium is-gray">조건변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-area">
+                            <!-- Sortable List -->
+                            <div class="list-group">
+                                <!-- 
+                                * 활성화 : is-active 클래스 추가
+                                -->
+                                <div class="card gasoline">
+                                    <div class="card-content">
+                                        <div class="nick is-bold">기아충전해택</div>
+                                        <div class="info-area">
+                                            <span class="oil">충전량</span>
+                                            <span class="price">80kWh</span>
+                                            <!-- button draggable -->
+                                            <button class="btn-draggable">
+                                                <span class="blind">이동하기</span>
+                                            </button>
+                                        </div>
+                                        <ul class="bullet-list">
+                                            <li>기아충전혜택 회원카드</li>
+                                            <li>포인트 자동사용 2,000P</li>
+                                            <li>롯데카드 1234 **** **** ****</li>
+                                        </ul>
+                                        <div class="buttons">
+                                            <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                                            <button class="button is-half is-medium is-gray">삭제</button>
+                                            <button class="button is-half is-medium is-gray">조건변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-area">
+                            <!-- Sortable List -->
+                            <div class="list-group">
+                                <!-- 
+                                * 활성화 : is-active 클래스 추가
+                                -->
+                                <div class="card gasoline">
+                                    <div class="card-content">
+                                        <div class="nick is-bold">신한카드시간</div>
+                                        <div class="info-area">
+                                            <span class="oil">충전시간</span>
+                                            <span class="price">20분</span>
+                                            <!-- button draggable -->
+                                            <button class="btn-draggable">
+                                                <span class="blind">이동하기</span>
+                                            </button>
+                                        </div>
+                                        <ul class="bullet-list">
+                                            <li>기아충전혜택 회원카드</li>
+                                            <li>포인트 자동사용 2,000P</li>
+                                            <li>신한카드 1234 **** **** ****</li>
+                                        </ul>
+                                        <div class="buttons">
+                                            <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                                            <button class="button is-half is-medium is-gray">삭제</button>
+                                            <button class="button is-half is-medium is-gray">조건변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-area">
+                            <!-- Sortable List -->
+                            <div class="list-group">
+                                <!-- 
+                                * 휘발유 [gasoline], 경유 [diesel], 고급휘발유 [premium] 클래스 추가
+                                * 활성화 : is-active 클래스 추가
+                                -->
+                                <div class="card gasoline">
+                                    <div class="card-content">
+                                        <div class="nick is-bold">5000원어치</div>
+                                        <div class="info-area">
+                                            <span class="oil">충전금액</span>
+                                            <span class="price">5000원</span>
+                                            <!-- button draggable -->
+                                            <button class="btn-draggable">
+                                                <span class="blind">이동하기</span>
+                                            </button>
+                                        </div>
+                                        <ul class="bullet-list">
+                                            <li>기아충전혜택 회원카드</li>
+                                            <li>포인트 자동사용 2,000P</li>
+                                            <li>국민카드 1234 **** **** ****</li>
+                                        </ul>
+                                        <div class="buttons">
+                                            <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                                            <button class="button is-half is-medium is-gray">삭제</button>
+                                            <button class="button is-half is-medium is-gray">조건변경</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+</body>
+</html>

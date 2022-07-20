@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">회원인증</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <!--2020/12/29 수정 type-2 클래스 추가 (footer 하단 없을 경우) -->
+            <div id="contents" class="container type-2">
+                <div class="inner is-padding-top">
+                    <!--2021-02-23 구조 수정 -->
+                    <div class="is-fullheight">
+                        <div class="title-area">
+                            <!-- 2021-04-14 문구 수정 -->
+                            <h3 class="title is-2">
+                                서비스 이용 시 한번 더<br>
+                                <strong>회원 인증</strong>이 필요합니다.
+                            </h3>                            
+                        </div>
+                       
+						<!-- form -->
+						<div class="form-grid login">
+							<!-- keyboard -->
+							<div class="keyboard-area hide">
+								<p class="keyboard"><span class="blind">한글 키패드</span></p>
+							</div>
+							<div class="level">
+								<a href="#" class="level-left view-keyboard">
+									<span>한글 자판보기</span>
+									<i class="icon-arrow-down size-smaller"></i>
+								</a>
+							</div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="email" class="input" id="id" placeholder="아이디 (4~20자, 영문/숫자)" maxlength="20">
+                                    <button class="btn-del" id="btn-del-id"><span class="blind">지우기</span></button>
+                                    <p class="help">아이디를 입력해주세요</p> <!-- 에러시에만 출력됨 -->
+                                </div>
+                            </div>
+							<div class="field">
+								<!-- 에러시 control클래스에 is-error 클래스 추가 -->
+								<div class="control">
+									<input type="password" class="input" id="password" placeholder="비밀번호 (10~16자, 영문/숫자/특수문자)" maxlength="16" autocomplete="off">
+									<button class="btn-del" id="btn-del-password"><span class="blind">지우기</span></button>
+									<!-- 에러시에만 출력됨 -->
+									<p class="help">비밀번호를 입력해주세요</p>
+								</div>
+							</div>
+						</div>
+						<!-- // form -->
+						<!-- buttons -->
+						<div class="buttons is-centered">
+							<button class="button is-half is-outline">취소</button>
+							<button class="button is-half is-dark">확인</button>
+							<div class="util">
+                                <a href="#">아이디 찾기</a>
+                                <a href="#" class="before-vertical-bar">비밀번호 찾기</a>
+                            </div>
+						</div>
+						<!-- // buttons -->
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+    </div>
+</body>
+</html>

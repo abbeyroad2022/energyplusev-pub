@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">충전내역</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+         <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container charging-list">
+                <!-- 11/08 수정 ST -->
+                <div class="is-padding-top-20">
+                    <div class="box-lately-history">
+                        <p class="tit-oiling-lately">최근 3개월 주유 내역<span>총 <strong>3</strong>회</span></p>
+                        <ul class="list-oiling-area">
+                            <li class="item-oiling">
+                                <p class="txt-month">총 충전량</p>
+                                <p class="txt-price"><strong class="is-family-secondary">196.78</strong>kWh</p>
+                            </li>
+                            <li class="item-oiling">
+                                <p class="txt-month">총 할인금액</p>
+                                <p class="txt-price"><strong class="is-family-secondary">-59,400</strong>원</p>
+                            </li>
+                            <li class="item-oiling">
+                                <p class="txt-point"></p>
+                                <p class="txt-price"><strong class="is-family-secondary">500</strong>P</p>
+                            </li>
+                        </ul>
+                        <div class="t-price-txt">
+                            <div class="t-price-txt-inner"><span class="left-tit">최종 결제금액</span><span class="right-tit"><span class="m-number">71,712</span>원</span></div>
+                        </div>
+                        <p class="txt-charge-notice2">충전량/금액은반올림으로 인한 표기상 차이가 있을수 있습니다.</p>
+                    </div>
+                    <!-- 11/08 수정 END -->
+                    <!-- 충전내역 -->
+                    <div class="box-oiling-group">
+                        <ul class="list-oiling-details bg-highlight">
+							<li>
+                                <p class="tit-oiling is-family-secondary">2020-12-06</p>
+                            </li>
+                            <li>
+                                <p class="align-left"><strong>GS칼텍스 가든파이브주유소</strong></p>
+                                <p class="align-right"><span class="is-family-secondary">15.91kWh</span></p>
+                            </li>
+                            <li>
+                                <p class="align-left">할인금액</p>
+                                <p class="align-right"><span class="is-family-secondary">33,302</span>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left">결제금액</p>
+                                <p class="align-right"><strong class="is-family-secondary">1,000</strong>원</p>
+                            </li>
+							<li>
+                                <p class="align-left is-gray-text is-red-text">미결제</p>
+                                <p class="align-right"><button class="button is-small  is-red">결제하기</button></p>
+                            </li>                            
+                        </ul><!-- //list-oiling-details -->
+						<ul class="list-oiling-details">
+							<li>
+                                <p class="tit-oiling is-family-secondary">2020-12-06</p>
+                            </li>
+                            <li>
+                                <p class="align-left"><strong>GS칼텍스 가든파이브주유소</strong></p>
+                                <p class="align-right"><span class="is-family-secondary">15.91kWh</span></p>
+                            </li>
+                            <li>
+                                <p class="align-left">할인금액</p>
+                                <p class="align-right"><span class="is-family-secondary">33,302</span>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left">결제금액</p>
+                                <p class="align-right"><strong class="is-family-secondary">1,000</strong>원</p>
+                            </li>
+							<li>
+                                <p class="align-left is-gray-text">결제완료</p>
+                                <p class="align-right"><button class="button is-small is-outline">영수증</button></p>
+                            </li>                            
+                        </ul><!-- //list-oiling-details -->
+                        <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div>
+                        <ul class="list-oiling-details">
+							<li>
+                                <p class="tit-oiling is-family-secondary">2020-12-06</p>
+                            </li>
+                            <li>
+                                <p class="align-left"><strong>GS칼텍스 가든파이브주유소</strong></p>
+                                <p class="align-right"><span class="is-family-secondary">15.91kWh</span></p>
+                            </li>
+                            <li>
+                                <p class="align-left">할인금액</p>
+                                <p class="align-right"><span class="is-family-secondary">33,302</span>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left">결제금액</p>
+                                <p class="align-right"><strong class="is-family-secondary">1,000</strong>원</p>
+                            </li>
+							<li>
+                                <p class="align-left is-gray-text">결제완료</p>
+                                <p class="align-right"><button class="button is-small is-outline">영수증</button></p>
+                            </li>                            
+                        </ul><!-- //list-oiling-details -->
+                        <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div>
+                    </div>
+                    <!-- E: 충전내역 -->
+                    <button class="button is-text more" data-index="0">더보기</button>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+</body>
+</html>

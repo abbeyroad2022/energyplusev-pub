@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2,.cls-3,.cls-5{fill:none}.cls-2,.cls-3{stroke:#a6acb2;stroke-width:2px}.cls-3{stroke-linecap:round}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="icon_shop" transform="translate(-317 -760)">
+        <g id="사각형_6303" class="cls-2" transform="translate(319 771)">
+            <path d="M0 0h20v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0z" class="cls-4"/>
+            <rect width="18" height="10" x="1" y="1" class="cls-5" rx="1"/>
+        </g>
+        <g id="사각형_6304" class="cls-2" transform="translate(318 765)">
+            <path d="M2 0h18a2 2 0 0 1 2 2v6H0V2a2 2 0 0 1 2-2z" class="cls-4"/>
+            <rect width="20" height="6" x="1" y="1" class="cls-5" rx="1"/>
+        </g>
+        <path id="선_218" d="M4 4L0 0" class="cls-3" transform="translate(324.5 761.5)"/>
+        <path id="선_219" d="M0 4L4 0" class="cls-3" transform="translate(329 761.5)"/>
+        <path id="선_220" d="M0 0L0 10" class="cls-2" transform="translate(329 772.5)"/>
+    </g>
+</svg>

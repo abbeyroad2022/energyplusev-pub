@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:none}.cls-3{stroke:#0f1f2e;stroke-linecap:round}
+        </style>
+    </defs>
+    <g id="icon-gas_receipt" transform="translate(-168 -225)">
+        <path id="사각형_4080" d="M0 0H32V32H0z" class="cls-1" transform="translate(168 225)"/>
+        <g id="타원_2124" fill="#fff" stroke="#0f1f2e" transform="translate(171 228)">
+            <circle cx="13" cy="13" r="13" stroke="none"/>
+            <circle cx="13" cy="13" r="12.5" class="cls-1"/>
+        </g>
+        <g id="그룹_18334" transform="translate(0 -1)">
+            <path id="선_213" d="M0 0L3 8" class="cls-3" transform="translate(178 238.5)"/>
+            <path id="선_216" d="M0 0L3 8" class="cls-3" transform="translate(184 238.5)"/>
+            <path id="선_214" d="M3 0L0 8" class="cls-3" transform="translate(181 238.5)"/>
+            <path id="선_215" d="M3 0L0 8" class="cls-3" transform="translate(187 238.5)"/>
+            <path id="선_217" d="M0 0L13 0" class="cls-3" transform="translate(177.5 241.5)"/>
+        </g>
+    </g>
+</svg>

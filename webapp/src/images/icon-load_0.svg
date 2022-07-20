@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.571" height="15" viewBox="0 0 13.571 15">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="icon-direction-chargeB" transform="translate(-315 -546.5)">
+        <g id="그룹_12706" transform="translate(315 546.5)">
+            <path id="다각형_1" d="M2.758 1.139a1 1 0 0 1 1.627 0l1.628 2.28A1 1 0 0 1 5.2 5H1.943a1 1 0 0 1-.814-1.581z" class="cls-1" transform="translate(0 0)"/>
+            <path id="사각형_3910" d="M0 0H2.143V10.714H0z" class="cls-1" transform="translate(2.5 4.286)"/>
+            <path id="빼기_32" d="M1.449 5.344A2.857 2.857 0 0 1 2.857 0h5v2.525a2.856 2.856 0 0 0-1.429-.383H4.285A2.86 2.86 0 0 0 1.428 5a2.9 2.9 0 0 0 .02.342z" class="cls-1" transform="translate(2.857 7.143)"/>
+            <path id="다각형_32" d="M2.758 1.139a1 1 0 0 1 1.627 0l1.628 2.28A1 1 0 0 1 5.2 5H1.943a1 1 0 0 1-.814-1.581z" class="cls-1" transform="translate(13.571 4.643) rotate(90)"/>
+        </g>
+    </g>
+</svg>

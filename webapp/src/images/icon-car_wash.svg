@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-2{fill:#0f1f2e}
+        </style>
+    </defs>
+    <g id="icon-car_wash" transform="translate(-275 -165)">
+        <path id="Box" fill="none" d="M0 0H20V20H0z" transform="translate(275 165)"/>
+        <g id="Shape" transform="translate(205 101.852)">
+            <path id="사각형_4047" d="M0 0h3v1.5A1.5 1.5 0 0 1 1.5 3 1.5 1.5 0 0 1 0 1.5V0z" class="cls-2" transform="translate(74 78.148)"/>
+            <path id="빼기_89" d="M-7177-7912.351h-12v-2.5a4.005 4.005 0 0 1 4-4h4a4 4 0 0 1 4 4v2.5zm-8-5.5a3 3 0 0 0-3 3v1h10v-1a3 3 0 0 0-3-3z" class="cls-2" transform="translate(7263 7987)"/>
+            <path id="빼기_90" d="M-7179-7725.852h-10a3 3 0 0 1-3-3 3 3 0 0 1 3-3h10a3 3 0 0 1 3 3 3 3 0 0 1-3 3zm-1-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1zm-8 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1z" class="cls-2" transform="translate(7264 7805)"/>
+            <path id="사각형_4609" d="M0 0h3v1.5A1.5 1.5 0 0 1 1.5 3 1.5 1.5 0 0 1 0 1.5V0z" class="cls-2" transform="translate(83 78.148)"/>
+            <rect id="사각형_4708" width="1" height="2" class="cls-2" rx=".5" transform="translate(76.5 65.148)"/>
+            <rect id="사각형_4709" width="1" height="2" class="cls-2" rx=".5" transform="translate(79.5 65.148)"/>
+            <rect id="사각형_4710" width="1" height="2" class="cls-2" rx=".5" transform="translate(82.5 65.148)"/>
+        </g>
+    </g>
+</svg>

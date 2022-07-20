@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="418" height="785.001" viewBox="0 0 418 785.001">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #f5f5f5;
+      }
+
+      .cls-3 {
+        fill: #3ddb87;
+        font-family: Montserrat-Black, Montserrat;
+        font-weight: 800;
+      }
+
+      .cls-3, .cls-7 {
+        font-size: 18px;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        font-size: 15px;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #0f1f2e;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: NotoSansCJKkr-Medium, Noto Sans CJK KR;
+      }
+
+      .cls-5, .cls-6, .cls-8 {
+        font-weight: 500;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-7 {
+        font-family: Whitney-Bold, Whitney;
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        font-family: Whitney-Medium, Whitney;
+      }
+
+      .cls-9 {
+        filter: url(#사각형_5827);
+      }
+
+      .cls-10 {
+        filter: url(#빼기_80);
+      }
+    </style>
+    <filter id="빼기_80" x="0" y="0" width="418" height="785.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#a8a8a8" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_5827" x="36" y="645" width="346" height="97" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#a8a8a8" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="스템프bg" transform="translate(22 -211.369)">
+    <g class="cls-10" transform="matrix(1, 0, 0, 1, -22, 211.37)">
+      <path id="빼기_80-2" data-name="빼기 80" class="cls-1" d="M306,695H22A21.982,21.982,0,0,1,0,673V288.3a17.9,17.9,0,0,0,5.2-2.462,18.063,18.063,0,0,0,4.117-3.921A17.835,17.835,0,0,0,13,271a17.836,17.836,0,0,0-3.684-10.913A18.063,18.063,0,0,0,5.2,256.166,17.9,17.9,0,0,0,0,253.7V22A21.982,21.982,0,0,1,22,0H306a21.981,21.981,0,0,1,22,22V254.111a18.007,18.007,0,0,0,0,33.777V673a21.981,21.981,0,0,1-22,22Zm-7.5-427a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,298.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,283.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,268.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,253.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,238.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,223.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,208.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,193.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,178.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,163.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,148.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,133.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,118.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,103.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,88.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,73.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,58.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,43.5,268Zm-15,0a3.5,3.5,0,1,0,3.5,3.5A3.5,3.5,0,0,0,28.5,268Z" transform="translate(45 35)"/>
+    </g>
+    <g class="cls-9" transform="matrix(1, 0, 0, 1, -22, 211.37)">
+      <path id="사각형_5827-2" data-name="사각형 5827" class="cls-2" d="M0,0H328a0,0,0,0,1,0,0V57a22,22,0,0,1-22,22H22A22,22,0,0,1,0,57V0A0,0,0,0,1,0,0Z" transform="translate(45 651)"/>
+    </g>
+    <g id="con1" transform="translate(62 880.369)">
+      <g id="그룹_17137" data-name="그룹 17137">
+        <text id="_5_000P" data-name="5,000P" class="cls-3" transform="translate(100 39.5)"><tspan x="0" y="0">5,000</tspan><tspan class="cls-4" y="0">P</tspan></text>
+        <text id="전부_모으면_바로주유에도_사용할_수_있는" data-name="전부 모으면 바로주유에도 사용할 수 있는" class="cls-5" transform="translate(125 17)"><tspan x="-121.013" y="0">전부 모으면 바로주유에도 사용할 수 있는</tspan></text>
+        <g id="그룹_17451" data-name="그룹 17451" transform="translate(6.5 22)">
+          <text id="을_드립니다." data-name="을 드립니다." class="cls-6" transform="translate(159.5 16)"><tspan x="0" y="0">을 드립니다.</tspan></text>
+          <text id="GS_POINT" data-name="GS&amp;POINT" class="cls-7" transform="translate(0 17)"><tspan x="0" y="0">GS</tspan><tspan class="cls-8" y="0">&amp;POINT</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

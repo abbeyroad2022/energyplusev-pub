@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="102" viewBox="0 0 280 102">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #da1e28;
+        opacity: 0.47;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-7 {
+        fill: #222;
+      }
+
+      .cls-3, .cls-5 {
+        font-size: 15px;
+      }
+
+      .cls-3, .cls-7 {
+        font-family: NotoSansCJKkr-Regular, Noto Sans CJK KR;
+      }
+
+      .cls-5 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        font-family: AppleSDGothicNeo-Bold, Apple SD Gothic Neo;
+      }
+
+      .cls-7 {
+        font-size: 12px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_6259" data-name="사각형 6259" class="cls-1" width="280" height="102" transform="translate(48 247)"/>
+    </clipPath>
+  </defs>
+  <g id="img" class="cls-2" transform="translate(-48 -247)">
+    <g id="img-2" data-name="img" transform="translate(0 3)">
+      <g id="그룹_18212" data-name="그룹 18212" transform="translate(1 -66)">
+        <text id="주유혜택_" data-name="주유혜택 " class="cls-3" transform="translate(54 328)"><tspan x="0" y="0">주유혜택 </tspan></text>
+        <circle id="Bullet" class="cls-4" cx="1.5" cy="1.5" r="1.5" transform="translate(47 321)"/>
+      </g>
+      <g id="그룹_18213" data-name="그룹 18213" transform="translate(1 -62)">
+        <text id="세차혜택_" data-name="세차혜택 " class="cls-3" transform="translate(54 354)"><tspan x="0" y="0">세차혜택 </tspan></text>
+        <circle id="Bullet-2" data-name="Bullet" class="cls-4" cx="1.5" cy="1.5" r="1.5" transform="translate(47 347)"/>
+      </g>
+      <g id="그룹_18214" data-name="그룹 18214" transform="translate(1 -32)">
+        <text id="정비혜택" class="cls-3" transform="translate(54 354)"><tspan x="0" y="0">정비혜택</tspan></text>
+        <circle id="Bullet-3" data-name="Bullet" class="cls-4" cx="1.5" cy="1.5" r="1.5" transform="translate(47 347)"/>
+      </g>
+      <text id="_1리터당_10원" data-name="1리터당 10원" class="cls-5" transform="translate(205 261)"><tspan x="-78.09" y="0">1</tspan><tspan class="cls-6" y="0">리터당</tspan><tspan y="0" xml:space="preserve"> 10</tspan><tspan class="cls-6" y="0">원</tspan></text>
+      <text id="무료_자동_세차_쿠폰_3개" data-name="무료 자동 세차 쿠폰 3개" class="cls-3" transform="translate(273 292)"><tspan x="-145.965" y="0">무료 자동 세차 쿠폰 3개</tspan></text>
+      <text id="_1_000원_경정비할일_무료_안전점검" data-name="1,000원 경정비할일
+무료 안전점검" class="cls-3" transform="translate(127 322)"><tspan x="0" y="0">1,000원 경정비할일</tspan><tspan x="0" y="22">무료 안전점검</tspan></text>
+      <text id="_최대_200L_" data-name="(최대 200L)" class="cls-7" transform="translate(266 258)"><tspan x="-59.364" y="0">(최대 200</tspan><tspan y="0">L)</tspan></text>
+    </g>
+  </g>
+</svg>

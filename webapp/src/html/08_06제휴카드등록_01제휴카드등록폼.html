@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">회원/제휴카드 등록</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+         <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <div class="inner is-padding-top box-point-enroll">
+                    <div class="control">
+                        <p class="txt-control-desc">카드 번호</p>
+                        <input type="text" class="input" placeholder="카드번호를 입력해주세요.">
+                        <div class="box-img-card card-01">
+                            <img src="./images/img-point-card.png" alt="">
+                        </div>
+                        <p class="cvc-noti">* CVC번호 별도 입력 필요 없음.</p>
+                    </div>
+                    <button type="button" class="button is-fullwidth">회원/제휴카드 등록</button>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+</body>
+</html>
