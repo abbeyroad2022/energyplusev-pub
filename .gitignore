@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dependency directory
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
@@ -12,3 +13,19 @@ package-lock.json
 
 # vsdode setting
 .vscode
+=======
+# Dependency directory
+# Commenting this out is preferred by some people, see
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
+node_modules
+dist
+package-lock.json
+
+
+
+# gh-pages
+.publish
+
+# vsdode setting
+.vscode
+>>>>>>> a966be9631e4b1c5ad922276d35a0fa45aae8c85
