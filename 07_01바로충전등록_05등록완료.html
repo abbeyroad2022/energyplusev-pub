@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">바로충전 등록</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <!--2020/12/29 수정 type-2 클래스 추가 (footer 하단 없을 경우) -->
+            <div id="contents" class="container type-2">
+                <div class="inner is-padding-top">
+                    <!--2021-02-23 구조 수정 -->
+                    <div class="is-fullheight">
+                        <div class="title-area">
+                            <!-- 2021-04-14 문구 수정 -->
+                            <h3 class="title is-2">
+                                바로충전 등록이<br>
+                                <strong>완료</strong>되었습니다.
+                            </h3>
+                            <!-- 배너 -->
+                            <div class="banner-complete">
+                                <!-- S: 2021-01-14 태그 추가 -->
+                                <span class="twinkle-a">이미지</span>
+                                <span class="twinkle-b">이미지</span>
+                                <!-- E: 2021-01-14 태그 추가 -->
+                            </div>
+                        </div>
+                        <!--2021-02-23 구조 수정 -->
+                        <div class="card-area">
+                            <!-- card -->
+                            <!-- 휘발유 [gasoline], 경유 [diesel], 고급유 [premium] 클래스 추가-->
+                            <div class="card gasoline">
+                                <div class="card-content">
+                                    <div class="nick">기아충전혜택(2)</div>
+                                    <div>
+                                        <span class="oil">충전율</span>
+                                        <span class="price">80%</span>
+                                    </div>
+                                    <ul class="bullet-list">
+                                        <li>기아충전혜택 회원카드</li>
+                                        <li>포인트 자동사용 2,000P</li>
+                                        <li>롯데카드 1234 **** **** ****</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-notice-text">
+                            설정된 금액보다 적게 충전할 경우<br>
+                            포인트 사용이 불가합니다.
+                        </p>
+                        <!--2021-02-23 구조 수정 -->
+                        <!-- button -->
+                        <div class="buttons is-bottom-type">
+                            <button class="button is-fullwidth is-dark">홈으로 가기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+    </div>
+</body>
+
+</html>

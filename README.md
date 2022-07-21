@@ -29,4 +29,4 @@
 
 ## git서버
 - https://github.com/abbeyroad2022/energyplusev-pub (퍼블리싱 작업용)
-- https://abbeyroad2022.github.io/energyplusev-pub/coding_list (퍼블리싱 확인용)
+- https://abbeyroad2022.github.io/energyplusev-dist/coding_list (퍼블리싱 확인용)

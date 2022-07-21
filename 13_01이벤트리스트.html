@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">이벤트</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <!-- top fixed section -->
+                <section class="top-fixed-section">
+                    <div class="tab-area b-tabs">
+                        <!-- tabs -->
+                        <nav class="tabs">
+                            <ul>
+                                <!-- 탭 활성화 : is-active 클래스 추가 -->
+                                <li class="is-active">
+                                    <a href="#">
+                                        <span>진행중 이벤트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>종료 이벤트</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </section>
+                <section class="contents-section">
+                    <div class="inner">
+                        <ul class="event-list">
+                            <!-- 친구도 나도 함께 할인 -->
+                            <li class="item-event">
+                                <a href="#">
+                                    <div class="box-event-img-area">
+                                        <p class="box-event-img">
+                                            <!-- 이미지 배너 영역 -->
+                                            <img src="./images/event-banner-invite.svg" alt="친구도 나도 함께 할인">
+                                        </p>
+                                    </div>
+                                    <div class="txt-event-info">
+                                        <div class="box-txt-group">
+                                            <p class="title">친구도 나도 함께 할인</p>
+                                            <p class="is-family-secondary">~ 2020-11-09
+                                                <!--기간 임박(30일 이내)일 시 출력 -->
+                                                <strong>D-20</strong>
+                                            </p>
+                                        </div>
+                                        <small class="event-status">참여중</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 주유한만큼 혜택 PLUS -->
+                            <li class="item-event">
+                                <a href="#">
+                                    <div class="box-event-img-area">
+                                        <p class="box-event-img">
+                                            <!-- 이미지 배너 영역 -->
+                                            <img src="./images/event-banner-plus.svg" alt="주유한만큼 혜택 PLUS">
+                                        </p>
+                                    </div>
+                                    <div class="txt-event-info">
+                                        <div class="box-txt-group">
+                                            <p class="title">주유한만큼 혜택 PLUS</p>
+                                            <p class="is-family-secondary">~ 2020-11-09<strong>D-20</strong></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 스탬프찍고 할인받고 -->
+                            <li class="item-event">
+                                <a href="#">
+                                    <div class="box-event-img-area">
+                                        <p class="box-event-img">
+                                            <!-- 이미지 배너 영역 -->
+                                            <img src="./images/event-banner-stamp.svg" alt="스탬프 찍고 할인 받고">
+                                        </p>
+                                    </div>
+                                    <div class="txt-event-info">
+                                        <div class="box-txt-group">
+                                            <p class="title">스탬프찍고 할인받고</p>
+                                            <p class="is-family-secondary">~ 2020-11-09<strong>D-20</strong></p>
+                                        </div>
+                                        <!-- <small class="event-status">참여중</small> -->
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- 2021-04-01 이미지 오류 스타일 추가 -->
+                            <li class="item-event">
+                                <a href="#">
+                                    <div class="box-event-img-area">
+                                        <p class="box-event-img">
+                                            <!-- D: 이미지 없을 경우 출력 -->
+                                            <img src="./images/no-img.svg" class="no-img">
+                                        </p>
+                                    </div>
+                                    <div class="txt-event-info">
+                                        <div class="box-txt-group">
+                                            <p class="title">스탬프찍고 할인받고</p>
+                                            <p class="is-family-secondary">~ 2020-11-09<strong>D-20</strong></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <!-- // Contents -->
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">충전소찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">해택</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+    </div>
+</body>
+
+</html>

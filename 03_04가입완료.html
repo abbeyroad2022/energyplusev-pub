@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">가입 완료</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <!--2020/12/29 수정 type-2 클래스 추가 (footer 하단 없을 경우) -->
+            <div id="contents" class="container type-2">
+                <div class="inner is-padding-top">
+                    <!--2021-02-23 구조 수정 -->
+                    <div class="is-fullheight">
+                        <div class="title-area">
+                            <!-- 2021-04-14 문구 수정 -->
+                            <h3 class="title is-2">
+                                <strong>energy plus EV</strong>에<br>
+                                오신 것을 환영합니다!
+                            </h3>
+                            <p class="mt40">
+                                충전과 할인/적립 혜택을 한번에!<br>
+                                빠르고 편리한 바로충전 등록 후 이용하세요~
+                            </p>
+                        </div>
+                        <div class="card-area t-c">
+                            <img src="images/ev-card-member.png">
+                        </div>
+                        <!-- button -->
+                        <div class="buttons is-bottom-type">
+                            <button class="button is-half is-outline">다음에 하기</button>
+                            <button class="button is-half is-dark">바로충전 등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+    </div>
+</body>
+
+</html>

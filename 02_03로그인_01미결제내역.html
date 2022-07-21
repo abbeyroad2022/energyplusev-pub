@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- header -->
+        <header id="header" class="main-header">
+            <div class="inner">
+                <h1>
+                    <a href="/" class="bi" title="Energyplus">
+                        <span class="blind">Energyplus</span>
+                    </a>
+                </h1>
+            </div>
+        </header>
+        <!-- // header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents">
+                <div class="main-wrap">
+                    <div class="main-wrap__top-area">
+                        <div class="main-tit">
+                            <span class="is-bold">KIA 충전혜택</span> 회원의<br>
+                            무료충전 혜택
+                        </div>
+                        <div class="main-btn">
+                            <span>카드변경</span>
+                        </div>
+                        <div class="main-card">
+                            <div class="txt-t0">
+                                <span class="txt-t0-0">정상가</span>
+                                <span class="txt-t0-1">2,567</span>
+                                <span class="txt-t0-2">원</span>
+                            </div>
+                            <div class="txt-t1">
+                                <span class="txt-t1-0">222.2</span>
+                                <span class="txt-t1-1">원</span>
+                                <span class="txt-t1-2">-33.5</span>
+                                <span class="txt-t1-3"></span>
+                                <span class="txt-t1-4"></span>
+                            </div>
+                            <div class="txt-t2">
+                                <span class="txt-t2-0">~ 2022-12-31</span>
+                            </div>
+                            <div class="start-btn">
+                                <span>충전 시작하기</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-wrap__bottom-area">
+                        <div class="menu-wrap">
+                            <div class="menu-wrap_inner">
+                                <div class="menu0 is-on">추천순<span class="bar"></span></div>
+                                <div class="menu1">거리순<span class="bar"></span><i></i></div>
+                                <div class="menu2"><i></i>지도로 보기</div>
+                            </div>
+                            <div class="main-card-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-card">
+                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span>충전가능</span></div>
+                                                <span class="txt">GS칼텍스 삼방주유소</span>
+                                                <div class="bottom-area"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bul"><span>혜택</span></div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-card">
+                                                <div class="card-top"><i><img src="images/icon-logo-s1.png"></i><span>충전중</span></div>
+                                                <span class="txt">GS칼텍스 삼방주유소</span>
+                                                <div class="bottom-area is-green"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bul2"><span>혜택</span></div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-card">
+                                                <div class="card-top"><i><img src="images/icon-logo-s2.png"></i><span>충전중</span></div>
+                                                <span class="txt">GS칼텍스 삼방주유소</span>
+                                                <div class="bottom-area"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bul"><span>혜택</span></div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-card">
+                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span>충전중</span></div>
+                                                <span class="txt">GS칼텍스 삼방주유소</span>
+                                                <div class="bottom-area is-green"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bul"><span>혜택</span></div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-card">
+                                                <div class="card-top"><i><img src="images/icon-logo-s1.png"></i><span>충전중</span></div>
+                                                <span class="txt">GS칼텍스 삼방주유소</span>
+                                                <div class="bottom-area"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bul2"><span>혜택</span></div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                    </div>
+                                    <!-- swiper pagination -->
+                                    <!--
+                                    <div class="swiper-pagination-wrap">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                            <div class="main-banner-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-banner">
+                                                <img src="images/Banner.png">
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-banner">
+                                                <img src="images/Banner.png">
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-bannerm-card">
+                                                <img src="images/Banner.png">
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-banner">
+                                                <img src="images/Banner.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- swiper pagination -->
+                                    <div class="swiper-pagination-wrap">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">충전소찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">해택</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+        <!-- gnb -->
+        <!-- 활성화 is-active 클래스 추가 -->
+        <div id="gnb" class="gnb">
+            <div class="gnb-wrap">
+                <!-- gnb header -->
+                <div class="gnb-header">
+                    <div class="inner">
+                        <div class="level">
+                            <div class="level-left">
+                                <div class="info-user">
+                                    <!-- 로그인 전 / show, hide 클래스로 구분 -->
+                                    <div class="hide">
+                                        <h3 class="title is-2">
+                                            <strong>로그인</strong>
+                                            <i class="icon-arrow-right"></i>
+                                        </h3>
+                                    </div>
+                                    <!-- // 로그인 전 -->
+                                    <!-- 로그인 후 -->
+                                    <div class="show">
+                                        <h3 class="title is-2"><strong>김태형</strong>님</h3>
+                                        <!-- 2021-03-18 수정 -->
+                                        <!-- GS 포인트 -->
+                                        <a href="#" class="link-arrow-right">
+                                            <span class="gs-point">113,123</span>
+                                        </a>
+                                    </div>
+                                    <!-- // 로그인 후 -->
+                                </div>
+                            </div>
+                            <!-- 로그인 후 show 클래스 추가  -->
+                            <div class="level-right show">
+                                <!-- 2021-03-18 알림 추가 -->
+                                <div class="notification-area">
+                                    <a href="#" class="icon-notification blind">알림</a>
+                                    <!-- D: 새로운 알림 발생 시 표기 -->
+                                    <span class="badge blind">new</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- quick menu -->
+                        <div class="gnb-quick-area">
+                            <ul class="columns">
+                                <li class="column">
+                                    <a href="#" class="gnb-quick-item">
+                                        <div class="gnb-quick-icon">
+                                            <i class="icon-card is-large"></i>
+                                        </div>
+                                        <div class="gnb-quick-txt">
+                                            <span>회원카드</span>
+                                            <!-- 2020/12/28 수정 - 바로주유 건수 표현 삭제 -->
+                                            <!-- <strong class="count">3</strong> -->
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="column">
+                                    <a href="#" class="gnb-quick-item">
+                                        <div class="gnb-quick-icon">
+                                            <i class="icon-gas-receipt is-large"></i>
+                                        </div>
+                                        <div class="gnb-quick-txt">
+                                            <span>결제수단</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="column">
+                                    <a href="#" class="gnb-quick-item">
+                                        <div class="gnb-quick-icon">
+                                            <i class="icon-coupon icon-coupon1 is-large"></i>
+                                        </div>
+                                        <div class="gnb-quick-txt">
+                                            <span>충전내역</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="column">
+                                    <a href="#" class="gnb-quick-item">
+                                        <div class="gnb-quick-icon">
+                                            <i class="icon-like is-large"></i>
+                                        </div>
+                                        <div class="gnb-quick-txt">
+                                            <span>바로충전</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="notice-area">
+                        <div class="inner">
+                            <!--2021-03-18 알림 -> 공지로 수정 / icon-new-dot 삭제 -->
+                            <span class="is-vertical-bar">공지</span>
+                            <a href="#" class="notice-cont">
+                                <!-- 2021-03-30 추가 -->
+                                <p class="txt-notice">
+                                    GS칼텍스에서 알립니다. 최근 코로나 격상이 최근 코로나 격상이
+                                </p>
+                                <!-- 2021-03-30 삭제 -->
+                                <!-- <i class="icon-new-dot"></i> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- gnb body -->
+                <div class="gnb-body">
+                    <div class="inner">
+                        <nav class="gnb-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>GS&POINT 보너스 카드</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>충전소찾기</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>단골충전소</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>미결제내역</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>혜택</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>이벤트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>1:1문의</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>공지사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>FAQ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>DINAMIC PRICING</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>개인정보처리방침</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>설정</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="gnb-item">
+                                        <span>energy+ 앱 바로가기</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <button class="button is-outline is-small">회원정보수정</button>
+                            <button class="button is-outline is-small">로그아웃</button>
+                            <button class="button is-outline is-small">회원탈퇴</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal is-active">
+        <div class="modal-background"></div>
+        <!--  Bottom Sheet -->
+        <div class="bottom-sheet is-bottom-fixed is-large">
+            <div class="bottom-sheet-header">
+                <h2 class="title is-3 has-text-centered">미결제내역 안내</h2>
+                <button class="btn-close"><span class="blind">닫기</span></button>
+            </div>
+            <div class="bottom-sheet-body">
+                <div class="inner case-dc">
+                    <p class="title is-3">미결제내역 결제 후<br>충전서비스를 이용하실 수 있습니다.</p>
+                    <ul class="bullet-list bbcolor02">
+                        <li><em>GS칼텍스 가든파이브주유소 (031-1234-5678)</em></li>
+                        <li>거래일시 : <span class="둫">2021.03.26 15:52</span></li>
+                    </ul>
+                    <ul class="ul-list">
+                        <li class="level">
+                            <span class="">충전량</span>
+                            <span class="align-right eng"><strong>100.00</strong>kWh</span>
+                        </li>
+                        <li class="level">
+                            <span class="align-left">충전금액</span>
+                            <span class="align-right "><span class="eng">30,000.0</span>원</span>
+                        </li>
+                        <li>
+                            <ul class="bullet-list is-gray">
+                                <li class="level">
+                                    <span class="align-left">무료충전</span>
+                                    <span class="align-right"><span class="eng">-15000.0</span>원</span>
+                                </li>
+                                <li class="level">
+                                    <span class="align-left">단가할인</span>
+                                    <span class="align-right"><span class="eng">-15000.0</span>원</span>
+                                </li>
+                                <li class="level">
+                                    <span class="align-left">쿠폰</span>
+                                    <span class="align-right"><span class="eng">0</span>원</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="title level is-red-text">
+                        <strong class="align-left">미결제 금액</strong>
+                        <strong class="align-right"><span class="eng">23,904</span>원</strong>
+                    </p>
+                    <div class="is-button-fixed">
+                        <div class="inner">
+                            <div class="buttons">
+                                <button type="button" class="button is-outline is-half">다음에 하기</button>
+                                <button type="button" class="button is-dark is-half">결제하러 가기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 바로주유 카드 Swiper   
+        var swiper = new Swiper('.main-card-slider > .swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: false,
+            spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        // 슬라이드 배너 Swiper
+        var swiper = new Swiper('.main-banner-slider > .swiper-container', {
+            spaceBetween: 24,
+            // loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        /* 
+         * 바로주유 가격 설정 드롭다운 메뉴 
+         * 클릭시 price에 is-active 클래스 토글 / layer-dropdown-area에 is-active 클래스 토글
+         */
+        const priceItem = document.querySelectorAll('.price')
+        const dropdown = document.querySelector('.layer-dropdown-area')
+        priceItem.forEach(priceItem => {
+            priceItem.addEventListener('click', event => {
+                const currentlyPriceItem = document.querySelector('.price.is-active');
+                if (currentlyPriceItem && currentlyPriceItem != priceItem) {
+                    currentlyPriceItem.classList.remove('is-active');
+                }
+                priceItem.classList.toggle('is-active');
+                dropdown.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+
+</html>

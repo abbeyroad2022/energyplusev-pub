@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">충전내역</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container charging-list">
+                <!-- 11/08 수정 ST -->
+                <div class="is-padding-top-20">
+                    <div class="box-lately-history">
+                        <p class="tit-oiling-lately">최근 3개월 주유 내역<span>총 <strong>3</strong>회</span></p>
+                        <ul class="list-oiling-area">
+                            <li class="item-oiling">
+                                <p class="txt-month">총 충전량</p>
+                                <p class="txt-price"><strong class="is-family-secondary">196.78</strong>kWh</p>
+                            </li>
+                            <li class="item-oiling">
+                                <p class="txt-month">총 할인금액</p>
+                                <p class="txt-price"><strong class="is-family-secondary">-59,400</strong>원</p>
+                            </li>
+                            <li class="item-oiling">
+                                <p class="txt-point"></p>
+                                <p class="txt-price"><strong class="is-family-secondary">500</strong>P</p>
+                            </li>
+                        </ul>
+                        <div class="t-price-txt">
+                            <div class="t-price-txt-inner"><span class="left-tit">최종 결제금액</span><span class="right-tit"><span class="m-number">71,712</span>원</span></div>
+                        </div>
+                        <p class="txt-charge-notice2">충전량/금액은반올림으로 인한 표기상 차이가 있을수 있습니다.</p>
+                    </div>
+                    <!-- 11/08 수정 END -->
+                    <!-- 충전내역 -->
+                    <div class="box-oiling-group">
+                        <ul class="list-oiling-details bg-highlight">
+                            <li>
+                                <p class="tit-oiling is-family-secondary">2020-12-06</p>
+                            </li>
+                            <li>
+                                <p class="align-left"><strong>GS칼텍스 가든파이브주유소</strong></p>
+                                <p class="align-right"><span class="is-family-secondary">15.91kWh</span></p>
+                            </li>
+                            <li>
+                                <p class="align-left">할인금액</p>
+                                <p class="align-right"><span class="is-family-secondary">33,302</span>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left">결제금액</p>
+                                <p class="align-right"><strong class="is-family-secondary">1,000</strong>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left is-gray-text is-red-text">미결제</p>
+                                <p class="align-right"><button class="button is-small  is-red">결제하기</button></p>
+                            </li>
+                        </ul><!-- //list-oiling-details -->
+                        <ul class="list-oiling-details">
+                            <li>
+                                <p class="tit-oiling is-family-secondary">2020-12-06</p>
+                            </li>
+                            <li>
+                                <p class="align-left"><strong>GS칼텍스 가든파이브주유소</strong></p>
+                                <p class="align-right"><span class="is-family-secondary">15.91kWh</span></p>
+                            </li>
+                            <li>
+                                <p class="align-left">할인금액</p>
+                                <p class="align-right"><span class="is-family-secondary">33,302</span>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left">결제금액</p>
+                                <p class="align-right"><strong class="is-family-secondary">1,000</strong>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left is-gray-text">결제완료</p>
+                                <p class="align-right"><button class="button is-small is-outline">영수증</button></p>
+                            </li>
+                        </ul><!-- //list-oiling-details -->
+                        <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div>
+                        <ul class="list-oiling-details">
+                            <li>
+                                <p class="tit-oiling is-family-secondary">2020-12-06</p>
+                            </li>
+                            <li>
+                                <p class="align-left"><strong>GS칼텍스 가든파이브주유소</strong></p>
+                                <p class="align-right"><span class="is-family-secondary">15.91kWh</span></p>
+                            </li>
+                            <li>
+                                <p class="align-left">할인금액</p>
+                                <p class="align-right"><span class="is-family-secondary">33,302</span>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left">결제금액</p>
+                                <p class="align-right"><strong class="is-family-secondary">1,000</strong>원</p>
+                            </li>
+                            <li>
+                                <p class="align-left is-gray-text">결제완료</p>
+                                <p class="align-right"><button class="button is-small is-outline">영수증</button></p>
+                            </li>
+                        </ul><!-- //list-oiling-details -->
+                        <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div>
+                    </div>
+                    <!-- E: 충전내역 -->
+                    <button class="button is-text more" data-index="0">더보기</button>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">충전소찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">해택</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner case-dc">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">영수증</h2>
+                </div>
+                <button class="button share">공유</button>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container case-dc">
+                <div class="inner pdt30">
+                    <ul class="ul-list bbcolor01">
+                        <li><strong>GS칼텍스 가든파이브주유소 (031-1234-5678)</strong></li>
+                        <li>고양시 덕양구 일산동구<br>전기자동차 헬프데스크 : <span class="eng">1661-7737</span></li>
+                    </ul>
+                    <ul class="ul-list">
+                        <li class="level">
+                            <span class="align-left">카드번호</span>
+                            <span class="align-right eng">****-****-****-1234</span>
+                        </li>
+                        <li class="level">
+                            <span class="align-left">카드종류</span>
+                            <span class="align-right">신한카드</span>
+                        </li>
+                        <li class="level">
+                            <span class="">승인번호</span>
+                            <span class="align-right eng">01928349</span>
+                        </li>
+                    </ul><!-- //list -->
+                    <ul class="ul-list">
+                        <li class="level">
+                            <span class="align-left">충전시작일시</span>
+                            <span class="align-right eng">2021.03.26 20:51</span>
+                        </li>
+                        <li class="level">
+                            <span class="align-left">충전종료일시</span>
+                            <span class="align-right eng">2021.03.26 20:51</span>
+                        </li>
+                        <li class="level">
+                            <span class="">충전량</span>
+                            <span class="align-right eng">90.00kWh</span>
+                        </li>
+                    </ul><!-- //list -->
+                    <ul class="ul-list ">
+                        <li class="level">
+                            <span class="align-left">결제방식</span>
+                            <span class="align-right">신용카드</span>
+                        </li>
+                        <li class="level">
+                            <span class="align-left">결제일시</span>
+                            <span class="align-right eng">2021.03.26 20:52</span>
+                        </li>
+                        <li class="level">
+                            <span class="align-left">충전금액</span>
+                            <span class="align-right"><span class="eng">23,904</span>원</span>
+                        </li>
+                    </ul><!-- //detail-list -->
+                    <p class="title level">
+                        <strong class="align-left">최종 결제 금액</strong>
+                        <strong class="align-right"><span class="eng">23,904</span>원</strong>
+                    </p>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">충전소찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">해택</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+    </div>
+</body>
+
+</html>

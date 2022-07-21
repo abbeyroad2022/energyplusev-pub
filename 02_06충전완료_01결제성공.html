@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <!-- 2021-03-18 타이틀 수정 -->
+                    <h2 class="title is-3">충전하기</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <div class="inner is-padding-top">
+                    <p class="txt-charge-notice lg">충전이 완료되었습니다.</p>
+                    <div class="charge-box">
+                        <!-- [D] 완료시 finish 클래스 추가 -->
+                        <div class="charge-amount finish">
+                            <strong class="val">80%</strong>
+                            <span class="info">충전량<em>90.00</em>kW</span>
+                            <span class="bar">
+                                <!-- [D] height:50% 로 값 조절 -->
+                                <span class="ratio" style="height:80%"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="charge-result">
+                        <div class="top-info">
+                            <p>GS칼텍스 가든파이브주유소 (031-1234-5678)</p>
+                        </div>
+                        <ul class="payment-info">
+                            <li class="payment-item">
+                                <span class="txt-t">결제카드</span>
+                                <span class="txt-d">신한카드</span>
+                            </li>
+                            <li class="payment-item">
+                                <span class="txt-t">충전금액</span>
+                                <span class="txt-d">30,000.0원</span>
+                            </li>
+                            <li class="payment-sub-item">
+                                <span class="txt-t">할인/혜택</span>
+                                <span class="txt-d">-21,100.0원</span>
+                            </li>
+                        </ul>
+                        <div class="fin">
+                            <span class="txt-t">결제완료</span>
+                            <span class="txt-d"><em>8,900</em>원</span>
+                        </div>
+                    </div>
+                    <div class="buttons is-centered">
+                        <button type="button" class="button is-outline is-half">닫기</button>
+                        <button type="button" class="button is-outline is-half">영수증</button>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">충전소찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">해택</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+    </div>
+</body>
+
+</html>

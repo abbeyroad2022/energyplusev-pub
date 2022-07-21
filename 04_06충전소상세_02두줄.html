@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">충전소 상세정보</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container" class="is-overhidden">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <section class="contents-section ">
+                    <div class="content-inner-map">
+                        <div class="map-area"></div>
+                    </div>
+                    <div class="content-inner">
+                        <div class="option-area">
+                            <div class="bul"><span>혜택</span></div>
+                            <div class="bul2"><span>제한</span></div>
+                            <ul>
+                                <li><img src="images/icon_24hour.svg"></li>
+                                <!--10/18수정 -->
+                                <li><img src="images/icon-drink.svg"></li>
+                                <!--10/18수정 -->
+                                <li><img src="images/icon-tool.svg"></li>
+                                <!--10/18수정 -->
+                                <li><img src="images/icon-car_wash.svg"></li>
+                                <!--10/18수정 -->
+                            </ul>
+                        </div>
+                        <div class="tit-area">
+                            <div class="logo">
+                                <div class="con"><img src="images/icon-logo-gscal-36.png"></div>
+                                <div class="tit"><span class="is-possible">충전가능</span></div>
+                            </div>
+                            <div class="shop-name is-line2">
+                                <span>레미안 그레이튼아파트입주자대표회의-4</span>
+                            </div>
+                        </div>
+                        <ul class="list-area bullet-list is-clx">
+                            <li>운영기관: GS칼텍스</li>
+                            <li>운영시간: 06:00~23:00</li>
+                            <li><span class="adress">주소: 서울특별시 강남구 도곡로43길 21레미안 그레이튼</span><i class="plus-con"></i></li>
+                            <li>연락처: <a href="tel:080-617-1399">080-617-1399</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="content-line"></div>
+                <section class="contents-section">
+                    <div class="content-inner">
+                        <div class="info-tit">충전기 정보</div>
+                        <div class="product-detail">
+                            <div class="item-name">
+                                <!--10/18수정 -->
+                                01
+                            </div>
+                            <div class="item-info">
+                                <div class="info0 is-wait">충전가능</div> <!-- is-line1 (내용이 한줄일 경우에 사용) -->
+                                <div class="info1">최근사용</div>
+                                <div class="info-time">2일전</div>
+                            </div>
+                            <ul class="item-list">
+                                <li class="list0 is-active">
+                                    <div class="list-con0"></div>
+                                    <div class="list-name">DC콤보</div>
+                                </li>
+                                <li class="list1 is-active">
+                                    <div class="list-con1"></div>
+                                    <div class="list-name">DC차데모</div>
+                                </li>
+                                <li class="list2">
+                                    <div class="list-con2"></div>
+                                    <div class="list-name">AC3상</div>
+                                </li>
+                                <li class="list3">
+                                    <div class="list-con3"></div>
+                                    <div class="list-name">완속</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-detail">
+                            <div class="item-name">
+                                <!--10/18수정 -->
+                                02
+                            </div>
+                            <div class="item-info">
+                                <div class="info0 is-end">사용불가</div>
+                                <div class="info1">최근사용</div>
+                                <div class="info-time">2일전</div>
+                            </div>
+                            <ul class="item-list">
+                                <li class="list0 is-active">
+                                    <div class="list-con0"></div>
+                                    <div class="list-name">DC콤보</div>
+                                </li>
+                                <li class="list1 is-active">
+                                    <div class="list-con1"></div>
+                                    <div class="list-name">DC차데모</div>
+                                </li>
+                                <li class="list2">
+                                    <div class="list-con2"></div>
+                                    <div class="list-name">AC3상</div>
+                                </li>
+                                <li class="list3">
+                                    <div class="list-con3"></div>
+                                    <div class="list-name">완속</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-detail">
+                            <div class="item-name">
+                                <!--10/18수정 -->
+                                03
+                            </div>
+                            <div class="item-info">
+                                <div class="info0 is-ing is-line1">충전중</div>
+                                <div class="info1">95%</div>
+                            </div>
+                            <ul class="item-list">
+                                <li class="list0 is-active">
+                                    <div class="list-con0"></div>
+                                    <div class="list-name">DC콤보</div>
+                                </li>
+                                <li class="list1 is-active">
+                                    <div class="list-con1"></div>
+                                    <div class="list-name">DC차데모</div>
+                                </li>
+                                <li class="list2">
+                                    <div class="list-con2"></div>
+                                    <div class="list-name">AC3상</div>
+                                </li>
+                                <li class="list3">
+                                    <div class="list-con3"></div>
+                                    <div class="list-name">완속</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div class="content-line"></div>
+                <section class="contents-section">
+                    <div class="content-inner">
+                        <div class="info-tit">서비스</div>
+                        <div class="product-detail line-none">
+                            <ul class="item-list2">
+                                <li class="is-first">
+                                    <div class="icon-img"><img src="images/Ic_car_wash.png"></div>
+                                    <div class="icon-name">세차</div>
+                                </li>
+                                <li class="is-first">
+                                    <div class="icon-img"><img src="images/Ic_Tool.png"></div>
+                                    <div class="icon-name">경정비</div>
+                                </li>
+                                <li class="is-first">
+                                    <div class="icon-img"><img src="images/Ic_Store.png"></div>
+                                    <div class="icon-name">식음료</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons pt10 pb40">
+                            <button type="button" class="button is-outline is-fullwidth mb30">제보하기</button>
+                            <!-- 비활성화 -->
+                            <!--<div class="like-button"><span class="like-con like-con-off"></span></div>-->
+                        </div>
+                    </div>
+                </section>
+                <!--10/18수정 st-->
+                <div class="buttons fixbutton">
+                    <button type="button" class="button is-dark is-half2 is-half2_75"><i class="dire-con2"><img src="images/icon_navi_menu.svg"></i>길안내(2.2km)</button>
+                    <div class="like-button"><span class="like-con"></span></div>
+                </div>
+                <!--10/18수정 end-->
+            </div>
+            <!-- // Contents -->
+        </div>
+        <style>
+
+        </style>
+    </div>
+</body>
+
+</html>
