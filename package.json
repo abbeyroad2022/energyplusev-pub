@@ -1,15 +1,15 @@
 {
-  "name": "energyplusev",
+  "name": "energyplusev-pub",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp ev",
+    "start": "gulp",
     "build": "gulp build",
     "pages": "env-cmd -f .env.pages gulp build",
     "deploy": "npm run pages && npm run build"
   },
-  "homepage": "https://abbeyroad2022.github.io/energyplusev/",
+  "homepage": "https://abbeyroad2022.github.io/energyplusev-pub/",
   "author": "liam",
   "license": "ISC",
   "dependencies": {
