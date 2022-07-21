@@ -1,3 +1,5 @@
+# Energy Plus EV 운영 퍼블리싱
+
 # gulp 통합세팅
 --------------
 
@@ -16,18 +18,19 @@
 * 이미지 최적화 지원
 * Babel ES6
 
-1. 상단 내용 실행, 실시간 내용 실행 브라우저 싱크.  (gulp)
+1. 상단 내용 실행, 실시간 내용 실행 브라우저 싱크. (gulp)
 
 ## Notes
 <blockquote>
-    "src폴더"는 작업용홀더 이고 'dist'는 배포 홀더입니다.
+    "src폴더"는 작업용폴더 이고 'dist'는 배포폴더입니다.
 </blockquote>
-
-## local
-* http://localhost:3000/coding_list/
 
 ## git
 - https://github.com/abbeyroad2022/energyplusev-pub
+
+## local
+- `gulp`
+* http://localhost:3000/coding_list/
 
 ## deploy
 - `npm run deploy`
