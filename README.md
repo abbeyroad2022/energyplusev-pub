@@ -18,7 +18,6 @@
 
 1. 상단 내용 실행, 실시간 내용 실행 브라우저 싱크.  (gulp)
 
-
 ## Notes
 <blockquote>
     "src폴더"는 작업용홀더 이고 'dist'는 배포 홀더입니다.
@@ -27,11 +26,9 @@
 ## local
 * http://localhost:3000/coding_list/
 
+## git
+- https://github.com/abbeyroad2022/energyplusev-pub
+
 ## deploy
 - `npm run deploy`
 - https://abbeyroad2022.github.io/energyplusev-pub/coding_list
-
-
-## git서버
-- https://github.com/abbeyroad2022/energyplusev-pub (퍼블리싱 작업용)
-- https://abbeyroad2022.github.io/energyplusev-pub/coding_list (퍼블리싱 확인용)

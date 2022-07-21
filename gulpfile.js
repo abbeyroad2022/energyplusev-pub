@@ -21,7 +21,7 @@ const ghPages = require('gulp-gh-pages');
 const fileReplace = require('gulp-replace');
 const GulpState = process.env.APP_ENV_STATE || 'watch'; // 걸프 상태 ( watch, build )
 const PackageName = process.env.npm_package_name; // 패키지 이름 추출
-const GithubPagesFlag = process.env.APP_ENV_GITHUBPAGES || false; // 깃허브페이지 사용유무 
+const GithubPagesFlag = process.env.APP_ENV_GITHUBPAGES || true; // 깃허브페이지 사용유무 
 const GithubPagesPath = `${PackageName}`; // 깃허브페이지 추가경로
 
 console.log(

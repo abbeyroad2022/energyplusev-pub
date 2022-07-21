@@ -6,7 +6,7 @@ dist
 package-lock.json
 
 # gh-pages
-.publish
+# .publish
 
 # vsdode setting
 .vscode
