@@ -324,7 +324,7 @@ gulp.task('cssPathReplace', () =>
     gulp
     .src([dir.dist_css + '/**/*.css'])
     .pipe(fileReplace('/images/', `/${GithubPagesPath}/images/`))
-		.pipe(fileReplace('/fonts/', `/${GithubPagesPath}/fonts/`))
+	.pipe(fileReplace('/fonts/', `/${GithubPagesPath}/fonts/`))
     .pipe(gulp.dest(dir.dist_css))
 );
 
@@ -414,7 +414,7 @@ const pagesSeries = gulp.series(
 	'imagemin',
 	'sass',
 	'babel',
-	'pathReplace',
+	//'pathReplace',
 	'deploy'
 );
 
