@@ -50,48 +50,204 @@
         <div id="container">
             <!-- Contents -->
             <div id="contents">
-                <div class="main-wrap">
+                <div class="main-wrap-top"></div>
+                <!--0915수정-->
+                <div class="main-wrap main-bg">
                     <div class="main-wrap__top-area">
-                        <div class="main-tit">
-                            <span class="is-bold">KIA 충전혜택</span> 회원의<br>
-                            무료충전 혜택
-                        </div>
-                        <div class="main-btn">
-                            <span>카드변경</span>
-                        </div>
-                        <div class="main-card">
-                            <div class="main-card-txt">
-                                무료충전 잔여
-                            </div>
-                            <div class="main-card-num">
-                                32.15
-                                <span>kWh</span>
-                            </div>
-                            <div class="bar">
-                                <div class="inner-bar">
+                        <!-- 바로주유 (슬라이드 배너) -->
+                        <div class="main-card-slider main-card-slider-top">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <!-- 예약 카드 : 고급휘발유 -->
+                                        <div class="card">
+                                            <dl class="card-info-area">
+                                                <dt class="nick prname">기아충전혜택기기아충전혜택기</dt>
+                                                <dd>
+                                                    <div class="price-area">
+                                                        <div class="price">80%</div>
+                                                    </div>
+                                                    <span class="oil">기아충전혜택 회원</span>
+                                                    <p class="liter-info is-normal">무료잔여 <span class="is-bold">45</span>kWh</p>
+                                                    <span class="credit-card is-normal">롯데카드 1234</span>
+                                                    <small class="credit-card-expired">
+                                                        롯데카드 1234 사용기간이<br>
+                                                        만료되었습니다.
+                                                    </small>
+                                                </dd>
+                                            </dl>
+                                            <div class="button-area">
+                                                <button type="button" class="button is-dark">충전시작</button>
+                                                <button type="button" class="button btn-modify fr-right"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide -->
+                                    <!-- Slide -->
+                                    <div class="swiper-slide">
+                                        <!-- 예약 카드 : 고급휘발유 -->
+                                        <div class="card">
+                                            <dl class="card-info-area">
+                                                <dt class="nick prname">기아충전혜택기기아충전혜택기</dt>
+                                                <dd>
+                                                    <div class="price-area">
+                                                        <div class="price">80%</div>
+                                                    </div>
+                                                    <span class="oil">기아충전혜택 회원</span>
+                                                    <p class="liter-info is-normal">무료잔여 <span class="is-bold">45</span>kWh</p>
+                                                    <span class="credit-card is-normal">롯데카드 1234</span>
+                                                    <small class="credit-card-expired">
+                                                        롯데카드 1234 사용기간이<br>
+                                                        만료되었습니다.
+                                                    </small>
+                                                </dd>
+                                            </dl>
+                                            <div class="button-area">
+                                                <button type="button" class="button is-dark">충전시작</button>
+                                                <button type="button" class="button btn-modify fr-right"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide -->
+                                    <!-- 카드 추가 -->
+                                    <div class="swiper-slide">
+                                        <!-- card -->
+                                        <!-- 카드 등록 is-add 클래스 추가 -->
+                                        <div class="card is-add">
+                                            <div class="card-info-area">
+                                                <p class="txt-add-card">
+                                                    새로운 카드를 <br>
+                                                    추가할 수 있어요
+                                                </p>
+                                            </div>
+                                            <div class="button-area">
+                                                <button type="button" class="button is-regist is-bottom">바로주유등록</button>
+                                            </div>
+                                            <!-- <button type="button" class="button is-regist is-bottom">바로주유등록</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- swiper pagination -->
+                                <div class="swiper-pagination-wrap">
+                                    <div class="swiper-pagination swiper-pagination-top"></div>
                                 </div>
                             </div>
-                            <div class="start-btn">
-                                <span>충전 시작하기</span>
+                        </div>
+                        <!-- 주유가격 dropdown -->
+                        <div class="layer-dropdown-area">
+                            <div class="layer-price-dropdown">
+                                <div class="layer-price-inner">
+                                    <ul class="layer-price-list">
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo" checked="checked">
+                                                    <i></i> <strong><em class="is-family-secondary">30</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">40</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">50</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">60</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">70</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">80</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">90</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="control">
+                                                <label class="radio">
+                                                    <input type="radio" name="foo">
+                                                    <i></i> <strong><em class="is-family-secondary">99</em>%</strong>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="layer-bottom-area">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <i></i>
+                                            <span>선택한 설정 유지</span>
+                                        </label>
+                                        <button class="button is-small is-fullwidth is-dark">설정완료</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- // 주유가격 dropdown-->
                     </div>
-                    <div class="main-wrap__bottom-area">
+                    <div class="main-wrap__bottom-area main-bottom-bg">
+                        <!-- 0915수정( main-bottom-bg 추가) -->
                         <div class="menu-wrap">
                             <div class="menu-wrap_inner">
-                                <div class="menu0 is-on">추천순<span class="bar"></span></div>
-                                <div class="menu1">거리순<span class="bar"></span><i></i></div>
+                                <div class="menu0 is-on is-bold">추천순<span class="bar"></span></div>
+                                <div class="menu1">거리순</div>
+                                <div class="refresh-con"></div>
                                 <div class="menu2"><i></i>지도로 보기</div>
                             </div>
-                            <div class="main-card-slider">
+                            <div class="main-card-slider main-card-slider-bottom">
                                 <div class="swiper-container">
                                     <div class="swiper-wrapper">
                                         <!-- Slide -->
+                                        <!-- 0914 수정 st (html 변경 -->
                                         <div class="swiper-slide">
                                             <div class="m-card">
-                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span>충전가능</span></div>
+                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span class="banner-col0">충전가능</span></div>
                                                 <span class="txt">GS칼텍스 삼방주유소</span>
-                                                <div class="bottom-area"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bottom-area"><span class="load-con"><img src="images/icon-direction-chargeB.svg"></span></i><span class="km">21km</span><i><img src="images/Ic_Arrow_Top.svg"></i></div>
+                                                <div class="bul"><span>혜택</span></div>
+                                            </div>
+                                        </div>
+                                        <!-- 0914 수정 end -->
+                                        <!-- Slide -->
+                                        <!-- Slide -->
+                                        <div class="swiper-slide">
+                                            <div class="m-card">
+                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span class="banner-col0">사용불가</span></div>
+                                                <span class="txt">GS칼텍스 삼방주유소</span>
+                                                <div class="bottom-area"><span class="load-con"><img src="images/icon-direction-chargeB.svg"></span></i><span class="km">21km</span><i><img src="images/Ic_Arrow_Top.svg"></i></div>
                                                 <div class="bul"><span>혜택</span></div>
                                             </div>
                                         </div>
@@ -99,38 +255,38 @@
                                         <!-- Slide -->
                                         <div class="swiper-slide">
                                             <div class="m-card">
-                                                <div class="card-top"><i><img src="images/icon-logo-s1.png"></i><span>충전중</span></div>
+                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span class="banner-col1">충전중</span></div>
                                                 <span class="txt">GS칼텍스 삼방주유소</span>
-                                                <div class="bottom-area is-green"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
-                                                <div class="bul2"><span>혜택</span></div>
+                                                <div class="bottom-area is-green"><span class="load-con"><img src="images/icon-direction-chargeB.svg"></span></i><span class="km">21km</span><i><img src="images/Ic_Arrow_Top.svg"></i></div>
+                                                <div class="bul2"><span>제한</span></div>
                                             </div>
                                         </div>
                                         <!-- Slide -->
                                         <!-- Slide -->
                                         <div class="swiper-slide">
                                             <div class="m-card">
-                                                <div class="card-top"><i><img src="images/icon-logo-s2.png"></i><span>충전중</span></div>
+                                                <div class="card-top"><i><img src="images/icon-logo-s2.png"></i><span class="banner-col0">충전가능</span></div>
                                                 <span class="txt">GS칼텍스 삼방주유소</span>
-                                                <div class="bottom-area"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bottom-area"><span class="load-con"><img src="images/icon-direction-chargeB.svg"></span></i><span class="km">21km</span><i><img src="images/Ic_Arrow_Top.svg"></i></div>
                                                 <div class="bul"><span>혜택</span></div>
                                             </div>
                                         </div>
                                         <!-- Slide -->
                                         <div class="swiper-slide">
                                             <div class="m-card">
-                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span>충전중</span></div>
+                                                <div class="card-top"><i><img src="images/icon-logo-s0.png"></i><span class="banner-col1">충전중</span></div>
                                                 <span class="txt">GS칼텍스 삼방주유소</span>
-                                                <div class="bottom-area is-green"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
+                                                <div class="bottom-area is-green"><span class="load-con"><img src="images/icon-direction-chargeB.svg"></span></i><span class="km">21km</span><i><img src="images/Ic_Arrow_Top.svg"></i></div>
                                                 <div class="bul"><span>혜택</span></div>
                                             </div>
                                         </div>
                                         <!-- Slide -->
                                         <div class="swiper-slide">
                                             <div class="m-card">
-                                                <div class="card-top"><i><img src="images/icon-logo-s1.png"></i><span>충전중</span></div>
+                                                <div class="card-top"><i><img src="images/icon-logo-s1.png"></i><span class="banner-col0">충전가능</span></div>
                                                 <span class="txt">GS칼텍스 삼방주유소</span>
-                                                <div class="bottom-area"><span>21km</span><i><img src="images/icon-load_0.png"></i></div>
-                                                <div class="bul2"><span>혜택</span></div>
+                                                <div class="bottom-area"><span class="load-con"><img src="images/icon-direction-chargeB.svg"></span></i><span class="km">21km</span><i><img src="images/Ic_Arrow_Top.svg"></i></div>
+                                                <div class="bul2"><span>제한</span></div>
                                             </div>
                                         </div>
                                         <!-- Slide -->
@@ -162,7 +318,7 @@
                                         <!-- Slide -->
                                         <!-- Slide -->
                                         <div class="swiper-slide">
-                                            <div class="m-bannerm-card">
+                                            <div class="m-banner">
                                                 <img src="images/Banner.png">
                                             </div>
                                         </div>
@@ -403,73 +559,23 @@
             </div>
         </div>
     </div>
-    <div class="modal is-active">
-        <div class="modal-background"></div>
-        <!--  Bottom Sheet -->
-        <!--2020/12/15 클래스 수정 : is-large -->
-        <div class="bottom-sheet is-large is-bottom-fixed">
-            <div class="bottom-sheet-header">
-                <h2 class="title is-3 has-text-centered">권한 요청</h2>
-                <button class="btn-close"><span class="blind">닫기</span></button>
-            </div>
-            <div class="bottom-sheet-body">
-                <div class="inner">
-                    <section>
-                        <dl>
-                            <dt class="title is-3">
-                                필수 접근권한
-                            </dt>
-                            <dd class="gap-bottom">
-                                필수 접근권한 없음
-                            </dd>
-                            <dt class="title is-3">
-                                선택 접근권한
-                            </dt>
-                            <dd class="gap-bottom">
-                                <ul class="permission-list">
-                                    <li class="align-items-center">
-                                        <i class="icon-location is-large"></i>
-                                        <span><strong>GPS</strong> : 충전소 위치 찾기</span>
-                                    </li>
-                                    <li class="align-items-center">
-                                        <i class="icon-folder is-large"></i>
-                                        <span><strong>저장공간</strong> : 1:1문의 파일첨부</span>
-                                    </li>
-                                </ul>
-                                <div class="sub-desc">
-                                    * ‘선택 접근 권한’은 해당 기능을 사용할 때 허용이 필요하며, 비허용 시에도 해당 기능 외 서비스 이용이 가능합니다.
-                                </div>
-                            </dd>
-                            <dt class="title is-3">
-                                접근권한 변경 방법
-                            </dt>
-                            <dd>
-                                <strong>휴대폰 설정 > 앱 또는 어플리케이션관리</strong>
-                            </dd>
-                        </dl>
-                    </section>
-                    <div class="is-button-fixed">
-                        <div class="inner">
-                            <div class="buttons">
-                                <button class="button is-dark is-fullwidth">확인</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
         // 바로주유 카드 Swiper   
-        var swiper = new Swiper('.main-card-slider > .swiper-container', {
+        var swiper = new Swiper('.main-card-slider.main-card-slider-top > .swiper-container', {
             slidesPerView: 'auto',
             centeredSlides: false,
             spaceBetween: 10,
             freeMode: true,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination.swiper-pagination-top',
                 clickable: true,
             },
+        });
+        var swiper = new Swiper('.main-card-slider.main-card-slider-bottom > .swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: false,
+            spaceBetween: 10,
+            freeMode: true
         });
         // 슬라이드 배너 Swiper
         var swiper = new Swiper('.main-banner-slider > .swiper-container', {
