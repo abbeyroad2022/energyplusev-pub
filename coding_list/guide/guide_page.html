@@ -1,24 +1,29 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<link rel="shortcut icon" href="../img/liferay.ico" type="image/x-icon" />
-	<title>Page 가이드</title>
-	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
-	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
-	<link type="text/css" rel="stylesheet" href="/resource/css/layout.css" />
-	<script type="text/javascript" src="/resource/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="/resource/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/resource/js/ui.js"></script>
-	<script>
-		// 인크루드용 개발적용시 삭제
-		$(function(){
-			$("#header").load("/html/inc/layout.html #header > div");
-			$("#footer").load("/html/inc/layout.html #footer > div");
-		})
-	</script>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Button Guide</title>
+	<link rel="stylesheet" href="../../css/ep-style.css">
+	<link rel="stylesheet" href="../../lib/swiper/swiper-bundle.min.css">
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="../../coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../coding_list/css/pretty.css">
+	<!--//  가이드용 -->
+	<script src="../../lib/jquery/jquery.min.js"></script>
+	<script scr="../../js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+        .button.is-small + .is-small {
+            margin-left : 0;
+        }
+	</style>
 </head>
 <body>
 
