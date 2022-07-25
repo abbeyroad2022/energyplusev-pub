@@ -307,7 +307,7 @@ gulp.task('browserSync', () => {
 			server : {
 				baseDir : dist
 			},
-			startPath: './coding_list',
+			startPath: 'coding_list',
 			port : 3000
 		});
 	});

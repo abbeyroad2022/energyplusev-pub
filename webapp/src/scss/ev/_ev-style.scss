@@ -3,19 +3,15 @@
 /* 2021-05-11 */
 .membership-cards .main-card-slider .swiper-container {height: auto; margin-top: 20px; padding-right: 0;padding-top: 18px}
 .membership-cards .main-card-slider .swiper-container .swiper-wrapper {padding: 0 0 30px 0;}
-.membership-cards .main-card-slider .swiper-container .swiper-wrapper .swiper-slide.membership {max-width: 74%!important;width: 74%!important;}
+.membership-cards .main-card-slider .swiper-container .swiper-wrapper .swiper-slide.membership {max-width: 74%!important;width: 74%!important; margin: 0 8px;} /* 스타일수정 2022-07-25 */
 .membership-cards .main-card-slider .card {height: auto !important;padding-top: 24px;}
 .membership-cards .main-card-slider .swiper-container .swiper-pagination-wrap {justify-content: center}
 .membership-cards .main-card-slider .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {opacity: 1;width: 30px!important;border-radius: 6px;background: #222222!important;}
 .membership-cards .main-card-slider .swiper-container .swiper-pagination-bullet {width: 6px; height: 6px; margin: 0 3px; background: #a6acb2;}
-
 .membership-cards .main-card-slider .card .button { width: 76px; margin: 0 auto;}
-
 .membership-cards .my-card-wrap {position:relative; text-align:center;}
-
 .membership-cards .my-card-wrap.is-active .star {overflow:hidden; position:relative; display:inline-block; width:32px; height:32px; margin:0 auto 16px auto; background:url(../images/Icon-star-full.svg);background-size: 32px 32px; border-radius:50px; border:0; text-indent: -9999px;}
 .membership-cards .my-card-wrap .star { overflow: hidden; position: relative; display: inline-block; width: 32px; height: 32px; margin: 0 auto 16px auto; background: url(../images/Icon-star-full-off.svg); background-size: 32px 32px; border-radius: 50px; border: 0; text-indent: -9999px; }
-
 .membership-cards .my-card-wrap dl.card-info {margin:0 auto; max-width: 100%}
 .membership-cards .my-card-wrap dl.card-info dt.title{ margin-bottom: 8px}
 .membership-cards .my-card-wrap dl.card-info dt.card-img {overflow:hidden; max-width: 100%; margin-bottom: 20px; border-radius: 4px;}
@@ -25,15 +21,12 @@
 .membership-cards .my-card-wrap dl.card-info dd.oil strong {font-size:15px; font-weight:700;}
 .membership-cards .my-card-wrap dl.card-info dd.oil span {font-size:15px;}
 
-
 /* 회원카드 이용내역 */
 .user-card-details .item-tab-list .data-date-info {display:flex; width:100%;}
-
 .user-card-details .details-top {padding:18px; background: #f5f5f5;}
 .user-card-details .details-top dl.card-info {overflow:hidden;}
 .user-card-details .details-top dl.card-info dt.card-img {overflow:hidden; float:left; width:32px; height:32px; margin-right: 8px; background: url(../images/ic-card-ev.svg)}
 .user-card-details .details-top dl.card-info dt.title {float:left; line-height: 29px;}
-
 .user-card-details .details-top ul.bullet-list {margin:14px 0 0;}
 .user-card-details .details-top ul.bullet-list span {font-family: Montserrat;}
 .user-card-details .details-top ul.bullet-list strong {font-weight:700;}
@@ -46,16 +39,13 @@
 .card-application .field.address .control .level > input {margin-left:10px;}
 .card-application .field.address .control .level ~ input {margin-top:10px;}
 
-
 /* 주소찾기 */
 .find-Address input.input {border-radius: 24px;}
-
 .find-Address dl.address-list {margin-bottom:14px; padding-bottom:14px; border-bottom:1px solid #e5e5e5;}
 .find-Address dl.address-list dt {font-family: Montserrat; font-size:1rem; font-weight:500;}
 .find-Address dl.address-list dd {position:relative; margin-top:14px; padding-left:70px; }
 .find-Address dl.address-list dd > em {position:absolute; left:0; top:0; display:block; width:60px; height:20px; line-height:20px; letter-spacing:-1px; text-align:center; padding:0px 10px; border-radius:100px; background-color:#f0f0f0;}
 .find-Address dl.address-list dd > span {display:block;}
-
 
 /* 충전내역 */
 .charging-list .box-lately-history {border-bottom:8px solid #f5f5f5;}
@@ -63,14 +53,11 @@
 .charging-list .box-lately-history p.tit-oiling-lately span {float:right;}
 .charging-list .box-lately-history p.tit-oiling-lately span strong {font-weight:700; font-family:"Montserrat", sans-serif;}
 .charging-list .box-lately-history .list-oiling-area {padding-bottom:20px; border:0;}
-
 .charging-list ul.list-noti-area {margin:0 24px 20px 24px; }
 .charging-list ul.list-noti-area .item-txt-noti {position: relative; margin-left: 8px; text-indent: -7px; font-family: "NotoSansCJKkr", "Montserrat", sans-serif; font-size: 0.75rem; color: #888888;line-height: 18px; }
 .charging-list ul.list-noti-area .item-txt-noti + li {margin-top: 8px; }
-
 .charging-list .box-oiling-group {padding:0 24px 0;}
 .charging-list ul.list-oiling-details p.align-left.is-gray-text {line-height:32px;}
-
 
 .case-dc .eng {font-family: Montserrat;}
 .case-dc .bb0 {border-bottom:0 !important;}
@@ -80,20 +67,16 @@
 .case-dc .pd0 {padding:0px !important;}
 .case-dc .pdt30 {padding-top:30px !important;}
 .case-dc strong {font-weight:700;}
-
 .case-dc .box-sections {padding:24px; border-bottom: 8px solid #f5f5f5;}
-
 .case-dc ul.ul-list {padding-bottom:24px; margin-bottom:24px; border-bottom:1px solid #e5e5e5;}
 .case-dc ul.ul-list li {margin-bottom:12px;}
 .case-dc ul.ul-list li:last-child {margin-bottom:0px;}
-
 .case-dc ul.th-list {margin-bottom:25px;}
 .case-dc ul.th-list li {margin-top:10px; }
 .case-dc ul.th-list li:first-child {margin-top:0px; }
 .case-dc ul.th-list li > span {display:inline-block; width:56px;}
 .case-dc ul.th-list li > span.nfc_span{display:inline-block; width:100%;margin-left: 0px!important}
 .case-dc ul.th-list li > span + span {width:auto; margin-left:14px;}
-
 .case-dc ul.bullet-list.is-gray {color:#888888;}
 .case-dc ul.bullet-list.is-gray li::before {background:#888888;}
 .case-dc ul.bullet-list.is-gray .gs-point::before {background-image:url(../images/gsnpoint-gray.svg);}
@@ -110,14 +93,12 @@
 .case-dc .section-wish-area.case01 .box-wish-hd .txtGrp .ellipsis {position:relative; float:left; max-width:100%; padding-right:27px;}
 .case-dc .section-wish-area.case01 .box-wish-hd .txtGrp .ellipsis span.logo-title {overflow:hidden; display:block; width:100%; text-overflow:ellipsis; white-space:nowrap;}
 .case-dc .section-wish-area.case01 .box-wish-hd .txtGrp button.btn-toggle {position:absolute; right:0px; top:3px;}
-
 .case-dc .section-wish-area.case01 .box-wish-cont {overflow:hidden; border-bottom:0;}
 .case-dc .section-wish-area.case01 .box-wish-cont span {float:left; margin-left:8px;}
 .case-dc .section-wish-area.case01 .box-wish-cont span.charge {margin-left:0px;}
 .case-dc .section-wish-area.case01 .box-wish-cont span.time  {position:relative; padding-left:8px; }
 .case-dc .section-wish-area.case01 .box-wish-cont span.time:before {content:''; position:absolute; left:0; top:5px; display:block; background:#e5e5e5;}
 .case-dc .section-wish-area.case01 .box-wish-cont span.bonus {display:none; padding:2px 5px; font-size:12px; background:#21044b; border-radius:100px; color:#fff;}
-
 .case-dc .section-wish-area.case01 .drive {position:absolute; right:20px; top:12px; width:52px; height:60px; padding-top:45px; font-size:12px; text-align:center;}
 
 /* 단골충전소 - 충전가능*/
@@ -132,6 +113,7 @@
 /* 단골충전소 - 혜택 */
 .case-dc .section-wish-area.case01.bonus {background-color: #f4fbf6;}
 .case-dc .section-wish-area.case01.bonus span.bonus {display:block;}
+
 /* 메인 */
 #header.main-header {background-color:#3ddb87}
 .main-wrap__top-area {width:100%;height: 328px;background-color:#3ddb87}
