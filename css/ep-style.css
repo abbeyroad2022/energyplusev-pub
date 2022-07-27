@@ -11100,7 +11100,6 @@ label { margin-bottom: 8px; }
 
 .card-section .box-bottom-btn { margin-top: -13px; }
 
-/* 회원카드 \관리 */
 .ev-membership-cards .main-card-slider .swiper-container { height: auto; margin-top: 15px; padding: 18px 0 0; }
 
 .ev-membership-cards .main-card-slider .swiper-container .swiper-wrapper { padding: 0 0 30px 0; }
@@ -11137,7 +11136,7 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .my-card-wrap .card-info { display: flex; margin-bottom: 18px; }
 
-.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; width: 16.129%; max-width: 80px; margin-top: 5px; border-radius: 4px; }
+.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; max-width: 40px; margin-top: 5px; border-radius: 4px; }
 
 .ev-membership-cards .my-card-wrap .card-info .card-img img { width: 100%; border-radius: 4px; object-fit: cover; }
 
@@ -11161,7 +11160,6 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .my-card-wrap.no-data-section .no-data:before { display: none; }
 
-/* 타사회원카드 순서 편집 */
 .ev-membership-edit .txt-enrollment-desc { margin: 20px 0 12px; }
 
 .ev-membership-edit .card-area { margin: 0 auto; padding: 0; }
