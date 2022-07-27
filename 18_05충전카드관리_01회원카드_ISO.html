@@ -45,21 +45,21 @@
                     <span class="blind">이전</span>
                 </a>
                 <div class="has-text-centered">
-                    <h2 class="title is-3">회원카드</h2>
+                    <h2 class="title is-3">충전카드 관리</h2>
                 </div>
             </div>
         </header>
         <!-- // header -->
         <div id="container">
             <!-- Contents -->
-            <div id="contents">
-                <div class="main-wrap membership-cards">
+            <div id="contents" class="container">
+                <div class="main-wrap ev-membership-cards">
                     <div class="rows">
                         <div class="inner">
                             <div class="box-point-list type-3">
-                                <button type="button" class="btn-enrollment-card"><i class="ico-plus"></i>카드신청/등록</button>
+                                <button type="button" class="btn-enrollment-card"><i class="ico-plus"></i>회원카드 신청/등록</button>
                             </div>
-                            <p class="txt-enrollment-desc">대표카드를 지정하여 <strong>다양한 혜택</strong>을 누리세요.</p> <!-- 0914수정 문구변경 -->
+                            <p class="txt-enrollment-desc">회원카드는 <strong>최대 5장</strong>까지 등록할 수 있습니다.</p>
                         </div>
                         <div class="row">
                             <!-- 회원카드 -->
@@ -70,45 +70,63 @@
                                         <div class="swiper-slide membership">
                                             <!-- card -->
                                             <div class="card my-card-wrap is-active">
-                                                <button type="button" class="star">즐겨찾기</button>
-                                                <dl class="card-info">
-                                                    <dt class="title">기아자동차EV</dt>
-                                                    <dt class="card-img">
-                                                        <img class="img-x2" src="./images/card_img_kia_plus@2x.png" alt="">
-                                                    </dt>
-                                                    <dd class="oil"><strong>32.15</strong><span>/50.00</span>kWh</dd>
-                                                </dl>
-                                                <button class="button is-small is-outline custom-outline">이용내역</button> <!-- 0914수정 custom-outline 추가 -->
+                                                <div class="buttons is-top">
+                                                    <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                    <button type="button" class="star">즐겨찾기</button>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="card-img"><img src="./images/card_img_ev2@2x.png" alt=""></p>
+                                                    <div class="info-area">
+                                                        <h3 class="card-nick">GS엠비즈 배터리진단</h3>
+                                                        <p class="card-number">1234-5678-9012-3456</p>
+                                                        <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="button is-half is-medium is-gray">이용내역</button>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- Slide -->
                                         <div class="swiper-slide membership">
                                             <!-- card -->
                                             <div class="card my-card-wrap">
-                                                <button type="button" class="star">즐겨찾기</button>
-                                                <dl class="card-info">
-                                                    <dt class="title">기아자동차EV</dt>
-                                                    <dt class="card-img">
-                                                        <img class="img-x2" src="./images/card_img_kia_nor@2x.png" alt="">
-                                                    </dt>
-                                                    <dd class="oil"><strong>32.15</strong><span>/50.00</span>kWh</dd>
-                                                </dl>
-                                                <button class="button is-small is-outline custom-outline">이용내역</button> <!-- 0914수정 custom-outline 추가 -->
+                                                <div class="buttons is-top">
+                                                    <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                    <button type="button" class="star">즐겨찾기</button>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="card-img"><img src="./images/card_img_kia_nor2@2x.png" alt=""></p>
+                                                    <div class="info-area">
+                                                        <h3 class="card-nick">기아충전혜택플러스</h3>
+                                                        <p class="card-number">1234-5678-9012-3456</p>
+                                                        <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="button is-half is-medium is-gray">이용내역</button>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- Slide -->
                                         <div class="swiper-slide membership">
                                             <!-- card -->
                                             <div class="card my-card-wrap">
-                                                <button type="button" class="star">즐겨찾기</button>
-                                                <dl class="card-info">
-                                                    <dt class="title">기아자동차EV</dt>
-                                                    <dt class="card-img">
-                                                        <img class="img-x2" src="./images/card_img_ev@2x.png" alt="">
-                                                    </dt>
-                                                    <dd class="oil"><strong>32.15</strong><span>/50.00</span>kWh</dd>
-                                                </dl>
-                                                <button class="button is-small is-outline custom-outline">이용내역</button> <!-- 0914수정 custom-outline 추가 -->
+                                                <div class="buttons is-top">
+                                                    <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                    <button type="button" class="star">즐겨찾기</button>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="card-img"><img src="./images/card_img_kia_plus2@2x.png" alt=""></p>
+                                                    <div class="info-area">
+                                                        <h3 class="card-nick">기아충전혜택플러스</h3>
+                                                        <p class="card-number">1234-5678-9012-3456</p>
+                                                        <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="button is-half is-medium is-gray">이용내역</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

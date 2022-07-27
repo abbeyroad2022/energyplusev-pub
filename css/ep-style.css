@@ -7911,10 +7911,9 @@ label { margin-bottom: 8px; }
 
 .main-card-slider .swiper-container .swiper-wrapper .swiper-slide { max-width: 62.5%; border-radius: 16px; }
 
-@media screen and (max-width: 320px) { .main-ca + rd-slider .swiper-container .swiper-wrapper .swiper-slide { max-width: 75%; } }
+@media screen and (max-width: 320px) { .main-card-slider .swiper-container .swiper-wrapper .swiper-slide { max-width: 75%; margin: 0 16px; } }
 
-.main-card-slider .swiper-container .swiper-wrapper .swiper-slide:not(:last-child) { margin-right: 16px; }
-
+/* 오타수정 2022-07-25 */
 .main-card-slider .swiper-container .swiper-pagination-wrap { position: absolute; display: flex; height: 20px; align-items: center; bottom: 15px; margin-left: 25px; }
 
 .main-card-slider .swiper-container .swiper-pagination { position: relative; display: flex; align-items: center; width: auto; }
@@ -10005,8 +10004,9 @@ label { margin-bottom: 8px; }
 
 .membership-cards .main-card-slider .swiper-container .swiper-wrapper { padding: 0 0 30px 0; }
 
-.membership-cards .main-card-slider .swiper-container .swiper-wrapper .swiper-slide.membership { max-width: 74% !important; width: 74% !important; }
+.membership-cards .main-card-slider .swiper-container .swiper-wrapper .swiper-slide.membership { max-width: 74% !important; width: 74% !important; margin: 0 8px; }
 
+/* 스타일수정 2022-07-25 */
 .membership-cards .main-card-slider .card { height: auto !important; padding-top: 24px; }
 
 .membership-cards .main-card-slider .swiper-container .swiper-pagination-wrap { justify-content: center; }
@@ -11088,3 +11088,102 @@ label { margin-bottom: 8px; }
 .box-coupon-list.coupon-enroll { margin-top: 90px; }
 
 .item-box-coupon:last-of-type { margin-bottom: 0; }
+
+/* 2022-07-28 NFC 개선 */
+.top-fixed-section ~ .contents-section.card-section { height: auto; padding-top: 136px; }
+
+.top-fixed-section ~ .contents-section.card-section > .inner { flex-grow: 0; }
+
+.card-section .bullet-list { margin: 16px 0 0 10px; }
+
+.card-section .bullet-list li { margin-bottom: 0; }
+
+.card-section .box-bottom-btn { margin-top: -13px; }
+
+/* 회원카드 \관리 */
+.ev-membership-cards .main-card-slider .swiper-container { height: auto; margin-top: 15px; padding: 18px 0 0; }
+
+.ev-membership-cards .main-card-slider .swiper-container .swiper-wrapper { padding: 0 0 30px 0; }
+
+.ev-membership-cards .main-card-slider .swiper-container .swiper-wrapper .swiper-slide.membership { max-width: 74.6666% !important; width: 74.6666% !important; margin: 0 6px; }
+
+.ev-membership-cards .main-card-slider .swiper-container .swiper-pagination-wrap { justify-content: center; }
+
+.ev-membership-cards .main-card-slider .swiper-container .swiper-pagination-bullet { width: 6px; height: 6px; margin: 0 3px; background: #a6acb2; }
+
+.ev-membership-cards .main-card-slider .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active { opacity: 1; width: 30px !important; border-radius: 6px; background: #222222 !important; }
+
+.ev-membership-cards .main-card-slider .card { height: auto !important; min-height: 220px; padding: 60px 16px 24px; }
+
+.ev-membership-cards .main-card-slider .card .button { flex: 1; margin: 0 12px; }
+
+.ev-membership-cards .main-card-slider .card .button:first-child { margin-left: 0; }
+
+.ev-membership-cards .main-card-slider .card .button:last-child { margin-right: 0; }
+
+.ev-membership-cards .my-card-wrap { position: relative; display: flex; flex-direction: column; justify-content: space-between; text-align: center; }
+
+.ev-membership-cards .my-card-wrap.is-active .star { background: url(../images/Icon-star-full.svg); background-size: 32px 32px; }
+
+.ev-membership-cards .my-card-wrap .star { overflow: hidden; position: relative; display: inline-block; width: 32px; height: 32px; margin: 0; background: url(../images/Icon-star-full-off.svg); background-size: 32px 32px; border-radius: 50px; border: 0; text-indent: -9999px; }
+
+.ev-membership-cards .my-card-wrap .buttons { display: flex; align-items: center; justify-content: flex-end; width: auto; }
+
+.ev-membership-cards .my-card-wrap .buttons:not(:last-child) { margin-bottom: 0; }
+
+.ev-membership-cards .my-card-wrap .buttons.is-top { position: absolute; top: 20px; right: 16px; }
+
+.ev-membership-cards .my-card-wrap .buttons button { margin-left: 8px; }
+
+.ev-membership-cards .my-card-wrap .card-info { display: flex; margin-bottom: 18px; }
+
+.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; width: 16.129%; max-width: 80px; margin-top: 5px; border-radius: 4px; }
+
+.ev-membership-cards .my-card-wrap .card-info .card-img img { width: 100%; border-radius: 4px; object-fit: cover; }
+
+.ev-membership-cards .my-card-wrap .card-info .info-area { flex: 1; text-align: left; padding-left: 16px; }
+
+.ev-membership-cards .my-card-wrap .card-info .info-area .roaming { display: block; margin-bottom: 12px; }
+
+.ev-membership-cards .my-card-wrap .card-info .info-area .card-nick { font-weight: 500; }
+
+.ev-membership-cards .my-card-wrap .card-info .info-area .card-number { margin-top: 6px; font-family: "Montserrat", sans-serif; font-size: 1.125rem; font-weight: 700; letter-spacing: -.01em; }
+
+.ev-membership-cards .my-card-wrap .card-info .info-area .oil { margin-top: 8px; color: #222; font-size: 15px; font-family: "Montserrat", sans-serif; }
+
+.ev-membership-cards .my-card-wrap .card-info .info-area .oil strong { font-weight: 700; }
+
+.ev-membership-cards .my-card-wrap.no-data-section { display: block; flex-direction: unset; justify-content: unset; text-align: center; padding: 0; }
+
+.ev-membership-cards .my-card-wrap.no-data-section:before { content: ''; position: absolute; top: 50%; left: 50%; display: block; width: 41px; height: 41px; transform: translate(-50%, -50%); background: url(../images/icon_plus_card.svg) no-repeat center/cover; }
+
+.ev-membership-cards .my-card-wrap.no-data-section .no-data { position: absolute; bottom: -41px; display: block; align-items: unset; justify-content: unset; flex-grow: 0; flex-direction: unset; width: 100%; min-height: auto; margin: 0 auto; }
+
+.ev-membership-cards .my-card-wrap.no-data-section .no-data:before { display: none; }
+
+/* 타사회원카드 순서 편집 */
+.ev-membership-edit .txt-enrollment-desc { margin: 20px 0 12px; }
+
+.ev-membership-edit .card-area { margin: 0 auto; padding: 0; }
+
+.ev-membership-edit .card-area + .card-area { margin-top: 12px; }
+
+.ev-membership-edit .card-area + .is-bottom-type { padding-top: 32px; margin-bottom: 8px; }
+
+.ev-membership-edit .card-area .card { margin-bottom: 0; border: 1px solid #e5e5e5; border-radius: 12px; box-shadow: none; }
+
+.ev-membership-edit .card-area .card.is-active { box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); }
+
+.ev-membership-edit .card-area .card .card-content { display: flex; min-height: auto; padding: 17px 24px; box-sizing: border-box; }
+
+.ev-membership-edit .card-area .card .card-content .info-area { height: auto; margin: 0; padding-right: 16px; }
+
+.ev-membership-edit .card-area .card .card-content .card-nick { font-weight: 500; }
+
+.ev-membership-edit .card-area .card .card-content .card-number { font-family: "Montserrat", sans-serif; margin-top: 5px; }
+
+.ev-membership-edit .card-area .card .card-content .btn-draggable { margin-left: auto; margin-right: -16px; }
+
+.ev-membership-edit .card-area.draggable-mode .card { border: 1px solid #3cdc87; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); }
+
+.ev-membership-edit .btn-draggable { display: block; width: 52px; height: 52px; padding: 20px; background: url(../images/icon-move-dark.svg) no-repeat center; }
