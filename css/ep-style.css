@@ -11114,7 +11114,7 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .main-card-slider .card { height: auto !important; min-height: 220px; padding: 60px 16px 24px; }
 
-.ev-membership-cards .main-card-slider .card .button { flex: 1; margin: 0 12px; }
+.ev-membership-cards .main-card-slider .card .button { flex: 1; margin: 0 8px; }
 
 .ev-membership-cards .main-card-slider .card .button:first-child { margin-left: 0; }
 
@@ -11136,7 +11136,7 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .my-card-wrap .card-info { display: flex; margin-bottom: 18px; }
 
-.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; max-width: 40px; margin-top: 5px; border-radius: 4px; }
+.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; width: 16.129%; max-width: 80px; margin-top: 5px; border-radius: 4px; }
 
 .ev-membership-cards .my-card-wrap .card-info .card-img img { width: 100%; border-radius: 4px; object-fit: cover; }
 
