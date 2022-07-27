@@ -11089,7 +11089,7 @@ label { margin-bottom: 8px; }
 
 .item-box-coupon:last-of-type { margin-bottom: 0; }
 
-/* 2022-07-28 NFC 개선 */
+/* 2022-07-28 회원카드/타사회원카드 관리 */
 .top-fixed-section ~ .contents-section.card-section { height: auto; padding-top: 136px; }
 
 .top-fixed-section ~ .contents-section.card-section > .inner { flex-grow: 0; }
