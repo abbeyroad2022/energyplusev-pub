@@ -11152,13 +11152,11 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area .oil strong { font-weight: 700; }
 
-.ev-membership-cards .my-card-wrap.no-data-section { display: block; flex-direction: unset; justify-content: unset; text-align: center; padding: 0; }
+.ev-membership-cards .my-card-wrap .no-data-section:before { content: ''; position: absolute; top: 50%; left: 50%; display: block; width: 41px; height: 41px; transform: translate(-50%, -50%); background: url(../images/icon_plus_card.svg) no-repeat center/cover; }
 
-.ev-membership-cards .my-card-wrap.no-data-section:before { content: ''; position: absolute; top: 50%; left: 50%; display: block; width: 41px; height: 41px; transform: translate(-50%, -50%); background: url(../images/icon_plus_card.svg) no-repeat center/cover; }
+.ev-membership-cards .my-card-wrap .no-data-section .no-data { position: absolute; left: 0; right: 0; bottom: -41px; display: block; min-height: auto; }
 
-.ev-membership-cards .my-card-wrap.no-data-section .no-data { position: absolute; bottom: -41px; display: block; align-items: unset; justify-content: unset; flex-grow: 0; flex-direction: unset; width: 100%; min-height: auto; margin: 0 auto; }
-
-.ev-membership-cards .my-card-wrap.no-data-section .no-data:before { display: none; }
+.ev-membership-cards .my-card-wrap .no-data-section .no-data:before { display: none; }
 
 .ev-membership-edit .txt-enrollment-desc { margin: 20px 0 12px; }
 
