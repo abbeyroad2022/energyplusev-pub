@@ -30,7 +30,7 @@
 
 ## local
 - `gulp`
-* http://localhost:3000/coding_list/
+- http://localhost:3000/coding_list/
 
 ## deploy
 - `npm run deploy`

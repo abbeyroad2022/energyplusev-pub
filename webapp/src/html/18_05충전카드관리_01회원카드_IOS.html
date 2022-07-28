@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<!-- 팝업 오픈시 body에 is-fixed 클래스 추가-->
+<body class="is-fixed">
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">충전카드 관리</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <div class="main-wrap ev-membership-cards">
+                    <div class="rows">
+						<div  class="inner">
+							<div class="box-point-list type-3">
+								<button type="button" class="btn-enrollment-card"><i class="ico-plus"></i>회원카드 신청/등록</button>
+							</div>
+							<p class="txt-enrollment-desc">회원카드는 <strong>최대 5장</strong>까지 등록할 수 있습니다.</p>
+						</div>
+                        <div class="row">
+                            <!-- 회원카드 -->
+                            <div class="main-card-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide -->
+                                        <div class="swiper-slide membership">
+                                            <!-- card -->
+                                            <div class="card my-card-wrap is-active">
+                                                <div class="buttons is-top">
+                                                    <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                    <button type="button" class="star">즐겨찾기</button>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="card-img"><img src="./images/card_img_ev2@2x.png" alt=""></p>
+                                                    <div class="info-area">
+                                                        <h3 class="card-nick">GS엠비즈 배터리진단</h3>
+                                                        <p class="card-number">1234-5678-9012-3456</p>
+                                                        <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="button is-half is-medium is-gray">이용내역</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <div class="swiper-slide membership">
+                                            <!-- card -->
+                                            <div class="card my-card-wrap">
+                                                <div class="buttons is-top">
+                                                    <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                    <button type="button" class="star">즐겨찾기</button>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="card-img"><img src="./images/card_img_kia_nor2@2x.png" alt=""></p>
+                                                    <div class="info-area">
+                                                        <h3 class="card-nick">기아충전혜택플러스</h3>
+                                                        <p class="card-number">1234-5678-9012-3456</p>
+                                                        <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="button is-half is-medium is-gray">이용내역</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slide -->
+                                        <div class="swiper-slide membership">
+                                            <!-- card -->
+                                            <div class="card my-card-wrap">
+                                                <div class="buttons is-top">
+                                                    <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                    <button type="button" class="star">즐겨찾기</button>
+                                                </div>
+                                                <div class="card-info">
+                                                    <p class="card-img"><img src="./images/card_img_kia_plus2@2x.png" alt=""></p>
+                                                    <div class="info-area">
+                                                        <h3 class="card-nick">기아충전혜택플러스</h3>
+                                                        <p class="card-number">1234-5678-9012-3456</p>
+                                                        <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                    </div>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="button is-half is-medium is-gray">이용내역</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- swiper pagination -->
+                                    <div class="swiper-pagination-wrap is-relative ml0"><!--0916수정 클래스추가(is-relative ml0) -->
+                                        <div class="swiper-pagination member-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        @@include('./include/footer.html')
+    </div>
+    <script>
+        // 바로주유 카드 Swiper   
+        var swiper = new Swiper('.main-card-slider > .swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            //spaceBetween: 12,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

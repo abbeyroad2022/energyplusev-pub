@@ -726,3 +726,289 @@ position: relative;
 .box-coupon-list.coupon-enroll { margin-top: 90px; }
 .item-box-coupon:last-of-type { margin-bottom: 0; }
 // .coupon-section .no-data-section { margin-top: 90px; }
+
+
+
+
+/* 2022-07-28 충전카드 관리 */
+.top-fixed-section ~ .contents-section.card-section {
+    height: auto;
+    padding-top: 136px;
+    > .inner { 
+        flex-grow: 0; 
+    }
+}
+.card-section {
+    .bullet-list {
+        margin: 16px 0 0 10px;
+        li {
+            margin-bottom: 0;
+        }
+    }
+    .box-bottom-btn {
+        margin-top: -13px;
+    }
+}
+// 회원카드 관리
+.ev-membership-cards {
+    .main-card-slider {
+        .swiper-container {
+            height: auto;
+            margin-top: 15px;
+            padding: 18px 0 0;
+            .swiper-wrapper {
+                padding: 0 0 30px 0;
+                .swiper-slide.membership {
+                    max-width: 74.6666%!important;
+                    width: 74.6666%!important;
+                    margin: 0 6px;
+                }
+            }
+            .swiper-pagination-wrap {
+                justify-content: center;
+            }
+            .swiper-pagination-bullet {
+                width: 6px;
+                height: 6px;
+                margin: 0 3px;
+                background: #a6acb2;
+                &.swiper-pagination-bullet-active {
+                    opacity: 1;
+                    width: 30px!important;
+                    border-radius: 6px;
+                    background: #222222!important;
+                }
+            }
+        }
+        .card {
+            height: auto !important;
+            min-height: 220px;
+            padding: 60px 16px 24px;
+            .button {
+                flex: 1;
+                margin: 0 8px;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .my-card-wrap {
+    	position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    	text-align: center;
+        &.is-active .star {
+            background: url(../images/Icon-star-full.svg);
+            background-size: 32px 32px;
+        }
+        .star {
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin: 0;
+            background: url(../images/Icon-star-full-off.svg);
+            background-size: 32px 32px;
+            border-radius: 50px;
+            border: 0;
+            text-indent: -9999px;
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: auto;
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+            &.is-top {
+                position: absolute;
+                top: 20px;
+                right: 16px;
+            }
+            button {
+                margin-left: 8px;
+            }
+        }
+        .card-info {
+            display: flex;
+            margin-bottom: 18px;
+            .card-img {
+                overflow: hidden;
+                width: 16.129%;
+                max-width: 80px;
+                margin-top: 5px;
+                border-radius: 4px;
+                img {
+                    width: 100%;
+                    border-radius: 4px;
+                    border: 1px solid #e2e2e2;
+                    object-fit: cover;
+                }
+            }
+            .info-area {
+                flex: 1;
+                text-align: left;
+                padding-left: 16px;
+                .roaming {
+                    display: block;
+                    margin-bottom: 12px;
+                }
+                .card-nick {
+                    font-weight: 500;
+                }
+                .card-number {
+                    margin-top: 6px;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    letter-spacing: -.01em;
+                }
+                .oil {
+                    margin-top: 8px;
+                    color: #222;
+                    font-size: 15px;
+                    font-family: "Montserrat", sans-serif;
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .no-data-section {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                width: 41px;
+                height: 41px;
+                transform: translate(-50%, -50%);
+                background: url(../images/icon_plus_card.svg) no-repeat center / cover;
+            }
+            .no-data {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -41px;
+                display: block;
+                min-height: auto;
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// no-data-section 카드없음 스타일 추가
+// .no-data-section {
+//     &.no-card {
+//         position: relative;
+//         margin: 15px 0 40px;
+//         padding: 18px 0 30px;
+//         width: 100%;
+//         height: auto;
+//         display: block;
+//         overflow-y: visible;
+//         &:before {
+//             content: '';
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             display: block;
+//             width: 41px;
+//             height: 41px;
+//             transform: translate(-50%, -50%);
+//             background: url(../images/icon_plus_card.svg) no-repeat center / cover;
+//         }
+//         &:after {
+//             content: '';
+//             display: block;
+//             width: 74.6666%;
+//             min-height: 220px;
+//             padding: 0;
+//             margin: 0 auto;
+//             border-radius: 16px;
+//             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//         }
+//         .no-data {
+//             position: absolute;
+//             left: 0;
+//             right: 0;
+//             bottom: -11px;
+//             display: block;
+//             min-height: auto;
+//             &:before {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+
+// 타사회원카드 순서 편집
+.ev-membership-edit {
+    .txt-enrollment-desc {
+        margin: 20px 0 12px;
+    }
+    .card-area {
+        margin: 0 auto;
+        padding: 0;
+        + .card-area {
+            margin-top: 12px;
+        }
+        + .is-bottom-type {
+            padding-top: 32px;
+            margin-bottom: 8px;
+        }
+        .card {
+            margin-bottom: 0;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            box-shadow: none;
+            &.is-active {
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+            }
+            .card-content {
+                display: flex;
+                min-height: auto;
+                padding: 17px 24px;
+                box-sizing: border-box;
+                .info-area {
+                    height: auto;
+                    margin: 0;
+                    padding-right: 16px;
+                }
+                .card-nick {
+                    font-weight: 500;
+                }
+                .card-number {
+                    font-family: "Montserrat", sans-serif;
+                    margin-top: 5px;
+                }
+                .btn-draggable {
+                    margin-left: auto;
+                    margin-right: -16px;
+                }
+            }
+        }
+        &.draggable-mode .card {
+            border: 1px solid #3cdc87;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+        }
+    }
+    .btn-draggable {
+        display: block;
+        width: 52px;
+        height: 52px;
+        padding: 20px;
+        background: url(../images/icon-move-dark.svg) no-repeat center;
+    }
+}
