@@ -45,7 +45,7 @@
                     <span class="blind">이전</span>
                 </a>
                 <div class="has-text-centered">
-                    <h2 class="title is-3">충전카드 관리</h2>
+                    <h2 class="title is-3">NFC 카드 관리</h2>
                 </div>
             </div>
         </header>
@@ -60,22 +60,25 @@
                         <nav class="tabs">
                             <ul>
                                 <!-- 탭 활성화 : is-active 클래스 추가 -->
-                                <li><a href="#"><span>회원카드</span></a></li>
-                                <li class="is-active"><a href="#"><span>타사 회원카드</span></a></li>
+                                <li class="is-active"><a href="#"><span>회원카드</span></a></li>
+                                <li><a href="#"><span>타사 회원카드</span></a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="inner">
                         <div class="box-point-list type-3">
-                            <button type="button" class="btn-enrollment-card"><i class="ico-plus"></i>타사 회원카드 NFC 바로등록</button>
+                            <button type="button" class="btn-enrollment-card"><i class="ico-plus"></i>회원카드 신청/등록</button>
                         </div>
                     </div>
                 </section>
                 <section class="contents-section card-section">
                     <div class="inner">
-                        <p class="txt-enrollment-desc">GS칼텍스 회원카드 및 타사카드는 <br><strong>최대 10장</strong>까지 등록가능 합니다.</p>
+                        <ul class="bullet-list">
+                            <li>자사발급(회원/제휴) 카드만 등록 가능합니다.</li>
+                            <li><strong>흔들기 기능</strong> 사용을 위해 NFC를 등록해주세요.</li>
+                            <li>회원카드는 <strong>최대 5장</strong>까지 등록할 수 있습니다.</li>
+                        </ul>
                     </div>
-
                     <div class="ev-membership-cards">
                         <!-- 회원카드 -->
                         <div class="main-card-slider">
@@ -84,12 +87,66 @@
                                     <!-- Slide -->
                                     <div class="swiper-slide membership">
                                         <!-- card -->
-                                        <div class="card my-card-wrap">
-                                            <!-- 등록된 카드 없을 경우 -->
-                                            <div class="no-data-section">
-                                                <div class="no-data">
-                                                    <p>등록된 타사 회원카드가 없습니다.</p>
+                                        <div class="card my-card-wrap is-active">
+                                            <div class="buttons is-top">
+                                                <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                <button type="button" class="star">즐겨찾기</button>
+                                            </div>
+                                            <div class="card-info">
+                                                <p class="card-img"><img src="./images/card_img_ev2@2x.png" alt=""></p>
+                                                <div class="info-area">
+                                                    <h3 class="card-nick">GS엠비즈 배터리진단</h3>
+                                                    <p class="card-number">0000-0000-0000-0000</p>
+                                                    <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
                                                 </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <button class="button is-half is-medium is-dark">NFC 등록</button>
+                                                <button class="button is-half is-medium is-gray">이용내역</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide -->
+                                    <div class="swiper-slide membership">
+                                        <!-- card -->
+                                        <div class="card my-card-wrap">
+                                            <div class="buttons is-top">
+                                                <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                <button type="button" class="star">즐겨찾기</button>
+                                            </div>
+                                            <div class="card-info">
+                                                <p class="card-img"><img src="./images/card_img_kia_nor2@2x.png" alt=""></p>
+                                                <div class="info-area">
+                                                    <h3 class="card-nick">기아충전혜택플러스</h3>
+                                                    <p class="card-number">1234-5678-9012-3456</p>
+                                                    <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <button class="button is-half is-medium is-gray">NFC 활성화</button>
+                                                <button class="button is-half is-medium is-gray">이용내역</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide -->
+                                    <div class="swiper-slide membership">
+                                        <!-- card -->
+                                        <div class="card my-card-wrap">
+                                            <div class="buttons is-top">
+                                                <button class="btn-trash"><span class="blind">삭제</span></button>
+                                                <button type="button" class="star">즐겨찾기</button>
+                                            </div>
+                                            <div class="card-info">
+                                                <p class="card-img"><img src="./images/card_img_kia_plus2@2x.png" alt=""></p>
+                                                <div class="info-area">
+                                                    <h3 class="card-nick">기아충전혜택플러스</h3>
+                                                    <p class="card-number">1234-5678-9012-3456</p>
+                                                    <p class="oil"><strong>32.15</strong><span>/50.00</span>kWh</p>
+                                                </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <button class="button is-half is-medium is-gray">NFC 활성화</button>
+                                                <button class="button is-half is-medium is-gray">이용내역</button>
                                             </div>
                                         </div>
                                     </div>
