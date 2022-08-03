@@ -730,7 +730,7 @@ position: relative;
 
 
 
-/* 2022-07-28 NFC 카드 관리 */
+/* 2022-07-28 충전카드 관리 */
 .top-fixed-section ~ .contents-section.card-section {
     height: auto;
     padding-top: 136px;
@@ -783,7 +783,7 @@ position: relative;
         .card {
             height: auto !important;
             min-height: 220px;
-            padding: 60px 16px 24px;
+            padding: 60px 16px 20px;
             .button {
                 flex: 1;
                 margin: 0 8px;
@@ -859,21 +859,22 @@ position: relative;
                 padding-left: 12px;
                 .roaming {
                     display: block;
-                    margin-bottom: 12px;
+                    margin-bottom: 6px;
+                    color: #888;
+                    font-size: 0.906rem;
                 }
                 .card-nick {
                     font-weight: 500;
                 }
                 .card-number {
-                    margin-top: 6px;
+                    margin-top: 4px;
                     font-family: "Montserrat", sans-serif;
-                    font-size: 1.125rem;
+                    font-size: 1.063rem;
                     font-weight: 700;
-                    letter-spacing: -.02em;
-                    white-space: nowrap;
+                    letter-spacing: -.03em;
                 }
                 .oil {
-                    margin-top: 8px;
+                    margin-top: 10px;
                     color: #222;
                     font-size: 15px;
                     font-family: "Montserrat", sans-serif;
