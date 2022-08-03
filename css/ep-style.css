@@ -11136,17 +11136,17 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .my-card-wrap .card-info { display: flex; margin-bottom: 18px; }
 
-.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; width: 16.129%; max-width: 80px; margin-top: 5px; border-radius: 4px; }
+.ev-membership-cards .my-card-wrap .card-info .card-img { overflow: hidden; width: 16.129%; min-width: 40px; max-width: 80px; margin-top: 5px; border-radius: 4px; }
 
 .ev-membership-cards .my-card-wrap .card-info .card-img img { width: 100%; border-radius: 4px; border: 1px solid #e2e2e2; object-fit: cover; }
 
-.ev-membership-cards .my-card-wrap .card-info .info-area { flex: 1; text-align: left; padding-left: 16px; }
+.ev-membership-cards .my-card-wrap .card-info .info-area { flex: 1; text-align: left; padding-left: 12px; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area .roaming { display: block; margin-bottom: 12px; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area .card-nick { font-weight: 500; }
 
-.ev-membership-cards .my-card-wrap .card-info .info-area .card-number { margin-top: 6px; font-family: "Montserrat", sans-serif; font-size: 1.125rem; font-weight: 700; letter-spacing: -.01em; }
+.ev-membership-cards .my-card-wrap .card-info .info-area .card-number { margin-top: 6px; font-family: "Montserrat", sans-serif; font-size: 1.125rem; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area .oil { margin-top: 8px; color: #222; font-size: 15px; font-family: "Montserrat", sans-serif; }
 
