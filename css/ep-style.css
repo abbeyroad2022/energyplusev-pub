@@ -11089,7 +11089,7 @@ label { margin-bottom: 8px; }
 
 .item-box-coupon:last-of-type { margin-bottom: 0; }
 
-/* 2022-07-28 NFC 카드 관리 */
+/* 2022-07-28 충전카드 관리 */
 .top-fixed-section ~ .contents-section.card-section { height: auto; padding-top: 136px; }
 
 .top-fixed-section ~ .contents-section.card-section > .inner { flex-grow: 0; }
@@ -11112,7 +11112,7 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .main-card-slider .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active { opacity: 1; width: 30px !important; border-radius: 6px; background: #222222 !important; }
 
-.ev-membership-cards .main-card-slider .card { height: auto !important; min-height: 220px; padding: 60px 16px 24px; }
+.ev-membership-cards .main-card-slider .card { height: auto !important; min-height: 220px; padding: 60px 16px 20px; }
 
 .ev-membership-cards .main-card-slider .card .button { flex: 1; margin: 0 8px; }
 
@@ -11142,13 +11142,13 @@ label { margin-bottom: 8px; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area { flex: 1; text-align: left; padding-left: 12px; }
 
-.ev-membership-cards .my-card-wrap .card-info .info-area .roaming { display: block; margin-bottom: 12px; }
+.ev-membership-cards .my-card-wrap .card-info .info-area .roaming { display: block; margin-bottom: 6px; color: #888; font-size: 0.906rem; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area .card-nick { font-weight: 500; }
 
-.ev-membership-cards .my-card-wrap .card-info .info-area .card-number { margin-top: 6px; font-family: "Montserrat", sans-serif; font-size: 1.125rem; font-weight: 700; letter-spacing: -.02em; white-space: nowrap; }
+.ev-membership-cards .my-card-wrap .card-info .info-area .card-number { margin-top: 4px; font-family: "Montserrat", sans-serif; font-size: 1.063rem; font-weight: 700; letter-spacing: -.03em; }
 
-.ev-membership-cards .my-card-wrap .card-info .info-area .oil { margin-top: 8px; color: #222; font-size: 15px; font-family: "Montserrat", sans-serif; }
+.ev-membership-cards .my-card-wrap .card-info .info-area .oil { margin-top: 10px; color: #222; font-size: 15px; font-family: "Montserrat", sans-serif; }
 
 .ev-membership-cards .my-card-wrap .card-info .info-area .oil strong { font-weight: 700; }
 
