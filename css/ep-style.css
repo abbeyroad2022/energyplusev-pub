@@ -11185,4 +11185,6 @@ label { margin-bottom: 8px; }
 .ev-membership-edit .btn-draggable { display: block; width: 52px; height: 52px; padding: 20px; background: url(../images/icon-move-dark.svg) no-repeat center; }
 
 /* 22-08-04 */
-.btn-txt { padding: 0; color: #666; font-size: 0.938rem; background-color: transparent; }
+.btn-txt { padding: 0; color: #888; font-size: 0.938rem; background-color: transparent; }
+
+.btn-txt span { line-height: 1.2; border-bottom: 1px solid #888; }
