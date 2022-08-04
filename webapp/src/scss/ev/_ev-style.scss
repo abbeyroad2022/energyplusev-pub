@@ -909,8 +909,7 @@ position: relative;
             }
         }
     }
-}
-
+} 
 // no-data-section 카드없음 스타일 추가
 // .no-data-section {
 //     &.no-card {
@@ -1014,4 +1013,11 @@ position: relative;
         padding: 20px;
         background: url(../images/icon-move-dark.svg) no-repeat center;
     }
+}
+/* 22-08-04 */
+.btn-txt {
+    padding: 0;
+    color: #666;
+    font-size: 0.938rem;
+    background-color: transparent;
 }
