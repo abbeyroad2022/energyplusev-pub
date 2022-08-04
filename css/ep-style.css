@@ -11183,3 +11183,6 @@ label { margin-bottom: 8px; }
 .ev-membership-edit .card-area.draggable-mode .card { border: 1px solid #3cdc87; box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); }
 
 .ev-membership-edit .btn-draggable { display: block; width: 52px; height: 52px; padding: 20px; background: url(../images/icon-move-dark.svg) no-repeat center; }
+
+/* 22-08-04 */
+.btn-txt { padding: 0; color: #666; font-size: 0.938rem; background-color: transparent; }
