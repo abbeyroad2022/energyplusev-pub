@@ -1017,7 +1017,11 @@ position: relative;
 /* 22-08-04 */
 .btn-txt {
     padding: 0;
-    color: #666;
+    color: #888;
     font-size: 0.938rem;
     background-color: transparent;
+    span {
+        line-height: 1.2;
+        border-bottom: 1px solid #888;
+    }
 }
