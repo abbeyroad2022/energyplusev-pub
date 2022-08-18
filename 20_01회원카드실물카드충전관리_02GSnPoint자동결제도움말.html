@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus EV App</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <!-- 20201211 accordion 추가-->
+    <link rel="stylesheet" href="lib/accordion-js/accordion.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <!-- <script src="https://unpkg.com/vue/dist/vue.min.js"></script> vue CDN -->
+    <!--<script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>  buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- 20201211 lottie-player 추가-->
+    <script src="lib/lottie/lottie-player.js"></script>
+    <!-- 20201211 accordion 추가-->
+    <script src="lib/accordion-js/accordion.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">회원카드(실물카드) 충전관리</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container">
+                <div class="inner">
+                    <!-- charge area -->
+                    <div class="charge-area">
+                        <div class="title-area">
+                            <h3 class="title is-3">
+                                회원카드로 충전할 때도<br>
+                                <strong>쿠폰과 포인트를 내가 원하는 대로!</strong>
+                            </h3>
+                            <p class="sub-desc">
+                                오프라인에서 회원카드(실물카드) 사용 시 <br>
+                                설정한 쿠폰과 포인트가 자동으로 사용됩니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="line-sections">
+                        <div class="form-grid mb20">
+                            <!-- 모바일쿠폰 자동 결제 -->
+                            <div class="field">
+                                <label class="title">모바일쿠폰 자동 결제</label>
+                                <span><i id="help1" class="icon-help"></i><span class="blind">도움말</span></span>
+                                <div class="control column-list ">
+                                    <label class="radio">
+                                        <input type="radio" name="foo1" checked>
+                                        <i></i>
+                                        <strong>사용 안 함</strong>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="foo1">
+                                        <i></i>
+                                        <strong>기간임박</strong>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="foo1">
+                                        <i></i>
+                                        <strong>최대할인</strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </div><!-- //form-grid -->
+                    </div>
+
+                    <div class="line-sections">
+                        <div class="form-grid">
+                            <!-- 바로충전 외 GS&Point 사용 -->
+                            <div class="field">
+                                <label class="title">바로충전 외 GS&Point 사용</label>
+                                <span><i id="help2" class="icon-help"></i><span class="blind">도움말</span></span>
+                                <div class="control column-list">
+                                    <label class="radio">
+                                        <input type="radio" name="foo2" checked>
+                                        <i></i>
+                                        <strong>사용 안 함</strong>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="foo2">
+                                        <i></i>
+                                        <strong>1,000P 사용</strong>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="foo2">
+                                        <i></i>
+                                        <strong>2,000P 사용</strong>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="foo2">
+                                        <i></i>
+                                        <strong>직접입력(100P 단위)</strong>
+                                    </label>
+                                    <!-- 직접입력 선택시 disabled 해제 -->
+                                    <div class="input-point">
+                                        <input type="tel" class="input" maxlength="5" value="" placeholder="최대 9,900P까지 입력하세요." disabled>
+                                        <p class="txt">Point</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- //form-grid -->
+                    </div>
+
+                    <!-- buttons -->
+                    <div class="buttons">
+                        <button class="button is-fullwidth is-dark" disabled>저장</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+        <!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">충전소찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">해택</span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+        <!-- bottom sheet -->
+        <!-- [모바일쿠폰 자동 결제] 도움말 -->
+        <div id="modal1" class="modal">
+            <div class="modal-background"></div>
+            <div class="bottom-sheet is-medium is-bottom-fixed">
+                <div class="bottom-sheet-header">
+                    <h2 class="title is-3 has-text-centered">모바일쿠폰 자동 결제 도움말</h2>
+                    <button class="btn-close"><span class="blind">닫기</span></button>
+                </div>
+                <div class="bottom-sheet-body">
+                    <div class="inner">
+                        <dl class="inner-cont">
+                            <dt class="title is-3">모바일쿠폰 자동 결제란 무엇인가요?</dt>
+                            <dd>
+                                <ol class="list-decimal is-gray-text">
+                                    <li>실물카드, NFC, PNC 충전결제 시 적용됩니다.</li>
+                                    <li>보유하신 모바일쿠폰이 기간임박/최대할인 설정에 따라 우선 결제 됩니다.</li>
+                                </ol>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="is-button-fixed">
+                        <div class="inner">
+                            <div class="buttons">
+                                <button class="button is-fullwidth is-dark">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [바로충전 외 GS&Point] 사용 도움말 -->
+        <div id="modal2" class="modal is-active">
+            <div class="modal-background"></div>
+            <div class="bottom-sheet is-medium is-bottom-fixed">
+                <div class="bottom-sheet-header">
+                    <h2 class="title is-3 has-text-centered">GS&Point 자동 결제 도움말</h2>
+                    <button class="btn-close"><span class="blind">닫기</span></button>
+                </div>
+                <div class="bottom-sheet-body">
+                    <div class="inner">
+                        <dl class="inner-cont">
+                            <dt class="title is-3">GS&Point 자동 결제란 무엇인가요?</dt>
+                            <dd>
+                                <ol class="list-decimal is-gray-text">
+                                    <li>적립하신 GS&Point를 충전결제시 차감하는 결제하는 방식입니다.</li>
+                                    <li>충전 후 결제시 보유하신 <em>GS&Point 차감 후 잔여금액</em>은 등록한 결제정보로 자동 결제 됩니다.</li>
+                                </ol>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="is-button-fixed">
+                        <div class="inner">
+                            <div class="buttons">
+                                <button class="button is-fullwidth is-dark">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 바로충전 패턴 설정 -->
+        <div id="modal3" class="modal">
+            <div class="modal-background"></div>
+            <div class="bottom-sheet is-medium is-bottom-fixed">
+                <div class="bottom-sheet-header">
+                    <h2 class="title is-3 has-text-centered">바로충전 패턴 설정</h2>
+                    <button class="btn-close"><span class="blind">닫기</span></button>
+                </div>
+                <div class="bottom-sheet-body">
+                    <div class="inner">
+                        <dl class="inner-cont">
+                            <dt class="title is-3">등록되어 있는 바로충전에도 <br>회원카드(실물카드) 충전과 동일한 <br>패턴을 적용하시겠습니까?</dt>
+                            <dd>
+                                <ul class="bullet-list col2">
+                                    <li>제일자주쓰는충전</li>
+                                    <li>기아충전혜택</li>
+                                    <li>제일자주쓰는충전</li>
+                                    <li>기아충전혜택</li>
+                                    <li>제일자주쓰는충전</li>
+                                    </ol>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="is-button-fixed">
+                        <div class="inner">
+                            <div class="buttons">
+                                <button class="button is-half is-outline">적용안함</button>
+                                <button class="button is-half is-dark">적용</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // modal dim 클릭시 close
+        const $body = document.querySelector('body'),
+            $modal1 = document.querySelector('#modal1'),
+            $modal2 = document.querySelector('#modal2'),
+            $modal3 = document.querySelector('#modal3'),
+            $help1 = document.querySelector('#help1');
+        $help2 = document.querySelector('#help2');
+        $help1.addEventListener('click', () => {
+            $body.classList.add('is-fixed');
+            $modal1.classList.add('is-active');
+        })
+        $modal1.querySelector('.modal-background').addEventListener('click', () => {
+            $body.classList.remove('is-fixed');
+            $modal1.classList.remove('is-active');
+        })
+        $help2.addEventListener('click', () => {
+            $body.classList.add('is-fixed');
+            $modal2.classList.add('is-active');
+        })
+        $modal2.querySelector('.modal-background').addEventListener('click', () => {
+            $body.classList.remove('is-fixed');
+            $modal2.classList.remove('is-active');
+        })
+        $modal3.querySelector('.modal-background').addEventListener('click', () => {
+            $body.classList.remove('is-fixed');
+            $modal3.classList.remove('is-active');
+        })
+    </script>
+</body>
+
+</html>
