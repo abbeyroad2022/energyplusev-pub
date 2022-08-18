@@ -11188,3 +11188,50 @@ label { margin-bottom: 8px; }
 .btn-txt { padding: 0; color: #888; font-size: 0.938rem; background-color: transparent; }
 
 .btn-txt span { line-height: 1.2; border-bottom: 1px solid #888; }
+
+/* 22-08-19 회원카드(실물카드) 충전관리 추가 */
+.charge-area { position: relative; padding-top: 12px; }
+
+.charge-area .title-area { padding-bottom: 30px; }
+
+.charge-area .title-area .title { font-weight: 400; margin-bottom: 10px; }
+
+.charge-area .title-area .sub-desc { line-height: 1.5; }
+
+.line-sections { padding-top: 20px; border-top: 1px solid #e5e5e5; }
+
+.line-sections .title { font-size: 0.9375rem; }
+
+.column-list { margin-top: 29px; padding: 0; }
+
+.column-list .radio, .column-list .checkbox { display: flex; }
+
+.column-list .radio + .radio, .column-list .radio + .checkbox, .column-list .checkbox + .radio, .column-list .checkbox + .checkbox { margin-left: 0; }
+
+.column-list label:not(:last-child) { margin-bottom: 16px; }
+
+.input-point { position: relative; }
+
+.input-point input { padding-right: 60px; }
+
+.input-point input[disabled] + .txt { color: #888; }
+
+.input-point .txt { position: absolute; top: 50%; right: 12px; transform: translateY(-50%); }
+
+.bullet-list.col2 { display: flex; flex-wrap: wrap; }
+
+.bullet-list.col2 > li { flex-basis: 50%; }
+
+.modal .bottom-sheet-body > .inner .inner-cont .bullet-list.col2 > li { margin-bottom: 7px; }
+
+@media screen and (max-width: 320px) { .bullet-list.col2 > li { flex-basis: 100%; } }
+
+.box-banner { width: 100%; margin-top: 40px; }
+
+.box-banner .banner-link { display: flex; align-items: center; justify-content: space-between; padding: 13px 12px 13px 19px; border: 1px solid #e5e5e5; border-radius: 16px; }
+
+.box-banner .banner-link strong { color: #34c678; }
+
+.box-banner .banner-link .icon-arrow-right { width: 16px; height: 16px; margin-left: 12px; background-size: cover; }
+
+.txt-charge-notice2 + .box-banner { margin-top: 25px; }
