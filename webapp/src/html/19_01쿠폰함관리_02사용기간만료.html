@@ -21,7 +21,7 @@
         <!-- // Header -->
         <div id="container">
             <!-- Contents -->
-            <div id="contents" class="container type-2">
+            <div id="contents" class="container">
                 <!-- top fixed section -->
                 <section class="top-fixed-section">
                     <div class="tab-area b-tabs">
@@ -46,10 +46,11 @@
                         <!-- 2022/07/13  구조 수정 -->
                         <div class="control type-flex">
                             <div class="select period">
+                                <!-- 220819수정 -->
                                 <select>
-                                    <option>기간임박순</option>
-                                    <option>가격순</option>
                                     <option>최신순</option>
+                                    <option>기간 임박순</option>
+                                    <option>높은 가격순</option>
                                 </select>
                             </div>
                             <div class="select all-coupon">
@@ -288,10 +289,12 @@
                             </div>
                         </li>
                     </ul>
+
                 </section>
             </div>
             <!-- // Contents -->
         </div>
+        @@include('./include/footer.html')
     </div>
 </body>
 </html>

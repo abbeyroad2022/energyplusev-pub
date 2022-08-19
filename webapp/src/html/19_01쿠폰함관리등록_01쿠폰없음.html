@@ -21,7 +21,7 @@
         <!-- // Header -->
         <div id="container">
             <!-- Contents -->
-            <div id="contents" class="container type-2">
+            <div id="contents" class="container">
                 <!-- top fixed section -->
                 <section class="top-fixed-section">
                     <div class="tab-area b-tabs">
@@ -58,7 +58,15 @@
                         <!-- No Data -->
                         <div class="no-data">
                             <p>현재 사용 가능한 쿠폰이 없습니다.</p>
-                            <p class="txt-sub-desc">놓치는 쿠폰이 없도록 챙겨드릴께요!</p>
+
+                            <!-- 220819추가 -->
+                            <div class="box-banner">
+                                <a href="#" class="banner-link">
+                                    <span>잠깐! 쿠폰과 포인트 사용 설정 하셨나요? <br><strong>충전하기 전 설정하러 가기!</strong></span>
+                                    <i class="icon-arrow-right"></i>
+                                </a>
+                            </div>
+
                         </div>
                         <!-- // No Data -->
                     </div>
@@ -66,6 +74,7 @@
             </div>
             <!-- // Contents -->
         </div>
+        @@include('./include/footer.html')
     </div>
 </body>
 </html>

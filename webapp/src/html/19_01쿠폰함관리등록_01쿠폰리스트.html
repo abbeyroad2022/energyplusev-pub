@@ -21,7 +21,7 @@
         <!-- // Header -->
         <div id="container">
             <!-- Contents -->
-            <div id="contents" class="container type-2">
+            <div id="contents" class="container">
                 <!-- top fixed section -->
                 <section class="top-fixed-section">
                     <div class="tab-area b-tabs">
@@ -52,10 +52,11 @@
                         </div>
                         <div class="control type-flex">
                             <div class="select period">
+                                <!-- 220819수정 -->
                                 <select>
-                                    <option>기간임박순</option>
-                                    <option>가격순</option>
                                     <option>최신순</option>
+                                    <option>기간 임박순</option>
+                                    <option>높은 가격순</option>
                                 </select>
                             </div>
                             <div class="select all-coupon">
@@ -293,10 +294,20 @@
                             </div>
                         </li>
                     </ul>
+
+                    <!-- 220819추가 -->
+                    <div class="box-banner">
+                        <a href="#" class="banner-link">
+                            <span>잠깐! 쿠폰과 포인트 사용 설정 하셨나요? <br><strong>충전하기 전 설정하러 가기!</strong></span>
+                            <i class="icon-arrow-right"></i>
+                        </a>
+                    </div>
+
                 </section>
             </div>
             <!-- // Contents -->
         </div>
+        @@include('./include/footer.html')
     </div>
 </body>
 </html>
