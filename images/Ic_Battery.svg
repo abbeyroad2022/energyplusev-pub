@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path style="fill:transparent;opacity:.16" d="M0 0h32v32H0z"/>
+    <g data-name="사각형 18574" style="stroke:#0f1f2e;fill:#fff">
+        <path style="stroke:none" d="M0 0h10v4H0z" transform="translate(8 4)"/>
+        <path style="fill:none" d="M.5.5h9v3h-9z" transform="translate(8 4)"/>
+    </g>
+    <g data-name="사각형 4087" transform="translate(5 6)" style="stroke:#0f1f2e;fill:#fff">
+        <rect width="16" height="20" rx="2" style="stroke:none"/>
+        <rect x=".5" y=".5" width="15" height="19" rx="1.5" style="fill:none"/>
+    </g>
+    <path data-name="패스 14541" d="M65.442 659.085h-2.7l1.392-4.175-4.192 6.262h2.5l-.989 3.738z" transform="translate(-49.942 -644.91)" style="fill:#3ddb87;stroke:#0f1f2e"/>
+    <g>
+        <g data-name="타원 2386" transform="translate(14 15)" style="stroke:#0f1f2e;fill:#fff">
+            <circle cx="6.5" cy="6.5" r="6.5" style="stroke:none"/>
+            <circle cx="6.5" cy="6.5" r="6" style="fill:none"/>
+        </g>
+        <path data-name="합치기 361" d="M4.358 7.535.618 3.868a.612.612 0 0 1 0-.876L2.756.9a.639.639 0 0 1 .891 0 .611.611 0 0 1 0 .873L1.953 3.431l3.3 3.232a.608.608 0 0 1 0 .872.639.639 0 0 1-.891 0z" transform="rotate(-90 20.358 4.074)" style="fill:#0f1f2e"/>
+    </g>
+</svg>
