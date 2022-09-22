@@ -11230,11 +11230,21 @@ label { margin-bottom: 8px; }
 
 .box-banner { width: 100%; margin-top: 40px; }
 
-.banner-link { display: flex; align-items: center; justify-content: space-between; padding: 13px 12px 13px 19px; border: 1px solid #e5e5e5; border-radius: 16px; }
+.banner-link { display: flex; align-items: center; justify-content: space-between; padding: 13px 12px 13px 19px; color: #fff; font-weight: 500; border: 1px solid #3ddb87; background-color: #3ddb87; border-radius: 16px; /* 22-09-22 .type-white 추가 */ }
 
-.banner-link strong { color: #34c678; }
+.banner-link:hover { color: #fff; }
+
+.banner-link strong { color: #0f1f2e; font-weight: 700; }
 
 .banner-link .icon-arrow-right { width: 16px; height: 16px; margin-left: 12px; background-size: cover; }
+
+.banner-link.type-white { border: 1px solid #e5e5e5; background-color: #fff; }
+
+.banner-link.type-white .title { display: inline-flex; align-items: center; margin-bottom: 5px; color: #0f1f2e; font-weight: 700; }
+
+.banner-link.type-white .tip { display: inline-block; height: 22px; margin-right: 8px; padding: 3px 9px 2px 9px; color: #fff; font-size: 12px; font-weight: 400; letter-spacing: -0.06em; background-color: #3ddb87; border-radius: 12px; }
+
+.banner-link.type-white .text { color: #888; font-weight: 400; letter-spacing: -0.05em; }
 
 .txt-charge-notice2 + .box-banner { margin-top: 25px; }
 
@@ -11251,7 +11261,24 @@ label { margin-bottom: 8px; }
 
 .contents-section .content-inner .item-list2 li.is-first { margin-left: 0; }
 
-/* 22-09-14 Dynamic Pricing 수정 */
+/* 22-09-22 bottom sheet 배너 추가 */
+.box-bottom-banner { margin: 12px 0 32px; }
+
+.box-bottom-banner .banner-link:not(:first-child) { margin-top: 16px; }
+
+.box-bottom-noti ol.list-noti-area { list-style: none; }
+
+.box-bottom-noti ol.list-noti-area .item-txt-noti { margin-left: 18px; text-indent: -17px; }
+
+/* 22-09-22 야간할인 (구.  Dynamic Pricing) 수정 */
+.bullet-list.narrow { margin: 10px 0 0; }
+
+.bullet-list.narrow li { padding-left: 10px; margin-bottom: 2px; }
+
+.bullet-list.narrow li:last-child { margin-bottom: 0; }
+
+.bullet-list.narrow .date-tit-time span { margin-left: 0; padding-left: 0; }
+
 .date-tit-time { display: flex; align-items: center; }
 
 .date-tit-time .line-dy, .date-tit-time .arrow-con-s { position: static; top: auto; left: auto; }
@@ -11260,13 +11287,43 @@ label { margin-bottom: 8px; }
 
 .date-tit-time .arrow-con-s { margin: 0 4px 0 4px; }
 
-.case-dc .section-wish-area.case01 .box-wish-cont .date-tit-time span { margin-left: 0; padding-left: 0; }
+.case-dc .tag-area.is-scroll { width: 100%; margin: 0; }
 
-/* 22-09-22 bottom sheet 배너 추가 */
-.box-bottom-banner { margin: 0 0 24px; }
+.case-dc .tag-area.is-scroll .tag-list { flex-wrap: nowrap; padding: 19px 23px 22px 23px; background-color: #fff; overflow-y: auto; }
 
-.box-bottom-banner .banner-link:not(:first-child) { margin-top: 12px; }
+.case-dc .tag-area.is-scroll .tag-list li { margin-bottom: 0; }
 
-.box-bottom-noti ol.list-noti-area { list-style: none; }
+.case-dc .tag-area.is-scroll .tag-list li:last-child { margin-right: 0; }
 
-.box-bottom-noti ol.list-noti-area .item-txt-noti { margin-left: 18px; text-indent: -17px; }
+.case-dc .tag-area.is-scroll .tag-list .tag-item { white-space: nowrap; height: 36px; line-height: 32px; border-radius: 18px; }
+
+.case-dc .section-wish-area.case01 .box-wish-hd { font-weight: 500; }
+
+.case-dc .section-wish-area.case01 .box-wish-hd .title { display: flex; align-items: center; height: 36px; }
+
+.case-dc .section-wish-area.case01 .box-wish-hd .ic-favorite { display: inline-block; width: 20px; height: 20px; margin-left: 8px; background-image: url(../images/icon-favorite-filled.svg); }
+
+.case-dc .section-wish-area.case01 .bullet-list.narrow { margin: 10px 0 15px; }
+
+.case-dc .section-wish-area.case01 .bullet-list.narrow li { padding-left: 10px; margin-bottom: 2px; }
+
+.case-dc .section-wish-area.case01 .bullet-list.narrow li:last-child { margin-bottom: 0; }
+
+.case-dc .section-wish-area.case01 .bullet-list.narrow .date-tit-time span { margin-left: 0; padding-left: 0; }
+
+.charger-status { display: flex; align-items: center; justify-content: space-between; padding: 13px 19px; border-radius: 12px; background-color: #f4f4f4; }
+
+.charger-status [class^='lv']:before { content: ''; display: inline-block; width: 12px; height: 12px; margin-right: 4px; border-radius: 50%; background-color: #f4f4f4; }
+
+.charger-status .lv1:before { background-color: #3d9efc; }
+
+.charger-status .lv2:before { background-color: #23db87; }
+
+.charger-status .lv3:before { background-color: #a6acb2; }
+
+.w62 { width: 62px !important; }
+
+.t20 { top: 20px !important; }
+
+/* 22-09-22 충전소상세 수정 */
+.info-tit { margin-bottom: 15px; font-weight: 500; }
