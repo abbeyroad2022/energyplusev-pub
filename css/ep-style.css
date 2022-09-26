@@ -11327,3 +11327,10 @@ label { margin-bottom: 8px; }
 
 /* 22-09-22 충전소상세 수정 */
 .info-tit { margin-bottom: 15px; font-weight: 500; }
+
+/* 22-09-26 삼성화재 다이렉트 이벤트 */
+.event-img-wrap { display: flex; flex-direction: column; }
+
+.event-img-wrap .img-type { margin: 0; padding: 0; font-size: 0; border: 0; cursor: pointer; }
+
+.event-img-wrap img { padding-bottom: 0; }
