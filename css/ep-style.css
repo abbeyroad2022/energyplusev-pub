@@ -11329,8 +11329,23 @@ label { margin-bottom: 8px; }
 .info-tit { margin-bottom: 15px; font-weight: 500; }
 
 /* 22-09-26 삼성화재 다이렉트 이벤트 */
+.event-list .box-event-img-area { border: 1px solid #e5e5e5; }
+
 .event-img-wrap { display: flex; flex-direction: column; }
 
 .event-img-wrap .img-type { margin: 0; padding: 0; font-size: 0; border: 0; cursor: pointer; }
 
 .event-img-wrap img { padding-bottom: 0; }
+
+/* 22-09-28 충전기 정보 수정 */
+.contents-section .content-inner .product-detail { display: flex; align-items: center; justify-content: space-between; height: auto; margin-top: 16px; padding-bottom: 8px; }
+
+.contents-section .content-inner .product-detail:not(:last-child) { padding-bottom: 16px; }
+
+.contents-section .content-inner .product-detail.line-none { height: 82px; }
+
+.contents-section .content-inner .product-detail .item-name { width: 58px; margin-top: 0; text-align: center; }
+
+.contents-section .content-inner .product-detail .item-info { position: relative; left: auto; }
+
+.contents-section .content-inner .product-detail .charging-speed { padding: 1px 4px; font-size: 11px; font-weight: 500; border: 1px solid #333; border-radius: 4px; }
