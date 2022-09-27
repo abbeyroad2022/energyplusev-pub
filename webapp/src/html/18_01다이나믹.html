@@ -14,7 +14,7 @@
                     <span class="blind">이전</span>
                 </a>
                 <div class="has-text-centered">
-                    <h2 class="title is-3">Dynamic Pricing</h2>
+                    <h2 class="title is-3">야간 할인</h2><!-- 220922수정 (메뉴명 변경) -->
                 </div>
             </div>
         </header>
@@ -29,52 +29,263 @@
             			<dd>충전 할인혜택을 드립니다.</dd>
             		</dl>
             	</div>
+				<!-- tag -->
+				<div class="tag-area is-scroll">
+					<ul class="tag-list">
+						<li>
+							<!-- 선택됐을때 is-selected 클래스 추가-->
+							<a href="#" class="tag-item is-selected">전체</a>
+						</li>
+						<li>
+							<a href="#" class="tag-item">00:00~06:00</a>
+						</li>
+						<li>
+							<a href="#" class="tag-item">06:00~12:00</a>
+						</li>
+						<li>
+							<a href="#" class="tag-item">12:00~18:00</a>
+						</li>
+						<li>
+							<a href="#" class="tag-item">18:00~00:00</a>
+						</li>
+					</ul>
+				</div>
 				<div class="section-wish-area case01 lv1"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
 					<div class="box-wish-hd">
-						<dl>
-							<dt>GS칼텍스 삼방주유소</dt>
-						</dl>
+						<h3 class="title is-5">
+							<span>동궁리치웰타워</span>
+							<i class="ic-favorite"><span class="blind">단골충전소</span></i> <!-- 단골충전소 인  경우 표시 -->
+						</h3>
 					</div>
 					<div class="box-wish-cont">
-						<dl>
-							<dd>2021-10-30~2022-02-25</dd>
-							<dd class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">279원</span></dd>
-						</dl>
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+							<li class="date-tit-time">월,수,금 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">249원</span></li>
+							<li class="date-tit-time">주말 12:00~14:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">269원</span></li>
+							<li class="date-tit-time">월,화,수,목,금 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">249원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>3</strong></li>
+							<li class="lv2">충전중: <strong>1</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
 					</div>
-					<div class="drive w82 t30">
+					<div class="drive w62 t20">
 						<span class="charge is-bold ft-15">충전가능</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv3"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>GS칼텍스 삼방주유소</span>
+							<i class="ic-favorite"><span class="blind">단골충전소</span></i> <!-- 단골충전소 인  경우 표시 -->
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+							<li class="date-tit-time">월,수,금 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">249원</span></li>
+							<li class="date-tit-time">주말 12:00~14:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">269원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>0</strong></li>
+							<li class="lv3">충전불가: <strong>5</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">사용불가</span>
 					</div>
 				</div><!-- //section-wish-area -->
 				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
 					<div class="box-wish-hd">
-						<dl>
-							<dt>GS칼텍스 삼방주유소</dt>
-						</dl>
+						<h3 class="title is-5">
+							<span>머큐어 서울 엠버서더 강남 쏘도베</span>
+						</h3>
 					</div>
 					<div class="box-wish-cont">
-						<dl>
-							<dd>2021-10-30~2022-02-25</dd>
-							<dd class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">279원</span></dd>
-						</dl>
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
 					</div>
-					<div class="drive w82 t30">
+					<div class="drive w62 t20">
 						<span class="charge is-bold ft-15">충전중</span>
 					</div>
 				</div><!-- //section-wish-area -->
-				<div class="section-wish-area case01 lv1"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
 					<div class="box-wish-hd">
-						<dl>
-							<dt>GS칼텍스 삼방주유소</dt>
-						</dl>
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
 					</div>
 					<div class="box-wish-cont">
-						<dl>
-							<dd>2021-10-30~2022-02-25</dd>
-							<dd class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">279원</span></dd>
-						</dl>
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
 					</div>
-					<div class="drive w82 t30">
-						<span class="charge is-bold ft-15">충전가능</span>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
+					</div>
+				</div><!-- //section-wish-area -->
+				<div class="section-wish-area case01 lv2"> <!-- lv1 충전가능, lv2 충전중, lv3 사용불가, bonus 혜택 -->
+					<div class="box-wish-hd">
+						<h3 class="title is-5">
+							<span>아주빌딩(아주산업)</span>
+						</h3>
+					</div>
+					<div class="box-wish-cont">
+						<p class="period">2021-10-30~2022-02-25</p>
+						<ul class="bullet-list narrow">
+							<li class="date-tit-time">매일 09:00~18:00<i class="line-dy"></i><span class="is-fl-none be-price">279원</span><i class="arrow-con-s"></i><span class="is-fl-none af-price">259원</span></li>
+						</ul>
+						<ul class="charger-status">
+							<li class="lv1">충전가능: <strong>0</strong></li>
+							<li class="lv2">충전중: <strong>4</strong></li>
+							<li class="lv3">충전불가: <strong>0</strong></li>
+						</ul>
+					</div>
+					<div class="drive w62 t20">
+						<span class="charge is-bold ft-15">충전중</span>
 					</div>
 				</div><!-- //section-wish-area -->
             </div>

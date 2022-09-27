@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="euj2p1uu9a">
+            <path data-name="사각형 18581" transform="translate(-.5 -.5)" style="fill:none" d="M0 0h5v5H0z"/>
+        </clipPath>
+        <clipPath id="2gw39hujrb">
+            <path data-name="사각형 18580" style="fill:none" d="M0 0h7.534v7.534H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-253 -102.998)">
+        <path transform="translate(253 102.998)" style="fill:transparent" d="M0 0h32v32H0z"/>
+        <circle data-name="타원 2388" cx="12.5" cy="12.5" r="12.5" transform="translate(257 106.998)" style="fill:#f0551c"/>
+        <path data-name="패스 15475" d="M-5.976.1C-4.376.1-3.6-.7-3.6-1.64c0-2.056-3.256-1.344-3.256-2.376 0-.352.3-.64 1.064-.64a3.163 3.163 0 0 1 1.552.44l.4-.984a3.756 3.756 0 0 0-1.944-.5c-1.592 0-2.36.792-2.36 1.744 0 2.08 3.256 1.36 3.256 2.408 0 .344-.312.6-1.08.6a3.294 3.294 0 0 1-1.848-.584l-.44.976A3.991 3.991 0 0 0-5.976.1zM0 .1a2.9 2.9 0 0 0 3.064-2.9A2.9 2.9 0 0 0 0-5.7a2.9 2.9 0 0 0-3.064 2.9A2.9 2.9 0 0 0 0 .1zM0-1a1.708 1.708 0 0 1-1.752-1.8A1.708 1.708 0 0 1 0-4.592 1.708 1.708 0 0 1 1.752-2.8 1.708 1.708 0 0 1 0-1.008zM5.88.1c1.6 0 2.376-.8 2.376-1.74C8.256-3.7 5-2.984 5-4.016c0-.352.3-.64 1.064-.64a3.163 3.163 0 0 1 1.552.44l.4-.984a3.756 3.756 0 0 0-1.944-.5c-1.592 0-2.36.792-2.36 1.744 0 2.08 3.256 1.36 3.256 2.408 0 .344-.312.6-1.08.6a3.294 3.294 0 0 1-1.848-.58l-.44.976A3.991 3.991 0 0 0 5.88.1z" transform="translate(269.5 122.998)" style="fill:#fff"/>
+        <g data-name="그룹 19683" transform="rotate(45 .764 380.814)" style="clip-path:url(#euj2p1uu9a)">
+            <path data-name="패스 15473" d="M.5 3.969A3.469 3.469 0 0 1 3.969.5" transform="translate(-.235 -.235)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        </g>
+        <g data-name="그룹 19682" transform="rotate(45 5.592 378.814)" style="clip-path:url(#2gw39hujrb)">
+            <path data-name="패스 15472" d="M.5 7.034A6.534 6.534 0 0 1 7.034.5" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        </g>
+    </g>
+</svg>

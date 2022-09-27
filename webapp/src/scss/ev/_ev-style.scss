@@ -728,8 +728,6 @@ position: relative;
 // .coupon-section .no-data-section { margin-top: 90px; }
 
 
-
-
 /* 2022-07-28 충전카드 관리 */
 .top-fixed-section ~ .contents-section.card-section {
     height: auto;
@@ -831,9 +829,14 @@ position: relative;
                 position: absolute;
                 top: 20px;
                 right: 16px;
+                width: calc(100% - 32px); /* 22-09-22 추가 */
             }
             button {
                 margin-left: 8px;
+                &.btn-txt {
+                    margin-left: 0;
+                    margin-right: auto;
+                } /* 22-09-22 추가 */
             }
         }
         .card-info {
@@ -1098,24 +1101,287 @@ position: relative;
 .box-banner {
     width: 100%;
     margin-top: 40px;
-    .banner-link {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 13px 12px 13px 19px;
-        border: 1px solid #e5e5e5;
-        border-radius: 16px;
-        strong {
-            color: #34c678;
-        }
-        .icon-arrow-right {
-            width: 16px;
-            height: 16px;
-            margin-left: 12px;
-            background-size: cover;
-        }
+}
+.banner-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 12px 13px 19px;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #3ddb87;
+    background-color: #3ddb87;
+    border-radius: 16px;
+    &:hover {
+        color: #fff;
     }
+    strong {
+        color: #0f1f2e;
+        font-weight: 700;
+    }
+    .icon-arrow-right {
+        width: 16px;
+        height: 16px;
+        margin-left: 12px;
+        background-size: cover;
+    }
+    &.type-white {
+        border: 1px solid #e5e5e5;
+        background-color: #fff;
+        .title {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 5px;
+            color: #0f1f2e;
+            font-weight: 700;
+        }
+        .tip {
+            display: inline-block;
+            height: 22px;
+            margin-right: 8px;
+            padding: 3px 9px 2px 9px;
+            color: #fff;
+            font-size: 12px; 
+            font-weight: 400;
+            letter-spacing: -0.06em;
+            background-color: #3ddb87;
+            border-radius: 12px;
+        }
+        .text {
+            color: #888;
+            font-weight: 400;
+            letter-spacing: -0.05em;
+        }
+    } /* 22-09-22 .type-white 추가 */
 }
 .txt-charge-notice2 + .box-banner {
     margin-top: 25px;
+}
+
+/* 22-08-24 SOS, 배터리진단 추가 */
+.gnb .gnb-wrap .gnb-header .sos-area { 
+    margin-right: 8px;
+}
+.icon-sos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; 
+    height: 32px; 
+    border: 0;
+    outline: 0;
+    background: url(../images/icon-sos.svg) no-repeat center / 100%; 
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+    svg {
+        background-color: transparent;
+        fill: currentColor;
+        stroke-width: 0;
+        stroke: currentColor;
+        pointer-events: none;
+        width: auto;
+        height: auto;
+    }
+}
+.contents-section .content-inner .item-list2 li {
+    width: auto;
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &.is-first {
+        margin-left: 0;
+    }
+}
+
+/* 22-09-22 bottom sheet 배너 추가 */
+.box-bottom-banner {
+    margin: 12px 0 32px;
+    .banner-link {
+        &:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+}
+.box-bottom-noti ol.list-noti-area {
+    list-style: none;
+    .item-txt-noti {
+        margin-left: 18px; text-indent: -17px;
+    }
+}
+
+/* 22-09-22 야간할인 (구.  Dynamic Pricing) 수정 */
+.bullet-list.narrow {
+    margin: 10px 0 0;
+    li {
+        padding-left: 10px;
+        margin-bottom: 2px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .date-tit-time span {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+.date-tit-time {
+    display: flex;
+    align-items: center;
+    .line-dy,
+    .arrow-con-s {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+    .line-dy{
+        margin: 1px 8px 0 9px;
+    }
+    .arrow-con-s {
+        margin: 0 4px 0 4px;
+    }
+}
+.case-dc {
+    .tag-area.is-scroll {
+        width: 100%;
+        margin: 0;
+        .tag-list {
+            flex-wrap: nowrap;
+            padding: 19px 23px 22px 23px;
+            background-color: #fff;
+            overflow-y: auto;
+            li {
+                margin-bottom: 0;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .tag-item {
+                white-space: nowrap;
+                height: 36px;
+                line-height: 32px;
+                border-radius: 18px;
+            }
+        }
+    }
+    .section-wish-area.case01 {
+        .box-wish-hd {
+            font-weight: 500;
+            .title {
+                display: flex;
+                align-items: center;
+                height: 36px;
+            }
+            .ic-favorite {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-left: 8px;
+                background-image: url(../images/icon-favorite-filled.svg);
+            }
+        }
+        .bullet-list.narrow {
+            margin: 10px 0 15px;
+            li {
+                padding-left: 10px;
+                margin-bottom: 2px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .date-tit-time span {
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.charger-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 19px;
+    border-radius: 12px;;
+    background-color: #f4f4f4;
+    [class^='lv'] {
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 4px;
+            border-radius: 50%;
+            background-color: #f4f4f4;
+        }
+    }
+    .lv1:before {
+        background-color: #3d9efc;
+    }
+    .lv2:before {
+        background-color: #23db87;
+    }
+    .lv3:before {
+        background-color: #a6acb2;
+    }
+}
+.w62 {width: 62px!important}
+.t20 {top: 20px!important}
+
+/* 22-09-22 충전소상세 수정 */
+.info-tit {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* 22-09-26 삼성화재 다이렉트 이벤트 */
+.event-list .box-event-img-area { border: 1px solid #e5e5e5; }
+.event-img-wrap {
+    display: flex;
+    flex-direction: column;
+    .img-type {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        border: 0;
+        cursor: pointer;
+    }
+    img {
+        padding-bottom: 0;
+    }
+}
+
+/* 22-09-28 충전기 정보 수정 */
+.contents-section .content-inner .product-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    &:not(:last-child) {
+        padding-bottom: 16px;
+    } 
+    &.line-none {
+        height: 82px;
+    }
+    .item-name {
+        width: 58px;
+        margin-top: 0;
+        text-align: center;
+    }
+    .item-info {
+        position: relative;
+        left: auto;
+    }
+    .charging-speed {
+        padding: 1px 4px;
+        font-size: 11px;
+        font-weight: 500;
+        border: 1px solid #333;
+        border-radius: 4px;
+    }
 }
