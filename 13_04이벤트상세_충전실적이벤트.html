@@ -42,36 +42,40 @@
             <section class="ev-event-wrap">
 
                 <!-- 이벤트 이미지-->
-                <div class="event-content bg-dark">
-                    <p><img src="../images/ev_event/charging_event_main.png" alt="에너지플러스 EV 회원으로 충전하면 최대 15,000원 혜택!, 기간 : 22.11.14~22.12.31, 회원카드/NFC/바로충전으로 60kWh 충전 마다 5,000원 상당 혜택을 드립니다! (60kWh/120kWh/180kWh 최대 3번 지급)"></p>
+                <div class="ev-event-content charging-main bg-dark">
+                    <img src="../images/ev_event/charging_event_main.png" alt="에너지플러스 EV 회원으로 충전하면 최대 15,000원 혜택!, 기간 : 22.11.14~22.12.31, 회원카드/NFC/바로충전으로 60kWh 충전 마다 5,000원 상당 혜택을 드립니다! (60kWh/120kWh/180kWh 최대 3번 지급)">
+                    <i class="ic-deco"><img src="../images/ev_event/charging_event_deco.png" alt=""></i>
                 </div>
 
                 <!-- 충전 게이지 -->
-                <div class="event-content bg-dark">
+                <!-- 로그인 전: is-logout 클래스 기본, 로그인 후: is-logout 클래스 제거-->
+                <div class="ev-event-content charging-gauge bg-dark">
                     <div class="inner">
 
-                        <!-- 로그인 전: is-logout 클래스 기본, 로그인 후: is-logout 클래스 제거-->
-                        <!-- <div class="charging-gauge">
+
+                        <div class="gauge-area">
+
                             <div class="gauge-box">
-                                <i class="gauge-panel"></i>
+                                <!-- <i class="gauge-panel"></i>
                                 <i class="gauge-arrow" style="transform: rotate(0deg);"></i>
                                 <ul class="gauge-list">
                                     <li class="gauge-0"><span>0</span></li>
                                     <li class="gauge-60"><span>60</span></li>
                                     <li class="gauge-120"><span>120</span></li>
                                     <li class="gauge-180"><span>180</span></li>
-                                </ul>
+                                </ul> -->
                                 <div class="gauge-info">
-                                    <p>충전실적</p>
-                                    <p><em>108</em> kWh</p>
-                                    <button type="button" class="button is-dark is-small">쿠폰 선택</button>
+                                    <p class="tit">충전실적</p>
+                                    <p class="wattage"><em>108</em> kWh</p>
                                 </div>
                             </div>
-                            <a href="#" class="button is-dark is-medium btn-engagement">로그인 후 참여하기</a>
-                        </div> -->
-                        <a href="javascript:;" class="event-btn btn-type1">쿠폰 선택</a>
-                        <!-- 비활성화 : is-disabled 클래스 추가 -->
-                        <a href="javascript:;" class="event-btn btn-type1 is-disabled">쿠폰 선택</a>
+
+
+                            <a href="#" class="event-btn btn-type1 btn-engagement">로그인 후 참여하기</a>
+                        </div>
+                        <div class="btn-area">
+                            <a href="javascript:;" class="event-btn btn-type1 is-disabled">쿠폰 선택</a>
+                        </div>
                     </div>
                 </div>
 
