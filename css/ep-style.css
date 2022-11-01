@@ -11433,7 +11433,7 @@ label { margin-bottom: 8px; }
 
 .charging-main { position: relative; }
 
-.charging-main .ic-deco { position: absolute; bottom: 85px; display: block; width: 100%; z-index: 30; }
+.charging-main .ic-deco { position: absolute; bottom: 80px; display: block; width: 100%; z-index: 30; }
 
 .charging-gauge .inner { position: relative; padding-top: 0; padding-bottom: 5px; margin-top: -110px; }
 
@@ -11461,17 +11461,17 @@ label { margin-bottom: 8px; }
 
 .charging-gauge .gauge-box { position: relative; margin: auto; width: 335px; height: 200px; background: url(../images/ev_event/gauge_bg.png) no-repeat center/cover; }
 
-.charging-gauge .gauge-panel { position: absolute; left: 50%; width: 300px; height: 150px; transform: translateX(-50%); overflow: hidden; }
+.charging-gauge .gauge-panel { position: absolute; top: 38px; left: 50%; width: 255px; height: 127px; transform: translateX(-50%); overflow: hidden; }
 
-.charging-gauge .gauge-panel:before, .charging-gauge .gauge-panel:after { content: ''; position: absolute; top: 0; left: 0; display: block; width: 300px; height: 300px; border-radius: 50%; }
+.charging-gauge .gauge-panel .gauge-circle { position: relative; display: block; width: 255px; height: 255px; transition: transform .5s ease-in-out; }
 
-.charging-gauge .gauge-panel:before { border: 20px solid #3ddb87; }
+.charging-gauge .gauge-panel .gauge-bar { position: absolute; bottom: 0; display: block; width: 255px; height: 127px; overflow: hidden; }
 
-.charging-gauge .gauge-panel:after { width: 220px; height: 220px; margin: 40px; border: 1px solid #999; }
+.charging-gauge .gauge-panel .gauge-bar:before { content: ''; position: absolute; bottom: 0; left: 0; display: block; width: 255px; height: 255px; border-radius: 50%; border: 11px solid #3ddb87; }
 
-.charging-gauge .gauge-arrow { position: absolute; width: 260px; height: 260px; margin: 20px; transition: transform .5s ease-in-out; z-index: 1; }
+.charging-gauge .gauge-arrow { position: absolute; width: 221px; height: 221px; margin: 57px; transition: transform .5s ease-in-out; z-index: 1; }
 
-.charging-gauge .gauge-arrow:before { content: ''; position: absolute; top: 50%; left: 0; display: block; border-top: 8px solid transparent; border-right: 20px solid #3ddb87; border-bottom: 8px solid transparent; transform: translateY(-50%); }
+.charging-gauge .gauge-arrow:before { content: ''; position: absolute; top: 50%; left: 0; display: block; border-top: 6px solid transparent; border-right: 10px solid #000; border-bottom: 6px solid transparent; transform: translateY(-50%); }
 
 .charging-gauge .gauge-info { position: absolute; top: 84px; left: 50%; display: block; text-align: center; transform: translateX(-50%); z-index: 3; }
 
