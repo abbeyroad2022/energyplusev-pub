@@ -51,36 +51,25 @@
                 <!-- 로그인 전: is-logout 클래스 기본, 로그인 후: is-logout 클래스 제거-->
                 <div class="ev-event-content charging-gauge bg-dark">
                     <div class="inner">
-
-
                         <div class="gauge-area">
-
                             <div class="gauge-box">
-                                <!-- <i class="gauge-panel"></i>
-                                <i class="gauge-arrow" style="transform: rotate(0deg);"></i>
-                                <ul class="gauge-list">
-                                    <li class="gauge-0"><span>0</span></li>
-                                    <li class="gauge-60"><span>60</span></li>
-                                    <li class="gauge-120"><span>120</span></li>
-                                    <li class="gauge-180"><span>180</span></li>
-                                </ul> -->
+                                <span class="gauge-panel"><span class="gauge-circle" style="transform: rotate(90deg);"><i class="gauge-bar"></i></span></span>
+                                <i class="gauge-arrow" style="transform: rotate(90deg);"></i>
                                 <div class="gauge-info">
                                     <p class="tit">충전실적</p>
-                                    <p class="wattage"><em>108</em> kWh</p>
+                                    <p class="wattage"><em>90</em> kWh</p>
                                 </div>
                             </div>
-
-
                             <a href="#" class="event-btn btn-type1 btn-engagement">로그인 후 참여하기</a>
                         </div>
                         <div class="btn-area">
-                            <a href="javascript:;" class="event-btn btn-type1 is-disabled">쿠폰 선택</a>
+                            <a href="#benefitCoupon" class="event-btn btn-type1">쿠폰 선택</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- 혜택 쿠폰 -->
-                <div class="ev-event-content charging-benefit bg-dark">
+                <div class="ev-event-content charging-benefit bg-dark" id="benefitCoupon">
                     <div class="inner">
                         <h3 class="ev-event-title fc-white">혜택 쿠폰</h3>
 
