@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="155" viewBox="0 0 155 155">
+    <defs>
+        <filter id="2qewhatb8a" x=".629" y="1" width="154.179" height="154.945" filterUnits="userSpaceOnUse">
+            <feOffset dx="4" dy="4"/>
+            <feGaussianBlur result="blur"/>
+            <feFlood/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="0ezv5lb68b" x="28.345" y="35.981" width="102.852" height="80.087" filterUnits="userSpaceOnUse">
+            <feOffset dx="6" dy="3"/>
+            <feGaussianBlur result="blur-2"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur-2"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="wduyyq9z5c" x="83" y="6" width="52" height="52" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur-3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path data-name="사각형 18964" style="fill:none" d="M0 0h155v155H0z"/>
+    <g style="filter:url(#2qewhatb8a)">
+        <path data-name="합치기 158" d="M-16.2 44.59A60 60 0 1 1 98.1 70.137c2.393 3.078 5.682 8.193 6.649 14.021 1.209 7.276-3.423 17.9-3.976 16.075-.659-2.166-2.611-9.17-6.863-11.529a14.731 14.731 0 0 0-8.009-1.37A60 60 0 0 1-16.2 44.59z" transform="rotate(73 38.506 81.714)" style="fill:#c1c1c2"/>
+    </g>
+    <g data-name="그룹 19040">
+        <g style="filter:url(#0ezv5lb68b)">
+            <g data-name="빼기 63" style="fill:#fff" transform="rotate(-1.6 2.59 .79)">
+                <path d="m82.386 49.32-48.665-.002c-.809-3.387-3.86-5.912-7.491-5.912-3.632 0-6.684 2.526-7.493 5.913L2 49.318l-.002-.003L2 2 2.003 2h16.73c.804 3.395 3.86 5.928 7.497 5.928 3.636 0 6.691-2.533 7.495-5.927H82.39v47.318l-.004.001z" style="stroke:none" transform="rotate(-20 198.033 -47.942)"/>
+                <path d="M17.298 47.319c1.478-3.472 4.925-5.913 8.932-5.913 4.005 0 7.452 2.44 8.93 5.912h45.23V4H35.166C33.69 7.48 30.24 9.927 26.23 9.927c-4.012 0-7.463-2.447-8.938-5.927H4v43.318h13.298m3.233 4.001L2 51.318c-1.103 0-2-.897-2-2V2C0 .897.897 0 2 0h18.532a5.709 5.709 0 0 0 5.698 5.927A5.708 5.708 0 0 0 31.927 0H82.39c1.102 0 2 .897 2 2v47.318c0 1.103-.898 2-2 2H31.927a5.708 5.708 0 0 0-5.698-5.912 5.708 5.708 0 0 0-5.698 5.912v.001z" style="fill:#0f1f2e;stroke:none" transform="rotate(-20 198.033 -47.942)"/>
+            </g>
+        </g>
+        <g data-name="사각형 18937" transform="rotate(-20 163.971 -238.67)" style="fill:#3ddb87;stroke:#0f1f2e;stroke-width:4px">
+            <rect width="17.106" height="51.318" rx="2" style="stroke:none"/>
+            <path style="fill:none" d="M2 2h13.106v47.318H2z"/>
+        </g>
+        <text transform="rotate(-20 276.339 -86.766)" style="fill:#0f1f2e;font-size:13px;font-family:Montserrat-Bold,Montserrat;font-weight:700"><tspan x="0" y="0">Coupon</tspan></text>
+    </g>
+    <path transform="rotate(-20 190.246 -48.897)" style="fill:none" d="M0 0h84.39v57.02H0z"/>
+    <g>
+        <g style="filter:url(#wduyyq9z5c)">
+            <circle data-name="타원 2280" cx="25" cy="25" r="25" transform="translate(83.001 6)" style="fill:#fed92b"/>
+        </g>
+        <text data-name="GET" transform="rotate(-14.98 197.122 -394.223)" style="fill:#383840;font-size:18px;font-family:Montserrat-ExtraBold,Montserrat;font-weight:800"><tspan x="-18.693" y="0">GET</tspan></text>
+    </g>
+</svg>
