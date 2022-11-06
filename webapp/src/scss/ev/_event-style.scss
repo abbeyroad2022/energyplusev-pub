@@ -102,6 +102,21 @@ em { font-style: normal; }
         }
 	}
 }
+[class*='bi-gs25'] img {
+    width: auto;
+    margin-bottom: -1px;
+}
+.bi-gs25 {
+    &-lg img {
+        height: 14px;
+    }
+    &-md img {
+        height: 13px;
+    }
+    &-sm img {
+        height: 12px;
+    }
+}
 // 이벤트 참여방법
 .ev-event-guide {
     background-color: #f0f0f0;
@@ -112,16 +127,17 @@ em { font-style: normal; }
         list-style: none;
     }
     .guide-item {
-        display: flex;
-        align-items: flex-start;
-        padding: 18px 15px;
-        font-weight: 500;
+        padding: 20px 15px;
         border-radius: 10px;
         box-shadow: 10px 0 15px rgba(168, 168, 168, 0.16);
         background-color: #fff;
         &:not(:first-child) {
             margin-top: 15px;
         }
+    }
+    .guide-step {
+        display: flex;
+        align-items: center;
         .num {
             display: flex;
             align-items: center;
@@ -129,7 +145,7 @@ em { font-style: normal; }
             width: 35px;
             min-width: 35px;
             height: 35px;
-            margin: 2px 8px 0 0;
+            margin-right: 8px;
             padding-top: 2px;
             color: #fff;
             font-family: "Montserrat", sans-serif;
@@ -139,16 +155,18 @@ em { font-style: normal; }
             border-radius: 50%;
             background-color: #2d2d35;
         }
-        .guide-cont {
+        .tit {
+            color: #2d2d35;
             font-family: "NotoSansCJKkr", sans-serif;
-            .tit {
-                margin-bottom: 5px;
-                color: #2d2d35;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 1.1;
-            }
-        } 
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.1;
+            word-break: keep-all;
+        }
+    }
+    .note-txt {
+        margin: 5px 0 -5px 43px;
+        word-break: keep-all;
     }
 }
 // 이벤트 유의사항
@@ -243,9 +261,35 @@ em { font-style: normal; }
         display: block;
         width: 100%;
         padding-top: 55.2239%;
-        background: url(../images/ev_event/event_bg_gauge.svg) no-repeat right center / auto 100%;
+        background: url(../images/ev_event/event_bg_gauge.png) no-repeat right center / auto 100%;
         transform: translateX(-50%);
         z-index: 1;
+    }
+    .ic-notice-group {
+        &.get1 {
+            .coupon1 {
+                background-image: url(../images/ev_event/event_coupon_01_get.png);
+            }
+        }
+        &.get2 {
+            .coupon1 {
+                background-image: url(../images/ev_event/event_coupon_01_get.png);
+            }
+            .coupon2 {
+                background-image: url(../images/ev_event/event_coupon_02_get.png);
+            }
+        }
+        &.get3 {
+            .coupon1 {
+                background-image: url(../images/ev_event/event_coupon_01_get.png);
+            }
+            .coupon2 {
+                background-image: url(../images/ev_event/event_coupon_02_get.png);
+            }
+            .coupon3 {
+                background-image: url(../images/ev_event/event_coupon_03_get.png);
+            }
+        }
     }
     .ic-notice {
         position: absolute;
@@ -255,31 +299,21 @@ em { font-style: normal; }
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
-        &.coupon-get1 {
+        z-index: 5;
+        &.coupon1 {
             top: 5.07%;
             left: -0.6%;
-            background-image: url(../images/ev_event/event_notice_01.svg);
+            background-image: url(../images/ev_event/event_coupon_01.png);
         }
-        &.coupon-get2 {
+        &.coupon2 {
             top: 3.73%;
             right: 0.9%;
-            background-image: url(../images/ev_event/event_notice_02.svg);
+            background-image: url(../images/ev_event/event_coupon_02.png);
         }
-        &.coupon-get3 {
+        &.coupon3 {
             bottom: -1.8%;
             right: 1.8%;
-            background-image: url(../images/ev_event/event_notice_03.svg);
-        }
-        &.is-get {
-            &.coupon-get1 {
-                background-image: url(../images/ev_event/event_notice_01_get.svg);
-            }
-            &.coupon-get2 {
-                background-image: url(../images/ev_event/event_notice_02_get.svg);
-            }
-            &.coupon-get3 {
-                background-image: url(../images/ev_event/event_notice_03_get.svg);
-            }
+            background-image: url(../images/ev_event/event_coupon_03.png);
         }
     }
     .gauge-circle {
@@ -318,13 +352,12 @@ em { font-style: normal; }
         }
     }
     .gauge-arrow {
-        display: none;
         position: absolute;
-        top: 10%;
-        left: 50%;
-        width: 500px;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.45);
+        top: 33.4%;
+        left: 12%;
+        width: 74.325%;;
+        padding-top: 74.325%;
+        border-radius: 50%;
         z-index: 1;
         &:before {
             content: '';
@@ -332,9 +365,9 @@ em { font-style: normal; }
             top: 50%;
             left: 0;
             display: block;
-            border-top: 6px solid transparent;
-            border-right: 10px solid #000;
-            border-bottom: 6px solid transparent;
+            border-top: 18px solid transparent;
+            border-right: 30px solid #000;
+            border-bottom: 18px solid transparent;
             transform: translateY(-50%);
         }
     }
@@ -349,7 +382,7 @@ em { font-style: normal; }
         width: 92.24%;
         height: 54.77%;
         text-align: center;
-        background: url(../images/ev_event/event_bg_info.svg) no-repeat right center / auto 100%;
+        background: url(../images/ev_event/event_bg_info.png) no-repeat right center / auto 100%;
         transform: translateX(-50%);
         z-index: 3;
         .tit {
@@ -369,6 +402,7 @@ em { font-style: normal; }
             }
         }
     }
+    // gauge value 확인용
     #gaugeControl {
         position: absolute;
         bottom: 15%;
@@ -481,20 +515,20 @@ em { font-style: normal; }
     }
     .note-txt {
         margin-bottom: 6px;
+        opacity: 0.8;
+        word-break: keep-all;
     }
 }
 
 @media (max-width: 750px) {
-    .charging-gauge {
-        .gauge-info {
-            .tit {
-                font-size: 6.4vw;
-            }
-            .wattage {
-                font-size: 4.9333vw;
-                .gauge-value {
-                    font-size: 13.6vw;
-                }
+    .charging-gauge .gauge-info {
+        .tit {
+            font-size: 6.4vw;
+        }
+        .wattage {
+            font-size: 4.9333vw;
+            .gauge-value {
+                font-size: 13.6vw;
             }
         }
     }
