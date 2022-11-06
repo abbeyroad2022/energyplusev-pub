@@ -25,7 +25,7 @@
 
                 <!-- 이벤트 이미지-->
                 <div class="ev-event-content charging-main bg-dark">
-                    <img src="images/ev_event/charging_event_main.svg" alt="에너지플러스 EV 회원으로 충전하면 최대 15,000원 혜택!, 기간 : 22.11.14~22.12.31, 회원카드/NFC/바로충전으로 60kWh 충전 마다 5,000원 상당 혜택을 드립니다! (60kWh/120kWh/180kWh 최대 3번 지급)">
+                    <img src="images/ev_event/charging_event_main.png" alt="에너지플러스 EV 회원으로 충전하면 최대 15,000원 혜택!, 기간 : 22.11.14~22.12.31, 회원카드/NFC/바로충전으로 60kWh 충전 마다 5,000원 상당 혜택을 드립니다! (60kWh/120kWh/180kWh 최대 3번 지급)">
                     <i class="ic-deco"><img src="images/ev_event/charging_event_deco.png" alt=""></i>
                 </div>
 
@@ -35,9 +35,11 @@
                     <div class="inner">
                         <div class="gauge-area">
                             <i class="bg-gauge"></i>
-                            <i class="ic-notice coupon-get1"></i>
-                            <i class="ic-notice coupon-get2"></i>
-                            <i class="ic-notice coupon-get3"></i>
+                            <div class="ic-notice-group">
+                                <i class="ic-notice coupon1"></i>
+                                <i class="ic-notice coupon2"></i>
+                                <i class="ic-notice coupon3"></i>
+                            </div>
                             <div class="gauge-circle-wrap">
                                 <div class="gauge-circle-inner">
                                     <svg class="gauge-circle-progress" width="592" height="592" viewBox="0 0 592 592">
@@ -46,7 +48,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <i class="gauge-arrow" style="transform: rotate(90deg);"></i>
+                            <i class="gauge-arrow" style="transform: rotate(0deg);"></i>
                             <div class="gauge-info">
                                 <p class="tit">충전실적</p>
                                 <p class="wattage"><strong class="gauge-value">90</strong> kWh</p>
@@ -61,29 +63,28 @@
                 <div class="ev-event-content charging-benefit bg-dark" id="benefitCoupon">
                     <div class="inner">
                         <h3 class="ev-event-title fc-white">혜택 쿠폰</h3>
-
                         <ul class="event-coupon-list">
                             <i class="ic-tag"><img src="images/ev_event/charging_event_tag.png" alt="3종 택 1"></i>
                             <li class="event-coupon-item">
-                                <i class="ic-coupon"><img src="images/ev_event/ic_charging_coupon_01.svg" alt="무료 세차 쿠폰 아이콘"></i>
+                                <i class="ic-coupon"><img src="images/ev_event/ic_charging_coupon_01.png" alt="무료 세차 쿠폰 아이콘"></i>
                                 <p class="coupon-name">무료 세차 쿠폰</p>
                                 <!-- 쿠폰 받기 완료시 : is-complete 클래스 추가, 비활성화 : is-disabled 클래스 추가 -->
                                 <a href="javascript:;" class="event-btn btn-type2 is-complete">쿠폰 받기</a>
                             </li>
                             <li class="event-coupon-item">
-                                <i class="ic-coupon"><img src="images/ev_event/ic_charging_coupon_02.svg" alt="5,000원 충전 쿠폰 아이콘"></i>
+                                <i class="ic-coupon"><img src="images/ev_event/ic_charging_coupon_02.png" alt="5,000원 충전 쿠폰 아이콘"></i>
                                 <p class="coupon-name">5,000원 충전 쿠폰</p>
                                 <!-- 쿠폰 받기 완료시 : is-complete 클래스 추가, 비활성화 : is-disabled 클래스 추가 -->
                                 <a href="javascript:;" class="event-btn btn-type2 is-disabled">쿠폰 받기</a>
                             </li>
                             <li class="event-coupon-item">
-                                <i class="ic-coupon"><img src="images/ev_event/ic_charging_coupon_03.svg" alt="GS편의점 5,000원 쿠폰 아이콘"></i>
-                                <p class="coupon-name">GS편의점 5,000원 쿠폰</p>
+                                <i class="ic-coupon"><img src="images/ev_event/ic_charging_coupon_03.png" alt="GS25 5,000원 쿠폰 아이콘"></i>
+                                <p class="coupon-name"><i class="bi-gs25-lg"><img src="images/ev_event/bi_gs25.svg" alt="GS25"></i> 5,000원 쿠폰</p>
                                 <!-- 쿠폰 받기 완료시 : is-complete 클래스 추가, 비활성화 : is-disabled 클래스 추가 -->
                                 <a href="javascript:;" class="event-btn btn-type2">쿠폰 받기</a>
                             </li>
                         </ul>
-                        <p class="note-txt fc-white">* 3가지 혜택 중 1가지만 선택 가능합니다.</p>
+                        <p class="note-txt fc-white">* 1회 실적 충족 시, 1개 혜택 쿠폰 선택 가능합니다. (최대 3회)</p>
                     </div>
                 </div>
 
@@ -93,25 +94,31 @@
                         <h3 class="ev-event-title">참여 방법</h3>
                         <ol class="guide-list">
                             <li class="guide-item">
-                                <i class="num">1</i>
-                                <div class="guide-cont">
-                                    <p class="tit">회원카드 / <span class="ff-en">NFC</span> / 바로충전으로 충전하기!</p>
-                                    <p class="note-txt">* 충전 이력 확인하여 충전 실적 반영(24시간 이내)</p>
-                                </div>
+                                <p class="guide-step">
+                                    <i class="num">1</i>
+                                    <span class="tit">에너지 플러스 EV 앱 다운로드 하기</span>
+                                </p>
                             </li>
                             <li class="guide-item">
-                                <i class="num">2</i>
-                                <div class="guide-cont">
-                                    <p class="tit">총 <span class="ff-en">60kWh</span>/<span class="ff-en">120kWh</span>/<span class="ff-en">180Wh</span> 충전하여 혜택 쿠폰 받기!</p>
-                                    <p class="note-txt">* 무료 세차 쿠폰 or 5,000원 충전 쿠폰 or GS편의점 5,000원 쿠폰 중 택 1</p>
-                                </div>
+                                <p class="guide-step">
+                                    <i class="num">2</i>
+                                    <span class="tit">회원카드 / <span class="ff-en">NFC</span> / 바로충전으로 충전하기!</span>
+                                </p>
+                                <p class="note-txt">* 충전 이력 확인하여 충전 실적 반영(24시간 이내)</p>
                             </li>
                             <li class="guide-item">
-                                <i class="num">3</i>
-                                <div class="guide-cont">
-                                    <p class="tit">쿠폰함 > 발급된 쿠폰 확인 후 사용하기! </p>
-                                    <p class="note-txt">* 쿠폰 발급일 이후 30일 이내 사용 가능</p>
-                                </div>
+                                <p class="guide-step">
+                                    <i class="num">3</i>
+                                    <span class="tit">총 <span class="ff-en">60kWh</span>/<span class="ff-en">120kWh</span>/<span class="ff-en">180Wh</span> 충전하여 혜택 쿠폰 받기!</span>
+                                </p>
+                                <p class="note-txt">* 무료 세차 쿠폰 or 5,000원 충전 쿠폰 or <i class="bi-gs25-md"><img src="images/ev_event/bi_gs25.svg" alt="GS25"></i> 5,000원 쿠폰 중 택 1</p>
+                            </li>
+                            <li class="guide-item">
+                                <p class="guide-step">
+                                    <i class="num">4</i>
+                                    <span class="tit">쿠폰함 > 발급된 쿠폰 확인 후 사용하기!</span>
+                                </p>
+                                <p class="note-txt">* 쿠폰 발급일 이후 30일 이내 사용 가능</p>
                             </li>
                         </ol>
                     </div>
@@ -128,7 +135,7 @@
                             <li class="notice-item"><span>누적 합산한 충전 실적 60kWh 당 택1 쿠폰을 발급 받을 수 있으며, 중복 발급은 불가합니다.</span></li>
                             <li class="notice-item"><span>혜택 쿠폰은 해당 이벤트 페이지 내에서 이벤트 기간(11/14~12/31) 내 발급 할 수 있습니다.(이벤트 기간 종료 시 발급 불가)</span></li>
                             <li class="notice-item"><span>발급받은 쿠폰은 메인 > 쿠폰함에서 확인하실 수 있습니다.</span></li>
-                            <li class="notice-item"><span>무료 세차 쿠폰, 5,000원 충전 쿠폰, GS편의점 5,000원 쿠폰은 발급일 이후 30일 이내 사용 가능하며, 기한 만료 시 자동 소진됩니다.</span></li>
+                            <li class="notice-item"><span>무료 세차 쿠폰, 5,000원 충전 쿠폰, <i class="bi-gs25-sm"><img src="images/ev_event/bi_gs25.svg" alt="GS25"></i> 5,000원 쿠폰은 발급일 이후 30일 이내 사용 가능하며, 기한 만료 시 자동 소진됩니다.</span></li>
                             <li class="notice-item"><span>혜택 쿠폰 발급은 이벤트 기간 내 최대 3회(누적 충전실적 180kWh)까지 발급 됩니다.</span></li>
                             <li class="notice-item"><span>무료충전 외 추가 결제한 금액에 대해서만 GS&POINT 적립 가능합니다.</span></li>
                             <li class="notice-item"><span>발급받은 쿠폰은 타인에게 양도가 불가하며, 부정한 방법 또는 비정상적인 접근을 통해 이벤트 참여인 경우 당첨이 취소됩니다.</span></li>
@@ -145,13 +152,11 @@
     </div>
 
     <script>
-        const control = document.getElementById('gaugeControl');
-        const bar = document.querySelector('.gauge-circle-bar');
-        const value = document.querySelector('.gauge-value');
-        const notice = document.querySelector('.ic-notice');
-        const get1 = document.querySelector('.coupon-get1');
-        const get2 = document.querySelector('.coupon-get2');
-        const get3 = document.querySelector('.coupon-get3');
+        const control = document.getElementById('gaugeControl'),
+            value = document.querySelector('.gauge-value'),
+            elBar = document.querySelector('.gauge-circle-bar'),
+            elArrow = document.querySelector('.gauge-arrow'),
+            elNotice = document.querySelector('.ic-notice-group');
 
         let RADIUS = 280;
         let CIRCUMFERENCE = Math.round(2 * Math.PI * RADIUS);
@@ -161,17 +166,19 @@
             let dashoffset = Math.round(CIRCUMFERENCE * (1 - progress));
 
             value.innerHTML = khw;
-            bar.style.strokeDashoffset = dashoffset;
+            elArrow.style.webkitTransform = 'rotate(' + khw + 'deg)';
+            elArrow.style.transform = 'rotate(' + khw + 'deg)';
+            elBar.style.strokeDashoffset = dashoffset;
 
             if (khw >= 60 && khw < 120) {
-                get1.classList.add('is-get');
+                elNotice.className = ('ic-notice-group get1');
             } else if (khw >= 120 && khw < 180) {
-                get2.classList.add('is-get');
+                elNotice.className = ('ic-notice-group get2');
             } else if (khw == 180) {
-                get3.classList.add('is-get');
+                elNotice.className = ('ic-notice-group get3');
+            } else {
+                elNotice.className = ('ic-notice-group');
             }
-
-            console.log(progress, khw, dashoffset, CIRCUMFERENCE, dashoffset)
         }
 
         control.addEventListener('input', function(event) {
@@ -181,7 +188,7 @@
             progress(event.target.valueAsNumber);
         });
 
-        bar.style.strokeDasharray = CIRCUMFERENCE;
+        elBar.style.strokeDasharray = CIRCUMFERENCE;
         progress(0);
     </script>
 </body>
