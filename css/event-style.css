@@ -5754,13 +5754,13 @@ em { font-style: normal; }
 
 .event-btn.btn-type2:disabled, .event-btn.btn-type2.is-disabled, .event-btn.btn-type2.is-complete { color: #888; background-color: #eaeaea; }
 
-[class*='bi-gs25'] img { width: auto; margin-bottom: -1px; }
+[class*='ev-txt'] img { width: auto; margin-bottom: -1px; }
 
-.bi-gs25-lg img { height: 14px; }
+.ev-txt-lg img { height: 14px; }
 
-.bi-gs25-md img { height: 13px; }
+.ev-txt-md img { height: 13px; }
 
-.bi-gs25-sm img { height: 12px; }
+.ev-txt-sm img { height: 12px; }
 
 .ev-event-guide { background-color: #f0f0f0; }
 
@@ -5810,18 +5810,6 @@ em { font-style: normal; }
 
 .charging-gauge .bg-gauge { position: absolute; top: 21.79%; left: 50%; display: block; width: 100%; padding-top: 55.2239%; background: url(../images/event_bg_gauge.png) no-repeat right center/auto 100%; transform: translateX(-50%); z-index: 1; }
 
-.charging-gauge .ic-notice-group.get1 .coupon1 { background-image: url(../images/event_coupon_01_get.png); }
-
-.charging-gauge .ic-notice-group.get2 .coupon1 { background-image: url(../images/event_coupon_01_get.png); }
-
-.charging-gauge .ic-notice-group.get2 .coupon2 { background-image: url(../images/event_coupon_02_get.png); }
-
-.charging-gauge .ic-notice-group.get3 .coupon1 { background-image: url(../images/event_coupon_01_get.png); }
-
-.charging-gauge .ic-notice-group.get3 .coupon2 { background-image: url(../images/event_coupon_02_get.png); }
-
-.charging-gauge .ic-notice-group.get3 .coupon3 { background-image: url(../images/event_coupon_03_get.png); }
-
 .charging-gauge .ic-notice { position: absolute; display: block; width: 23.134%; padding-top: 23.134%; background-repeat: no-repeat; background-position: center; background-size: 100% 100%; z-index: 5; }
 
 .charging-gauge .ic-notice.coupon1 { top: 5.07%; left: -0.6%; background-image: url(../images/event_coupon_01.png); }
@@ -5829,6 +5817,24 @@ em { font-style: normal; }
 .charging-gauge .ic-notice.coupon2 { top: 3.73%; right: 0.9%; background-image: url(../images/event_coupon_02.png); }
 
 .charging-gauge .ic-notice.coupon3 { bottom: -1.8%; right: 1.8%; background-image: url(../images/event_coupon_03.png); }
+
+.charging-gauge .ic-notice.is-complete.coupon1 { background-image: url(../images/event_coupon_01.png); }
+
+.charging-gauge .ic-notice.is-complete.coupon2 { background-image: url(../images/event_coupon_02.png); }
+
+.charging-gauge .ic-notice.is-complete.coupon3 { background-image: url(../images/event_coupon_03.png); }
+
+.charging-gauge .ic-notice.is-active.coupon1 { background-image: url(../images/event_coupon_01_get.png); }
+
+.charging-gauge .ic-notice.is-active.coupon2 { background-image: url(../images/event_coupon_02_get.png); }
+
+.charging-gauge .ic-notice.is-active.coupon3 { background-image: url(../images/event_coupon_03_get.png); }
+
+.charging-gauge .ic-notice.is-active.is-complete.coupon1 { background-image: url(../images/event_coupon_01.png); }
+
+.charging-gauge .ic-notice.is-active.is-complete.coupon2 { background-image: url(../images/event_coupon_02.png); }
+
+.charging-gauge .ic-notice.is-active.is-complete.coupon3 { background-image: url(../images/event_coupon_03.png); }
 
 .charging-gauge .gauge-circle-wrap { overflow: hidden; position: absolute; top: 26%; left: 50%; width: 88.625%; padding-top: 60%; transform: translateX(-51%); z-index: 2; }
 
