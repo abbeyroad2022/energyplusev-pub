@@ -5796,6 +5796,10 @@ em { font-style: normal; }
 
 .charging-main { position: relative; }
 
+.charging-main .ev-event-period { position: absolute; top: 6%; left: 5.34%; display: flex; align-items: center; justify-content: center; padding: 0 5.34% 0 4%; height: 3.75%; color: #000; font-size: 28px; font-weight: 500; line-height: 1.1; border-radius: 50px; background-color: #fff; box-shadow: 3px 3px 0 black; z-index: 1; }
+
+.charging-main .ev-event-period .ff-en { font-family: "Montserrat", sans-serif; }
+
 .charging-main .ic-deco { position: absolute; left: 1.46%; bottom: -14.4%; display: block; width: 37.33%; z-index: 30; }
 
 .charging-gauge .inner { position: relative; padding: 0 5.3333%; margin-top: -79.2%; }
@@ -5850,7 +5854,7 @@ em { font-style: normal; }
 
 .charging-gauge .gauge-info .wattage .gauge-value { font-size: 102px; font-weight: 700; }
 
-.charging-gauge #gaugeControl { position: absolute; bottom: 15%; left: 50%; transform: translateX(-50%); opacity: 0; z-index: 999; }
+.charging-gauge #gaugeControl { position: absolute; bottom: 15%; left: 50%; transform: translateX(-50%); opacity: 1; z-index: 999; }
 
 .charging-gauge.is-logout .inner:after { content: ''; position: absolute; top: 0; left: 20px; right: 20px; bottom: 0; display: block; border-radius: 10px; background-color: rgba(0, 0, 0, 0.85); z-index: 28; }
 
@@ -5878,6 +5882,7 @@ em { font-style: normal; }
 
 .charging-benefit .note-txt { margin-bottom: 6px; opacity: 0.8; word-break: keep-all; }
 
-@media (max-width: 750px) { .charging-gauge .gauge-info .tit { font-size: 6.4vw; }
+@media (max-width: 750px) { .charging-main .ev-event-period { font-size: 3.7333vw; }
+	.charging-gauge .gauge-info .tit { font-size: 6.4vw; }
 	.charging-gauge .gauge-info .wattage { font-size: 4.9333vw; }
 	.charging-gauge .gauge-info .wattage .gauge-value { font-size: 13.6vw; } }
