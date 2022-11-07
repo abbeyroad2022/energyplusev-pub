@@ -5778,7 +5778,7 @@ em { font-style: normal; }
 
 .ev-event-guide .guide-step .tit { color: #2d2d35; font-family: "NotoSansCJKkr", sans-serif; font-size: 16px; font-weight: 700; line-height: 1.1; word-break: keep-all; }
 
-.ev-event-guide .note-txt { margin: 5px 0 -5px 43px; word-break: keep-all; }
+.ev-event-guide .note-txt { margin: 5px 0 -5px 43px; padding-right: 18px; word-break: keep-all; }
 
 .ev-event-notice .inner { padding-bottom: 50px; }
 
