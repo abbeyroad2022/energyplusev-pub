@@ -5944,6 +5944,8 @@ button[class*='btn-'] { display: flex; align-items: center; border: 0; outline: 
 
 .modal .bottom-sheet.is-small { height: 380px; }
 
+.modal .bottom-sheet.is-auto { height: auto; }
+
 .modal .bottom-sheet.is-bottom-fixed .bottom-sheet-body { padding-bottom: 103px; }
 
 .modal .bottom-sheet.is-close { transform: translateY(100%); }
