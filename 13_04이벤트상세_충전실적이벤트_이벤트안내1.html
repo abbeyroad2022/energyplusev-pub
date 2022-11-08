@@ -10,8 +10,6 @@
     <title>Energy Plus EV App</title>
     <!-- event CSS -->
     <link rel="stylesheet" href="css/event-style.css">
-    <!-- event JS -->
-    <script src="js/ui.js"></script>
 </head>
 
 <body>
@@ -200,6 +198,7 @@
     </div>
 
     <script>
+        // gauge
         const control = document.getElementById('gaugeControl'),
             value = document.querySelector('.gauge-value'),
             elBar = document.querySelector('.gauge-circle-bar'),
@@ -236,6 +235,16 @@
 
         elBar.style.strokeDasharray = CIRCUMFERENCE;
         progress(120);
+
+        // modal
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                //console.log(e.target);
+                if (e.target.classList.contains('btn-close') || e.target.classList.contains('modal-background')) {
+                    modal.classList.remove('is-active');
+                }
+            })
+        })
     </script>
 
 </body>
