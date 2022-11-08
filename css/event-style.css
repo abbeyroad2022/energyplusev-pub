@@ -5720,6 +5720,14 @@ em { font-style: normal; }
 .skipNavi a:focus { font-size: 14px; }
 
 /* layout */
+html, body { -webkit-text-size-adjust: none; text-size-adjust: none; overflow-anchor: none; }
+
+html { width: 100%; }
+
+body { width: 100%; height: 100%; overflow-y: auto; -webkit-user-select: none; user-select: none; -webkit-user-drag: none; background: #ffffff; }
+
+body.is-fixed { position: fixed; overflow: hidden; }
+
 #container { clear: both; display: flex; flex-direction: column; flex-grow: 1; width: 100%; min-width: 280px; height: 100%; background: #ffffff; overflow-y: auto; }
 
 .content-area { background: #e6e6e6; }
