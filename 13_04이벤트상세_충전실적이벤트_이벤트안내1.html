@@ -226,11 +226,11 @@
             }
         }
 
-        control.addEventListener('input', function(event) {
-            progress(event.target.valueAsNumber);
+        control.addEventListener('input', function(e) {
+            progress(e.target.valueAsNumber);
         });
-        control.addEventListener('change', function(event) {
-            progress(event.target.valueAsNumber);
+        control.addEventListener('change', function(e) {
+            progress(e.target.valueAsNumber);
         });
 
         elBar.style.strokeDasharray = CIRCUMFERENCE;

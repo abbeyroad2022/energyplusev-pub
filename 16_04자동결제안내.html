@@ -279,8 +279,8 @@
         const $body = document.querySelector('body'),
             $modal1 = document.querySelector('#modal1'),
             $modal2 = document.querySelector('#modal2'),
-            $help1 = document.querySelector('#help1');
-        $help2 = document.querySelector('#help2');
+            $help1 = document.querySelector('#help1'),
+            $help2 = document.querySelector('#help2');
         $help1.addEventListener('click', () => {
             $body.classList.add('is-fixed');
             $modal1.classList.add('is-active');
@@ -289,10 +289,10 @@
             $body.classList.remove('is-fixed');
             $modal1.classList.remove('is-active');
         })
-        $help2.addEventListener('click', () => {
-            $body.classList.add('is-fixed');
-            $modal2.classList.add('is-active');
-        })
+        // $help2.addEventListener('click', () => {
+        //     $body.classList.add('is-fixed');
+        //     $modal2.classList.add('is-active');
+        // })
         $modal2.querySelector('.modal-background').addEventListener('click', () => {
             $body.classList.remove('is-fixed');
             $modal2.classList.remove('is-active');
