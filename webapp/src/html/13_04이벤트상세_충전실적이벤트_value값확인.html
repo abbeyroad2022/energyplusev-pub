@@ -20,14 +20,14 @@
 
                 <!-- 충전 게이지 -->
                 <!-- 로그인 전: is-logout 클래스 기본, 로그인 후: is-logout 클래스 제거-->
-                <div class="ev-event-content charging-gauge bg-dark is-logout">
+                <div class="ev-event-content charging-gauge bg-dark">
                     <div class="inner">
                         <div class="gauge-area">
                             <i class="bg-gauge"></i>
                             <div class="ic-notice-group">
-                                <!-- 충전실적 충족시 : is-active 클래스 추가, 쿠폰 받기 완료시 : is-complete 클래스 추가 -->
-                                <i class="ic-notice coupon1 is-active is-complete"></i>
-                                <i class="ic-notice coupon2 is-active"></i>
+                                <!-- 충전실적 충족시 : is-active 클래스 추가, 쿠폰 받기 완료시 : is-active 클래스 제거 -->
+                                <i class="ic-notice coupon1"></i>
+                                <i class="ic-notice coupon2"></i>
                                 <i class="ic-notice coupon3"></i>
                             </div>
                             <div class="gauge-circle-wrap">
@@ -38,13 +38,13 @@
                                     </svg>
                                 </div>
                             </div>
-                            <i class="gauge-arrow" style="transform: rotate(120deg);"></i>
+                            <i class="gauge-arrow" style="transform: rotate(0deg);"></i>
                             <div class="gauge-info">
                                 <p class="tit">충전실적</p>
-                                <p class="wattage"><strong class="gauge-value">120</strong> kWh</p>
+                                <p class="wattage"><strong class="gauge-value">0</strong> kWh</p>
                             </div>
                         </div>
-                        <input type="range" id="gaugeControl" min="0" max="180" step="1" value="120" />
+                        <input type="range" id="gaugeControl" min="0" max="180" step="1" value="0" style="left: 50%; opacity: 1;" />
                         <a href="#" class="event-btn btn-type1 btn-engagement">로그인 후 참여하기</a>
                     </div>
                 </div>
@@ -141,53 +141,7 @@
         <!-- // Contents -->
     </div>
 
-    <div class="modal">
-        <div class="modal-background"></div>
-        <!--  Bottom Sheet -->
-        <div class="bottom-sheet is-bottom-fixed is-auto">
-            <div class="bottom-sheet-header">
-                <h2 class="title is-3 has-text-centered">이벤트 안내</h2>
-                <button class="btn-close"><span class="blind">닫기</span></button>
-            </div>
-            <div class="bottom-sheet-body">
-                <div class="inner">
-                    <p class="title is-3 has-text-centered">해당 쿠폰을 발급 받으시겠습니까? <br>발급 받은 쿠폰은 변경할 수 없습니다.</p>
-                    <div class="is-button-fixed">
-                        <div class="inner">
-                            <button class="button is-half is-outline">취소</button>
-                            <button class="button is-half is-dark">확인</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal">
-        <div class="modal-background"></div>
-        <!--  Bottom Sheet -->
-        <div class="bottom-sheet is-bottom-fixed is-auto">
-            <div class="bottom-sheet-header">
-                <h2 class="title is-3 has-text-centered">이벤트 안내</h2>
-                <button class="btn-close"><span class="blind">닫기</span></button>
-            </div>
-            <div class="bottom-sheet-body">
-                <div class="inner">
-                    <p class="title is-3 has-text-centered">충전실적 완료 후 <br>쿠폰을 발급 받을 수 있습니다.</p>
-                    <div class="is-button-fixed">
-                        <div class="inner">
-                            <div class="buttons">
-                                <button type="button" class="button is-dark is-fullwidth">확인</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <script>
-        // gauge
         const control = document.getElementById('gaugeControl'),
             value = document.querySelector('.gauge-value'),
             elBar = document.querySelector('.gauge-circle-bar'),
@@ -215,26 +169,15 @@
             }
         }
 
-        control.addEventListener('input', function(e) {
-            progress(e.target.valueAsNumber);
+        control.addEventListener('input', function(event) {
+            progress(event.target.valueAsNumber);
         });
-        control.addEventListener('change', function(e){
-            progress(e.target.valueAsNumber);
+        control.addEventListener('change', function(event){
+            progress(event.target.valueAsNumber);
         });
 
         elBar.style.strokeDasharray = CIRCUMFERENCE;
-        progress(120);
-
-        // modal
-		document.querySelectorAll('.modal').forEach(modal => {
-            modal.addEventListener('click', function(e) {
-                //console.log(e.target);
-                if (e.target.classList.contains('btn-close') || e.target.classList.contains('modal-background')) {
-                    modal.classList.remove('is-active');
-			    }
-            })
-		})
-        
+        progress(0);
     </script>
 
 </body>
